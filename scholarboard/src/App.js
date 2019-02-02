@@ -3,6 +3,9 @@ import './Styles/Global.css';
 import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import Features from './Components/Features';
+import About from './Components/About';
+import Footer from './Components/Footer';
+
 
 class App extends Component {
   render() {
@@ -11,6 +14,8 @@ class App extends Component {
         <Navbar />
         <Header />
         <Features />
+        <About />
+        <Footer />
       </div>
     );
   }
