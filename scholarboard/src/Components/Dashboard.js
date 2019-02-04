@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
-import Footer from './Footer';
+import LongFooter from './LongFooter';
 import Typed from 'react-typed';
 
 class Dashboard extends Component {
@@ -21,8 +21,57 @@ class Dashboard extends Component {
 
               <button className="btn">Search</button>
             </form>
-          </div>
-          <Footer />
+          
+            <div className="s-card btn-shadow">
+              <div className="left">
+                <p className="title">Scholarship Title Goes Here</p>
+                <p className="description">lorep de ipsum de lorep de ipsum de lorep de ipsum dev lorep de ipsum de lorep de ipsum de lorep de ipsum de lorep de ipsum de lorep de ipsum de lorep de ipsum de </p>
+              </div>
+              <div className="right">
+                <p className="date-text">Apply By</p>
+                <p>NOV O7</p>
+                <button className="btn">Read More</button>
+              </div>
+            </div>
+
+            <div className="s-card btn-shadow">
+              <div className="left">
+                <p className="title">Scholarship Title Goes Here</p>
+                <p className="description">lorep de ipsum de lorep de ipsum de lorep de ipsum dev lorep de ipsum de lorep de ipsum de lorep de ipsum de lorep de ipsum de lorep de ipsum de lorep de ipsum de </p>
+              </div>
+              <div className="right">
+                <p className="date-text">Apply By</p>
+                <p>NOV O7</p>
+                <button className="btn">Read More</button>
+              </div>
+            </div>
+
+            <div className="s-card btn-shadow">
+              <div className="left">
+                <p className="title">Scholarship Title Goes Here</p>
+                <p className="description">lorep de ipsum de lorep de ipsum de lorep de ipsum dev lorep de ipsum de lorep de ipsum de lorep de ipsum de lorep de ipsum de lorep de ipsum de lorep de ipsum de </p>
+              </div>
+              <div className="right">
+                <p className="date-text">Apply By</p>
+                <p>NOV O7</p>
+                <button className="btn">Read More</button>
+              </div>
+            </div>
+
+            <div className="s-card btn-shadow">
+              <div className="left">
+                <p className="title">Scholarship Title Goes Here</p>
+                <p className="description">lorep de ipsum de lorep de ipsum de lorep de ipsum dev lorep de ipsum de lorep de ipsum de lorep de ipsum de lorep de ipsum de lorep de ipsum de lorep de ipsum de </p>
+              </div>
+              <div className="right">
+                <p className="date-text">Apply By</p>
+                <p>NOV O7</p>
+                <button className="btn">Read More</button>
+              </div>
+            </div>
+
+          </div>      
+          <LongFooter />
         </div>
     );
   }

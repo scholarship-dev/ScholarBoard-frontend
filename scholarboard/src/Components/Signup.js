@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Footer from './Footer';
+import ShortFooter from './ShortFooter';
 import SignupForm from './SignupForm';
 
 
@@ -11,7 +11,7 @@ const Signup = () => {
       <div className="signup-page">
         <SignupForm />
       </div>
-      <Footer />
+      <ShortFooter />
     </div>
   )
 }
