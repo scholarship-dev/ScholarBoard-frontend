@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../Images/logo2black.png';
+import { Link, Navlink } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -7,10 +8,10 @@ const Navbar = () => {
     <div className="header btm-shadow">
       <img href="#default" className="header-logo" src={logo} alt="Logo" srcSet="" />
       <div className="header-right">
-        <a className="active" href="#home">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="#login">Login</a>
+        <Link to='/' className="active" >Home</Link>
+        {/* <a href="/contact">Contact</a> */}
+        <Link to='/about'>About</Link>
+        <Link to='/login'>Login</Link>
 
       </div>
     </div>
