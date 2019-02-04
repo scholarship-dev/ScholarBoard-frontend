@@ -1,12 +1,12 @@
 import React from 'react';
-import '../Styles/Footer.css';
+import logo from '../Images/logo2white.png';
 
 const Footer = () => {
   return (
-    <div className='footer'>
-      <h3>Footer</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolor porro dolorem laborum eum cupiditate. Atque quaerat odio earum maxime ad ullam at, quidem cumque ut expedita explicabo, architecto eos modi excepturi tempora consectetur fuga voluptate id numquam voluptatem obcaecati.</p>
-    </div>
+    <footer className="footer top-shadow">
+      <img className="footer-logo" src={logo} alt="Scholarship Logo"></img>
+      <p className="footer-credits">💻 Built by Asim, Medi, Thomas and William 🎓</p>
+    </footer>
   )
 }
 
