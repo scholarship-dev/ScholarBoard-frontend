@@ -6,6 +6,9 @@ $white: #ffffff;
 $purple: #511691;
 $lighterblue: #5b96e9;
 $pink: #ea4c89;
+$lightgray: #ECECEC;
+$gray: rgb(142, 142, 142);
+
 
 $small-phone-width: 310px; // Small tablets and large smartphones (landscape view)
 
@@ -39,31 +42,7 @@ html,body {
     font-size: 16px; 
 }
 html {
-    // background: linear-gradient(270deg, #00F260, #0575E6);
-    // background-size: 800% 800%;
-
-    // -webkit-animation: ColorChangeBackground 30s ease infinite;
-    // -moz-animation: ColorChangeBackground 30s ease infinite;
-    // animation: ColorChangeBackground 30s ease infinite;
-    
-    // @-webkit-keyframes ColorChangeBackground {
-    //     0%{background-position:0% 50%}
-    //     50%{background-position:100% 50%}
-    //     100%{background-position:0% 50%}
-    // }
-    // @-moz-keyframes ColorChangeBackground {
-    //     0%{background-position:0% 50%}
-    //     50%{background-position:100% 50%}
-    //     100%{background-position:0% 50%}
-    // }
-    // @keyframes ColorChangeBackground { 
-    //     0%{background-position:0% 50%}
-    //     50%{background-position:100% 50%}
-    //     100%{background-position:0% 50%}
-    // }
-
     font-family: 'PT Sans', sans-serif;
-
     font-size: 16px;
 }
 
@@ -85,7 +64,7 @@ html {
     -webkit-appearance: none;
 }
 
-.btm-shadow {
+.btn-shadow {
     transition: box-shadow 200ms ease-in-out;
     border-bottom: 1px solid transparent;
     border-color: rgba(0,0,0,0.14);
@@ -97,4 +76,29 @@ html {
     border-top: 1px solid transparent;
     border-color: rgba(0,0,0,0.14);
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+}
+
+.blue-green-gradient {
+    background: linear-gradient(270deg, #00F260, #0575E6);
+    background-size: 800% 800%;
+
+    -webkit-animation: ColorChangeBackground 20s ease infinite;
+    -moz-animation: ColorChangeBackground 20s ease infinite;
+    animation: ColorChangeBackground 20s ease infinite;
+
+    @-webkit-keyframes ColorChangeBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes ColorChangeBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes ColorChangeBackground { 
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
 }

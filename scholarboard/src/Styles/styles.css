@@ -27,7 +27,7 @@ html {
   -webkit-appearance: none;
 }
 
-.btm-shadow {
+.btn-shadow {
   transition: box-shadow 200ms ease-in-out;
   border-bottom: 1px solid transparent;
   border-color: rgba(0, 0, 0, 0.14);
@@ -39,6 +39,47 @@ html {
   border-top: 1px solid transparent;
   border-color: rgba(0, 0, 0, 0.14);
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.blue-green-gradient {
+  background: linear-gradient(270deg, #00F260, #0575E6);
+  background-size: 800% 800%;
+  -webkit-animation: ColorChangeBackground 20s ease infinite;
+  -moz-animation: ColorChangeBackground 20s ease infinite;
+  animation: ColorChangeBackground 20s ease infinite;
+}
+@-webkit-keyframes ColorChangeBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes ColorChangeBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes ColorChangeBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .header {
@@ -144,6 +185,71 @@ html {
 .home-top .img-section .scholarship-img {
   margin-top: 3em;
   max-width: 14em;
+}
+
+.signup-page {
+  height: 82vh;
+  background-color: #ECECEC;
+}
+.signup-page .signup-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 3em;
+}
+.signup-page .signup-section .signup-form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1em 2em;
+  width: 25vw;
+  height: 60vh;
+  border-radius: 1em 0em 0em 1em;
+}
+.signup-page .signup-section .signup-form .signup-small-logo {
+  max-width: 12em;
+}
+.signup-page .signup-section .signup-form .signup-fields {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  margin: 3em auto 0 auto;
+}
+.signup-page .signup-section .signup-form .signup-fields .legend {
+  text-align: center;
+}
+.signup-page .signup-section .signup-form .signup-fields label {
+  margin: 1em 0em 0.3em 0.3em;
+  color: #8e8e8e;
+  font-size: 0.8em;
+  font-weight: bolder;
+}
+.signup-page .signup-section .signup-form .signup-fields input {
+  border-width: 0 0 2px;
+  border-color: #ECECEC;
+  color: black;
+  padding: 5px 5px;
+  font-size: 1em;
+  width: 14vw;
+}
+.signup-page .signup-section .signup-form .signup-fields input:focus {
+  outline: none;
+  border-color: #3E4EE3;
+}
+.signup-page .signup-section .signup-form .signup-fields .signup-submit {
+  margin-top: 1em;
+  background-color: black;
+}
+.signup-page .signup-section .signup-info-section {
+  width: 25vw;
+  height: 60vh;
+  padding: 1em 2em;
+  border-radius: 0em 1em 1em 0em;
+}
+.signup-page .signup-section .signup-info-section h1 {
+  font-size: 3em;
+  font-weight: bolder;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
