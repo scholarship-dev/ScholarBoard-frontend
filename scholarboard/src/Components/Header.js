@@ -1,19 +1,22 @@
 import React from 'react';
-import logo from '../Images/logo2black.png';
+import ScholarshipImg from '../Images/scholarship.png';
 
-const Navbar = () => {
+const Header = () => {
   return (
-    <div className="header btm-shadow">
-      <img href="#default" className="header-logo" src={logo} alt="Logo" srcSet="" />
-      <div className="header-right">
-        <a className="active" href="#home">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="#login">Login</a>
-
+    <section className='home-top'>
+      <div className="info-section">
+        <h3 className="slogan">🎓 Scholarships made easy for high schoolers</h3>
+        <p className="top-sentence">ScholarBoard allows students to fill out a common application that can be used to apply to dozens of scholarships relevent to them with a click of a button.</p>
+        <button className="btn">Sign up</button>
+        <p className="credits">Created by <span>Asim</span>, <span>Medi</span>, <span>Thomas</span>, and <span>William</span>.</p>
       </div>
-    </div>
+
+      <div className="img-section">
+        <img className="scholarship-img" src={ScholarshipImg} alt="Scholarship"></img>
+      </div>
+
+    </section>
   )
 }
 
-export default Navbar;
+export default Header;
