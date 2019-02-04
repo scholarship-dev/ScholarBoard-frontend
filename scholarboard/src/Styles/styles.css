@@ -252,4 +252,41 @@ html {
   color: white;
 }
 
+.dashboard-page {
+  height: 82vh;
+  background-color: #ECECEC;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding-top: 4em;
+}
+.dashboard-page .db-title {
+  margin-top: 0em;
+}
+.dashboard-page .sort-tool {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+  width: 60vw;
+  margin: 0 auto;
+  padding: 0.3em 0em;
+}
+.dashboard-page input {
+  border-width: 0 0 2px;
+  border-color: #ECECEC;
+  color: black;
+  padding: 5px 5px;
+  font-size: 1em;
+  width: 14vw;
+}
+.dashboard-page input:focus {
+  outline: none;
+  border-color: #3E4EE3;
+}
+.dashboard-page button {
+  border-radius: 0;
+  padding: 6px 24px 6px;
+}
+
 /*# sourceMappingURL=styles.css.map */
