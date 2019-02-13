@@ -1,2 +1,15 @@
-# Scholarboard-FE
-The front end of scholar board
+# Scholarboard FrontEnd
+
+
+## Overview 
+
+
+## Engineers
+
+
+## Technology
+
+## Acknowledgement 
+
+
+## License
