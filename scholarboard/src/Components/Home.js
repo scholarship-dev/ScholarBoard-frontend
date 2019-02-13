@@ -1,14 +1,14 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Header from './Header';
-import Footer from './Footer';
+import HomeTop from './HomeTop';
+import ShortFooter from './ShortFooter';
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <Header />
-      <Footer />
+      <HomeTop />
+      <ShortFooter />
     </div>
   )
 }
