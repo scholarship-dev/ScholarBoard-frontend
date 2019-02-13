@@ -23,7 +23,7 @@ const SignupForm = () => {
                 <label htmlFor="password">Password</label>
                 <input name="password" type="password" placeholder="Password" required/>
 
-                <button className="btn signup-submit" type="submit">Signup</button>
+                <button className="btn signup-submit" type="submit"><a classhref="/dashboard">Signup</a></button>
 
                 <p>Already have an account? <span>Login here</span></p>
             </div>
