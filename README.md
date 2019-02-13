@@ -1,6 +1,6 @@
 # Scholarboard Web Client
 
-This repository contains the source code that supports the web client of the scholarboard application.
+This repository contains the source code that supports the web client of the scholarboard application. Live product can be found <a href="https://obscure-plains-18348.herokuapp.com/">here</a>.
 
 ## Engineers
 * **<a href= "https://github.com/will0101">Williams Bongans</a>** - *Front End Lead Engineer*
