@@ -206,7 +206,6 @@ html {
 }
 
 .signup-page {
-  height: 82vh;
   background-color: #ECECEC;
 }
 .signup-page .signup-section {
@@ -220,9 +219,9 @@ html {
   flex-direction: column;
   background-color: white;
   padding: 1em 2em;
-  width: 25vw;
-  height: 60vh;
+  min-width: 48vw;
   border-radius: 1em 0em 0em 1em;
+  margin-bottom: 14em;
 }
 .signup-page .signup-section .signup-form .signup-small-logo {
   max-width: 12em;
@@ -248,7 +247,7 @@ html {
   color: black;
   padding: 5px 5px;
   font-size: 1em;
-  width: 14vw;
+  min-width: 20vw;
 }
 .signup-page .signup-section .signup-form .signup-fields input:focus {
   outline: none;

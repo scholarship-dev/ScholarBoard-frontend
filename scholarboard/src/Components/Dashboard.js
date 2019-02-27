@@ -2,8 +2,16 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 import LongFooter from './LongFooter';
 import Typed from 'react-typed';
+import axios from 'axios';
 
 class Dashboard extends Component {
+
+  componentDidMount() {
+    axios.get(`/api/scholarships`).then(data => {
+      console.log("data:", data);
+    }).catch(console.err);
+  };
+
   render() {
     return (
       <div>
@@ -74,7 +82,7 @@ class Dashboard extends Component {
           <LongFooter />
         </div>
     );
-  }
-}
+  };
+};
 
 export default Dashboard;
