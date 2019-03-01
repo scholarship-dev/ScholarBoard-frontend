@@ -431,6 +431,10 @@ html {
   height: 70vh;
   background: lightblue;
   margin-top: 1em;
+  text-align: center;
+}
+.Features p {
+  margin-top: 5em;
 }
 
 .team-section {

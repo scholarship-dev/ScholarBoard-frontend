@@ -12,21 +12,25 @@ const Team = () => (
       <div className="medi">
         <img src={medi} alt="Medi Assumani" />
         <h3>Medi Assumani</h3>
+        <p>[Add a short description about team here]</p>
       </div>
 
       <div className="Asim">
         <img src={Asim} alt="Asim Zaidi" />
         <h3>Asim Zaidi</h3>
+        <p>[Add a short description about team here]</p>
       </div>
 
       <div className="Thomas">
         <img src={Thomas} alt="Thomas Lee" />
         <h3>Thomas Lee</h3>
+        <p>[Add a short description about team here]</p>
       </div>
 
       <div className="Will">
         <img src={Will} alt="William Bogans" />
         <h3>William Bogans</h3>
+        <p>[Add a short description about team here]</p>
       </div>
 
     </section>
