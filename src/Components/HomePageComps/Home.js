@@ -7,7 +7,6 @@ import Team from './Team';
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <Header />
       <Features />
       <Team />
