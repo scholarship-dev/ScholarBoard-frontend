@@ -418,4 +418,13 @@ html {
   text-align: center;
   max-width: 25%;
 }
+
+/* Williams styles start here for the night until he can figure out this scss workflow */
+.page-section h1 {
+  text-align: center;
+}
+
+.team-section {
+  
+}
 /*# sourceMappingURL=styles.css.map */
