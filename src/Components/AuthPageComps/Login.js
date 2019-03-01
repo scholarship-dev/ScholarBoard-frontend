@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 // import SignupForm from './SignupForm';
 import { connect } from "react-redux";
 import { Redirect } from 'react-router';
-import { signupUser } from "../js/actions/index";
-import logo from './../images/logo2black.png';
+import { signupUser } from "../../js/actions/index";
+import logo from '../../images/logo2black.png';
 
 
 class Signup extends Component {
