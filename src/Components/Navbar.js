@@ -5,14 +5,11 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
 
   return (
-    <div className="header btn-shadow">
+    <div className="header">
       <Link to="/"><img href="#default" className="header-logo" src={logo} alt="Logo" srcSet="" /></Link>
       <div className="header-right">
-        <Link to='/' className="active" >Home</Link>
-        {/* <a href="/contact">Contact</a> */}
-        <Link to='/about'>About</Link>
         <Link to='/login'>Login</Link>
-
+        <Link to='/signup'>Signup</Link>
       </div>
     </div>
   )

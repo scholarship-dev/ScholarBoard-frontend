@@ -6,7 +6,7 @@ import Typed from 'react-typed';
 const Header = () => {
 
   return (
-    <section className='home-top'>
+    <header className='home-top'>
       <div className="info-section">
         <h3 className="slogan"><span role="img" aria-label="Grad Icon">🎓</span> <Typed strings={['Scholarship search made easy for students.']} typeSpeed={20} /></h3>
         <p className="top-sentence">ScholarBoard allows students to fill out a common application that can be used to apply to dozens of scholarships relevent to them with a click of a button.</p>
@@ -17,7 +17,7 @@ const Header = () => {
         <img className="scholarship-img" src={ScholarshipImg} alt="Scholarship"></img>
       </div>
 
-    </section>
+    </header>
   )
 }
 
