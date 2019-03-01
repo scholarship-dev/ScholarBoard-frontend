@@ -2,30 +2,27 @@ import React, { Component } from 'react';
 // import SignupForm from './SignupForm';
 import { connect } from "react-redux";
 import { Redirect, Link } from 'react-router-dom';
-import { signupUser } from "../../js/actions/index";
-import logo from '../../images/logo2black.png';
+import { loginUser } from "../../js/actions/index";
+// import logo from '../../images/logo2black.png';
 
 
-class Signup extends Component {
+class Login extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      firstName: '',
-      email: ''
+      email: '',
+      password: ''
     };
   };
 
   handleChange = event => {
-    console.log("handleChange was called");
-
     this.setState({ [event.target.id]: event.target.value });
   };
 
   handleSubmit = event => {
-    console.log("handleSubmit was called");
     event.preventDefault();
-    this.props.signupUser(this.state);
+    this.props.loginUser(this.state);
   };
 
   render() {
@@ -70,9 +67,9 @@ const mapStateToProps = state => {
 
 function mapDispatchToProps() {
   return {
-    signupUser
+    loginUser
   };
 };
-const SignupUser = connect(mapStateToProps, mapDispatchToProps())(Signup);
+const LoginUser = connect(mapStateToProps, mapDispatchToProps())(Login);
 
-export default SignupUser;
+export default LoginUser;

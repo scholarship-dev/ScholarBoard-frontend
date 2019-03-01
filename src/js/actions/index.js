@@ -10,17 +10,20 @@ export const logoutUser = () => {
 // LOGIN ACTION 
 export function loginUser(loginState) {
     return (dispatcher) => {
-        axios.post(`/login`, loginState).then((res) => {
-            dispatcher(handleLogin(res.data.user, res.data.token)); // THUNKED IT!
+        console.log("loginStaet:", loginState);
+        
+        axios.post(`/api/sign-in`, loginState).then((res) => {
+            console.log("res.data:", res.data);
+            console.log("res.data.user:", res.data);            
+            dispatcher(handleLogin(res.data)); // THUNKED IT!
         }).catch(console.err);
     };
 };
 
-export const handleLogin = (user, token) => {
+export const handleLogin = (user) => {
     return {
         type: HANDLE_LOGIN,
-        user_payload: user,
-        token_payload: token
+        payload: user
     };
 };
 
