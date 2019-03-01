@@ -26,21 +26,17 @@ export const handleLogin = (user, token) => {
 
 // SIGNUP USER ACTION 
 export function signupUser(signupState) {
-    console.log("signup State", signupState);
     return (dispatcher) => {
-        axios.post(`/api/sign-up`, signupState).then((res) => {
-            console.log("res:", res);
-            
-            dispatcher(handleSignup(res.data.user, res.data.token));
+        axios.post(`/api/sign-up`, signupState).then(res => {
+            dispatcher(handleSignup(res.data.user));
         }).catch(console.err);
     };
 };
 
-export const handleSignup = (user, token) => {
+export const handleSignup = (user) => {
     return {
         type: SIGNUP_USER, 
-        user_payload: user,
-        token_payload: token
+        payload: user
     };
 };
 
