@@ -239,16 +239,6 @@ html {
   font-size: 1.2em;
 }
 
-.home-top .info-section .credits {
-  margin-top: 7em;
-  color: #5b96e9;
-  font-size: 1.2em;
-}
-
-.home-top .info-section .credits span {
-  color: #511691;
-}
-
 .home-top .img-section .scholarship-img {
   margin-top: 3em;
   max-width: 14em;
@@ -450,13 +440,10 @@ html {
   border-radius: 0.1em;
 }
 
-.team-section h3 {
-  text-align: center;
-}
 footer {
   position: fixed;
   bottom: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   background: red;
   height: 10vh;
