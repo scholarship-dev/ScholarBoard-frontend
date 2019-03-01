@@ -8,6 +8,7 @@ import Login from './components/AuthPageComps/Login';
 import Signup from './components/AuthPageComps/Signup';
 import Dashboard from './components/Dashboard';
 import Navbar from './components/GeneralComps/Navbar';
+import Footer from './components/GeneralComps/Footer';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route exact path='/login' component={Login} />
             <Route exact path='/signup' component={Signup} />
             <Route exact path='/dashboard' component={Dashboard} />
+            <Route path='/' component={Footer} />
           </div>
         </Router>
       </Provider>

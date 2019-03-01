@@ -427,6 +427,12 @@ html {
   text-align: center;
 }
 
+.Features {
+  height: 70vh;
+  background: lightblue;
+  margin-top: 1em;
+}
+
 .team-section {
   display: flex;
   justify-content: space-around;
@@ -444,6 +450,10 @@ html {
   text-align: center;
 }
 footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
   background: red;
   height: 10vh;
   text-align: center;
