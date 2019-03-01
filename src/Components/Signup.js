@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
-import ShortFooter from './ShortFooter';
 // import SignupForm from './SignupForm';
 import { connect } from "react-redux";
 import { Redirect } from 'react-router';
 import { signupUser } from "../js/actions/index";
-import logo from '../Images/logo2black.png';
+import logo from '../images/logo2black.png';
 
 
 class Signup extends Component {
@@ -84,7 +83,6 @@ class Signup extends Component {
 
           </section>
         </div>
-        <ShortFooter />
       </div>
     );
   };
