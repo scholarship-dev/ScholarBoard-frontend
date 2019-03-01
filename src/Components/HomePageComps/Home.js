@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Features from './Features';
 import Team from './Team';
+import Footer from '../GeneralComps/Footer';
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Header />
       <Features />
       <Team />
+      <Footer />
     </div>
   )
 }

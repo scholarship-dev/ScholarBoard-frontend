@@ -7,7 +7,7 @@ import Home from './components/HomePageComps/Home';
 import Login from './components/AuthPageComps/Login';
 import Signup from './components/AuthPageComps/Signup';
 import Dashboard from './components/Dashboard';
-import Navbar from './components/Navbar';
+import Navbar from './components/GeneralComps/Navbar';
 
 class App extends Component {
   render() {
@@ -15,8 +15,8 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
-            <Route path='/' exact component={Navbar} />
-            <Route path='/' component={Home} />
+            <Route path='/' component={Navbar} />
+            <Route path='/' exact component={Home} />
             <Route exact path='/login' component={Login} />
             <Route exact path='/signup' component={Signup} />
             <Route exact path='/dashboard' component={Dashboard} />

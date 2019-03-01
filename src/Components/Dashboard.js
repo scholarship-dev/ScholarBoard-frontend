@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Navbar from './Navbar';
 import Typed from 'react-typed';
 import axios from 'axios';
 
@@ -16,7 +15,6 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
-        <Navbar />
         <div className="dashboard-page">
           <h1 className="db-title"><Typed strings={['Scholarships For You, Jeremy']} typeSpeed={16} /></h1>
           <form className="sort-tool btn-shadow">
