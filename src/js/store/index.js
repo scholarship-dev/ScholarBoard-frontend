@@ -17,9 +17,11 @@ export const loadState = () => {
       return undefined
     }
     return JSON.parse(serializedState)
-  } catch(err) {
+  } catch (err) {
     return undefined;
   }
+
+
 };
 
 // Save State
@@ -27,7 +29,7 @@ export const saveState = (state) => {
   try {
     const serializedState = JSON.stringify(state)
     localStorage.setItem(MS_CLUBS_STATE, serializedState)
-  } catch(err) {
+  } catch (err) {
     console.log("Error saving data")
   };
 };

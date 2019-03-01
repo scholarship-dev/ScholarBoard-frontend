@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <div className="header btn-shadow">
-      <img href="#default" className="header-logo" src={logo} alt="Logo" srcSet="" />
+      <Link to="/"><img href="#default" className="header-logo" src={logo} alt="Logo" srcSet="" /></Link>
       <div className="header-right">
         <Link to='/' className="active" >Home</Link>
         {/* <a href="/contact">Contact</a> */}
