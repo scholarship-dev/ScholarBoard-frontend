@@ -40,7 +40,6 @@ class Signup extends Component {
     };
     return (
       <div>
-        <Navbar />
         <div className="signup-page">
           {/* <SignupForm /> */}
           <section className="signup-section">
