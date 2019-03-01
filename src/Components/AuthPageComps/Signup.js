@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import SignupForm from './SignupForm';
 import { connect } from "react-redux";
-import { Redirect } from 'react-router';
+import { Link, Redirect } from 'react-router-dom';
 import { signupUser } from "../../js/actions/index";
 
 
@@ -52,8 +52,9 @@ class Signup extends Component {
                 <input name="password" id="password" type="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" required />
 
 
+
                 <button className="btn signup-submit" type="submit">Signup</button>
-                <p>Already have an account? <span>Login here</span></p>
+                <p> Already have an account?<Link to="/login">Login here</Link></p>
               </div>
             </form>
 
@@ -63,7 +64,7 @@ class Signup extends Component {
 
           </section>
         </div>
-      </div>
+      </div >
     );
   };
 };

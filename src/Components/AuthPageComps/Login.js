@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import SignupForm from './SignupForm';
 import { connect } from "react-redux";
-import { Redirect } from 'react-router';
+import { Redirect, Link } from 'react-router-dom';
 import { signupUser } from "../../js/actions/index";
 import logo from '../../images/logo2black.png';
 
@@ -38,49 +38,25 @@ class Signup extends Component {
       return <Redirect to='/dashboard' />
     };
     return (
-      <div>
-        <div className="signup-page">
-          {/* <SignupForm /> */}
-          <section className="signup-section">
-            <form className="signup-form" onSubmit={this.handleSubmit}>
-              <img className="signup-small-logo" alt="Logo" src={logo} />
-              <div className="signup-fields">
-                <h2 className="legend">Login</h2>
-                <label htmlFor="email">Email</label>
-                <input name="email" id="email" type="text" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
+      <div className="signup-page">
+        <section className="signup-section">
+          <form className="signup-form" onSubmit={this.handleSubmit}>
 
-                {/* <label htmlFor="lastName">Last Name</label>
-                    <input name="lastName" type="text" value={this.state.lastName} onChange={this.handleChange} placeholder="Last Name" required/>
+            <div className="signup-fields">
+              <h2 className="legend">Login</h2>
+              <label htmlFor="email">Email</label>
+              <input name="email" id="email" type="text" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
 
-                    <label htmlFor="email">Email</label>
-                    <input name="email" type="email" value={this.state.email} onChange={this.handleChange} placeholder="email" required/>
 
-                    <label htmlFor="gpa">GPA</label>
-                    <input name="gpa" type="text" value={this.state.gpa} onChange={this.handleChange} placeholder="3.0" required/>
+              <label htmlFor="password">Password</label>
+              <input name="password" id="password" type="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" required />
 
-                    <label htmlFor="ethnicity">Ethnicity</label>
-                    <input name="ethnicity" type="text" value={this.state.ethnicity} onChange={this.handleChange} placeholder="Ethnicity" required/>   
-                    
-                    <label htmlFor="educationLevel">Education Level</label>
-                    <input name="educationLevel" type="text" value={this.state.educationLevel} onChange={this.handleChange} placeholder="Education Level"/>      
+              <button className="btn signup-submit" type="submit">Login</button>
+              <p>Need to make an account? <Link to="/signup">Sign up here</Link></p>
+            </div>
+          </form>
 
-                    <label htmlFor="grade">Grade</label>
-                    <input name="grade" type="text" value={this.state.grade} onChange={this.handleChange} placeholder="Grade"/>       */}
-
-                <label htmlFor="password">Password</label>
-                <input name="password" id="password" type="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" required />
-
-                <button className="btn signup-submit" type="submit">Login</button>
-                <p>Already have an account? <span>Login here</span></p>
-              </div>
-            </form>
-
-            {/* <div className="signup-info-section blue-green-gradient">
-                <h1>Sign up to join ScholarBoard for free!</h1>
-            </div> */}
-
-          </section>
-        </div>
+        </section>
       </div>
     );
   };
