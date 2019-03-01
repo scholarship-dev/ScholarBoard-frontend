@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Team = () => (
-  <div>
+  <div className="Team page-section">
     <h1>Team</h1>
   </div>
 )

@@ -34,13 +34,12 @@ $desktop-width: 1000px; // Large tablets and desktops
       @content;
     }
 }
-html,body {
+
+* {
     padding: 0px;
     margin: 0px;
-    height: 100%;
-    // Base font size
-    font-size: 16px; 
 }
+
 html {
     font-family: 'PT Sans', sans-serif;
 }
