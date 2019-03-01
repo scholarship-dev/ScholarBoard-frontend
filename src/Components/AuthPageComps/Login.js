@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Navbar from './Navbar';
 // import SignupForm from './SignupForm';
 import { connect } from "react-redux";
 import { Redirect } from 'react-router';
 import { signupUser } from "../js/actions/index";
-import logo from '../images/logo2black.png';
+import logo from './../images/logo2black.png';
 
 
 class Signup extends Component {
@@ -46,7 +45,7 @@ class Signup extends Component {
             <form className="signup-form" onSubmit={this.handleSubmit}>
               <img className="signup-small-logo" alt="Logo" src={logo} />
               <div className="signup-fields">
-                <h2 className="legend">Create Account</h2>
+                <h2 className="legend">Login</h2>
                 <label htmlFor="email">Email</label>
                 <input name="email" id="email" type="text" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
 
@@ -71,7 +70,7 @@ class Signup extends Component {
                 <label htmlFor="password">Password</label>
                 <input name="password" id="password" type="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" required />
 
-                <button className="btn signup-submit" type="submit">Signup</button>
+                <button className="btn signup-submit" type="submit">Login</button>
                 <p>Already have an account? <span>Login here</span></p>
               </div>
             </form>

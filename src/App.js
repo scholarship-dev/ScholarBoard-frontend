@@ -4,8 +4,8 @@ import { Provider } from "react-redux";
 import store from "./js/store";
 import './styles/styles.css';
 import Home from './components/HomePageComps/Home';
-import Login from './components/Login';
-import Signup from './components/Signup';
+import Login from './components/AuthPageComps/Login';
+import Signup from './components/AuthPageComps/Signup';
 import Dashboard from './components/Dashboard';
 import Navbar from './components/Navbar';
 
