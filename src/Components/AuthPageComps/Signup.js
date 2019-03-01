@@ -58,9 +58,9 @@ class Signup extends Component {
               </div>
             </form>
 
-            {/* <div className="signup-info-section blue-green-gradient">
-                <h1>Sign up to join ScholarBoard for free!</h1>
-            </div> */}
+            <div className="signup-info-section blue-green-gradient">
+              <h1>Sign up to join ScholarBoard for free!</h1>
+            </div>
 
           </section>
         </div>

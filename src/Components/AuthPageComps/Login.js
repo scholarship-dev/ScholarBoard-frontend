@@ -16,18 +16,14 @@ class Signup extends Component {
     };
   };
 
-  // validateForm() {
-  //   return this.state.firstName.length > 0 &&  this.state.lastName.length > 0 && this.state.email.length > 0 && this.state.password.length > 0;
-  // };
-
   handleChange = event => {
-    console.log("in handel");
+    console.log("handleChange was called");
 
     this.setState({ [event.target.id]: event.target.value });
   };
 
   handleSubmit = event => {
-    console.log("in submit func");
+    console.log("handleSubmit was called");
     event.preventDefault();
     this.props.signupUser(this.state);
   };
@@ -37,6 +33,7 @@ class Signup extends Component {
     if (this.props.user) {
       return <Redirect to='/dashboard' />
     };
+
     return (
       <div className="signup-page">
         <section className="signup-section">
@@ -55,6 +52,11 @@ class Signup extends Component {
               <p>Need to make an account? <Link to="/signup">Sign up here</Link></p>
             </div>
           </form>
+
+
+          <div className="signup-info-section blue-green-gradient">
+            <h1>Time to apply for those scholarships!</h1>
+          </div>
 
         </section>
       </div>
