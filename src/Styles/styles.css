@@ -32,27 +32,6 @@ html {
   -webkit-appearance: none;
 }
 
-.btn-shadow {
-  -webkit-transition: -webkit-box-shadow 200ms ease-in-out;
-  transition: -webkit-box-shadow 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
-  border-bottom: 1px solid transparent;
-  border-color: rgba(0, 0, 0, 0.14);
-  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
-}
-
-.top-shadow {
-  -webkit-transition: -webkit-box-shadow 200ms ease-in-out;
-  transition: -webkit-box-shadow 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
-  border-top: 1px solid transparent;
-  border-color: rgba(0, 0, 0, 0.14);
-  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
-}
 
 .blue-green-gradient {
   background: -webkit-gradient(linear, right top, left top, from(#00F260), to(#0575E6));
