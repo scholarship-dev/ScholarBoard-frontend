@@ -3,9 +3,11 @@
   margin: 0px;
 }
 html, body {
-
   height: 100%;
   font-size: 16px;
+}
+body {
+  position: relative;
 }
 
 html {
@@ -85,8 +87,7 @@ html {
 }
 
 .header {
-  overflow: hidden;
-  background-color: transparent;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.14);
   padding: 20px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,9 +442,9 @@ html {
 }
 
 footer {
-  position: fixed;
+  /* Figure out why this only sticks to the bottom on certain pages */
+  position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
   background: red;
   height: 10vh;
