@@ -1,6 +1,9 @@
-html, body {
+* {
   padding: 0px;
   margin: 0px;
+}
+html, body {
+
   height: 100%;
   font-size: 16px;
 }
@@ -425,6 +428,24 @@ html {
 }
 
 .team-section {
-  
+  display: flex;
+  justify-content: space-around;
+  height: 80vh;
+  padding: 0 2em;
+  margin-top: 3.5em;
+}
+
+.team-section img {
+  height: 18vh;
+  border-radius: 0.1em;
+}
+
+.team-section h3 {
+  text-align: center;
+}
+footer {
+  background: red;
+  height: 10vh;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

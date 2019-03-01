@@ -10,19 +10,23 @@ const Team = () => (
     <section className="team-section">
 
       <div className="medi">
-        <img src={medi} alt=" Medi Assumani" />
+        <img src={medi} alt="Medi Assumani" />
+        <h3>Medi Assumani</h3>
       </div>
 
       <div className="Asim">
-        <img src={Asim} alt=" Medi Zaidi" />
+        <img src={Asim} alt="Asim Zaidi" />
+        <h3>Asim Zaidi</h3>
       </div>
 
       <div className="Thomas">
         <img src={Thomas} alt="Thomas Lee" />
+        <h3>Thomas Lee</h3>
       </div>
 
       <div className="Will">
         <img src={Will} alt="William Bogans" />
+        <h3>William Bogans</h3>
       </div>
 
     </section>
