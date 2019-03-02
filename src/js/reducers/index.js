@@ -24,7 +24,7 @@ function rootReducer(state = initialState, action) {
     case SIGNUP_USER:
       return {...state, user: action.payload}
     case LOGOUT_USER:
-      return {...state, user: "", token: ""}
+      return {...state, user: ""}
     case HANDLE_SETTINGS:
       return {...state, user: action.payload}
     default: 

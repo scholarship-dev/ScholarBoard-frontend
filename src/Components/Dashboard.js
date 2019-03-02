@@ -6,11 +6,8 @@ class Dashboard extends Component {
 
   componentDidMount() {
     axios.get(`/api/scholarships`).then(data => {
-      console.log("data:", data);
     }).catch(console.err);
   };
-
-
 
   render() {
     return (

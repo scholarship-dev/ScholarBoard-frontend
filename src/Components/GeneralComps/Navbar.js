@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from '../../images/logo2black.png';
 import { Link } from 'react-router-dom';
 import { connect } from "react-redux";
+import { logoutUser } from "../../js/actions/";
 
 class Navbar extends Component {
 
@@ -11,7 +12,7 @@ class Navbar extends Component {
         <div className="header">
           <Link to="/"><img href="#default" className="header-logo" src={logo} alt="Logo" srcSet="" /></Link>
           <div className="header-right">
-            <Link to='/logout'>Logout</Link>
+            <button onClick={this.props.logoutUser}>Logout</button>
           </div>
         </div>
       )
@@ -32,8 +33,12 @@ class Navbar extends Component {
 const mapStateToProps = state => {
   return { user: state.user };
 };
-
-const UserNavbar = connect(mapStateToProps, null)(Navbar);
+function mapDispatchToProps() {
+  return {
+    logoutUser
+  };
+};
+const UserNavbar = connect(mapStateToProps, mapDispatchToProps())(Navbar);
 
 export default UserNavbar
 // export default Navbar;
