@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Dashboard from './components/UserComps/Dashboard';
-import Scholarship from './components/UserComps/Scholarship';
-
+import Dashboard from '../components/UserComps/Dashboard';
+import Scholarship from '../components/UserComps/Scholarship';
 
 
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Features from './components/HomePageComps/Features';
-import Header from './components/HomePageComps/Header';
-import Team from './components/HomePageComps/Team';
+import Features from '../components/HomePageComps/Features';
+import Header from '../components/HomePageComps/Header';
+import Team from '../components/HomePageComps/Team';
 
 
 it('renders Header Component without crashing', () => {
