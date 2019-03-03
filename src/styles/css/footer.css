@@ -1,4 +1,7 @@
 footer {
-  background: red; }
+  background: lightgoldenrodyellow;
+  height: 10vh; }
+  footer h4 {
+    text-align: center; }
 
 /*# sourceMappingURL=footer.css.map */

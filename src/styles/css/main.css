@@ -81,7 +81,10 @@ header {
     margin-bottom: 1em; }
 
 footer {
-  background: red; }
+  background: lightgoldenrodyellow;
+  height: 10vh; }
+  footer h4 {
+    text-align: center; }
 
 .page-section h2 {
   text-align: center;
