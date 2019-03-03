@@ -58,4 +58,8 @@ nav {
     text-decoration: none;
     margin-left: 2em; }
 
+header {
+  background: red;
+  height: 20vh; }
+
 /*# sourceMappingURL=main.css.map */
