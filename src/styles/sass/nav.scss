@@ -1,10 +1,17 @@
+// TODO: Style the header appropriately
 nav {
   background: lightblue;
   display: flex;
-  a {
-    text-decoration: none;
+  align-items: center;
+  padding: 1em 2.3em;
+  .nav-right {
+    margin-left: auto;
   }
   img {
-  
+    width: 50%;
+  }
+  a {
+    text-decoration: none;
+    margin-left: 2em;
   }
 }

@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Provider } from "react-redux";
 import store from "./js/store";
 import './styles/css/main.css';
-import Home from './components/HomePageComps/Home';
-import Login from './components/AuthPageComps/Login';
-import Signup from './components/AuthPageComps/Signup';
-import Dashboard from './components/UserComps/Dashboard';
+// import Home from './components/HomePageComps/Home';
+// import Login from './components/AuthPageComps/Login';
+// import Signup from './components/AuthPageComps/Signup';
+// import Dashboard from './components/UserComps/Dashboard';
 import Navbar from './components/GeneralComps/Navbar';
 // import Footer from './components/GeneralComps/Footer';
 

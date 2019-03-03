@@ -47,8 +47,15 @@ table {
 
 nav {
   background: lightblue;
-  display: flex; }
+  display: flex;
+  align-items: center;
+  padding: 1em 2.3em; }
+  nav .nav-right {
+    margin-left: auto; }
+  nav img {
+    width: 50%; }
   nav a {
-    text-decoration: none; }
+    text-decoration: none;
+    margin-left: 2em; }
 
 /*# sourceMappingURL=main.css.map */
