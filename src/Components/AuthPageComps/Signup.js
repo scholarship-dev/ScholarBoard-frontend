@@ -27,7 +27,9 @@ class Signup extends Component {
 
               <legend>Create Account</legend>
 
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">
+                Email
+              </label>
 
               <input
                 name="email"
@@ -53,7 +55,7 @@ class Signup extends Component {
                 required
               />
 
-              <button className="btn signup-submit" type="submit">
+              <button className="btn" type="submit">
                 Signup
                 </button>
 

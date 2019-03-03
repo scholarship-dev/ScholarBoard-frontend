@@ -12,8 +12,7 @@
       padding-top: 3em;
       border-radius: 5em;
 
-
-
+      //DONE
       form {
           display: flex;
           flex-direction: column;
@@ -21,17 +20,20 @@
           padding: 1em 2em;
           min-width: 48vw;
           height: 60vh;
+
+          //DONE
           .signup-fields {
               display: flex;
               flex-direction: column;
-              margin-top: 5em;
               margin: 3em auto 0 auto;
 
+              //DONE
               legend {
                   text-align: center;
                   font-size: 2em;
               }
 
+              //DONE
               label {
                   margin: 1em 0em .3em .3em;
                   color: gray;
@@ -39,6 +41,7 @@
                   font-weight: bolder;
               }
 
+              //DONE
               input {
                   border-width: 0 0 2px;
                   border-color: lightgray;
@@ -48,14 +51,29 @@
                   min-width: 20vw;
               }
 
+              //DONE
               input:focus {
                   outline: none;
                   border-color: darkblue;
               }
 
-              .signup-submit {
+              //DONE
+              button {
                   margin-top: 1em;
                   background-color: black;
+                  color: white;
+                  position: relative;
+                  text-decoration: none;
+                  color: #ffffff;
+                  display: inline-block;
+                  padding: 10px 15px 11px;
+                  font-size: 13px;
+                  font-weight: 500;
+                  line-height: 17px;
+                  letter-spacing: .02em;
+                  border: none;
+                  border-radius: 4px;
+                -webkit-appearance: none;
               }
           }
       }

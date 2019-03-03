@@ -63,14 +63,14 @@ class Signup extends Component {
               >
                 Login
               </button>
-              <p>
 
+              <p>
                 Need to make an account?
                 <Link to="/signup">
                   Sign up here
                 </Link>
-
               </p>
+
             </div>
           </form>
 

@@ -109,7 +109,6 @@ footer {
       .auth-page .form-container form .signup-fields {
         display: flex;
         flex-direction: column;
-        margin-top: 5em;
         margin: 3em auto 0 auto; }
         .auth-page .form-container form .signup-fields legend {
           text-align: center;
@@ -129,9 +128,22 @@ footer {
         .auth-page .form-container form .signup-fields input:focus {
           outline: none;
           border-color: darkblue; }
-        .auth-page .form-container form .signup-fields .signup-submit {
+        .auth-page .form-container form .signup-fields button {
           margin-top: 1em;
-          background-color: black; }
+          background-color: black;
+          color: white;
+          position: relative;
+          text-decoration: none;
+          color: #ffffff;
+          display: inline-block;
+          padding: 10px 15px 11px;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 17px;
+          letter-spacing: .02em;
+          border: none;
+          border-radius: 4px;
+          -webkit-appearance: none; }
     .auth-page .form-container .info-section {
       width: 40vw;
       padding: 1em 2em; }
@@ -164,5 +176,8 @@ footer {
   text-align: center;
   padding-top: 1em;
   font-size: 2em; }
+
+button:hover {
+  cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
