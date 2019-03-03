@@ -1,0 +1,17 @@
+.Team {
+  background: red;
+  height: 90vh;
+  .team-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 2em;
+    h3 {
+      font-size: 2em;
+    }
+  }
+  img {
+    height: 10em;
+    margin-bottom: 1em;
+  }
+}

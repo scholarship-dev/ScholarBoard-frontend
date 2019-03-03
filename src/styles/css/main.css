@@ -62,4 +62,27 @@ header {
   background: lightgoldenrodyellow;
   height: 90vh; }
 
+.Features {
+  height: 70vh;
+  background: lightseagreen; }
+
+.Team {
+  background: red;
+  height: 90vh; }
+  .Team .team-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 2em; }
+    .Team .team-section h3 {
+      font-size: 2em; }
+  .Team img {
+    height: 10em;
+    margin-bottom: 1em; }
+
+.page-section h2 {
+  text-align: center;
+  padding-top: 1em;
+  font-size: 2em; }
+
 /*# sourceMappingURL=main.css.map */

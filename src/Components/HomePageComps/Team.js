@@ -3,39 +3,44 @@ import medi from '../../images/team-images/Medi.jpg';
 import Asim from '../../images/team-images/Asim.jpg';
 import Thomas from '../../images/team-images/Thomas.jpg';
 import Will from '../../images/team-images/Will.jpg';
+import TeamMember from './TeamMember';
 
 const Team = () => (
   <div className="Team page-section">
-    <h1>Team</h1>
+    <h2>Team</h2>
+
     <section className="team-section">
+      <TeamMember
+        name="Medi Assumani"
+        img={medi}
+        description="blahhhhh"
+        alt="Medi Assumani"
+      />
 
-      <div className="medi">
-        <img src={medi} alt="Medi Assumani" />
-        <h3>Medi Assumani</h3>
-        <p>[Add a short description about team here]</p>
-      </div>
+      <TeamMember
+        name="Asim Zaidi"
+        img={Asim}
+        description="blahhhh"
+        alt="Asim Zaidi"
+      />
 
-      <div className="Asim">
-        <img src={Asim} alt="Asim Zaidi" />
-        <h3>Asim Zaidi</h3>
-        <p>[Add a short description about team here]</p>
-      </div>
+      <TeamMember
+        name="Thomas Lee"
+        img={Thomas}
+        alt="Thomas Lee"
+        description="Blahhhh"
+      />
 
-      <div className="Thomas">
-        <img src={Thomas} alt="Thomas Lee" />
-        <h3>Thomas Lee</h3>
-        <p>[Add a short description about team here]</p>
-      </div>
-
-      <div className="Will">
-        <img src={Will} alt="William Bogans" />
-        <h3>William Bogans</h3>
-        <p>[Add a short description about team here]</p>
-      </div>
+      <TeamMember
+        name="William Bogans"
+        img={Will}
+        alt="William Bogans"
+        description="blahhhh"
+      />
 
     </section>
   </div>
-)
+);
 
 
 export default Team;
