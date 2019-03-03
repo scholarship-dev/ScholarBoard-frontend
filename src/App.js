@@ -8,8 +8,7 @@ import Home from './components/HomePageComps/Home';
 // import Login from './components/AuthPageComps/Login';
 // import Signup from './components/AuthPageComps/Signup';
 // import Dashboard from './components/UserComps/Dashboard';
-
-// import Footer from './components/GeneralComps/Footer';
+import Footer from './components/GeneralComps/Footer';
 
 const App = () => (
   <Provider store={store}>
@@ -23,7 +22,7 @@ const App = () => (
         {/* <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={Signup} />
         <Route exact path='/dashboard' component={Dashboard} /> */}
-        {/* <Route path='/' component={Footer} /> */}
+        <Route path='/' component={Footer} />
 
       </div>
     </Router>

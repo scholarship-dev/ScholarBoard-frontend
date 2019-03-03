@@ -80,6 +80,9 @@ header {
     height: 10em;
     margin-bottom: 1em; }
 
+footer {
+  background: red; }
+
 .page-section h2 {
   text-align: center;
   padding-top: 1em;
