@@ -1,9 +1,13 @@
 @import 'reset';
+//General styles
 @import 'nav';
 @import 'header';
 @import 'features';
 @import 'team';
 @import 'footer';
+
+//Form styles
+@import 'form';
 
 //Global custom styles
 .page-section h2 {

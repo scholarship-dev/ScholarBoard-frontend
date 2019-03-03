@@ -1,0 +1,20 @@
+// validateForm() {
+  //   return this.state.firstName.length > 0 &&  this.state.lastName.length > 0 && this.state.email.length > 0 && this.state.password.length > 0;
+  // };
+
+  handleChange = event => {
+    console.log("in handel");
+
+    this.setState({ [event.target.id]: event.target.value });
+  };
+
+  handleSubmit = event => {
+    console.log("in submit func");
+    event.preventDefault();
+    this.props.signupUser(this.state);
+  };
+
+
+    if (this.props.user) {
+      return <Redirect to='/dashboard' />
+    };

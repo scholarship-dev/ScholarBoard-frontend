@@ -1,0 +1,18 @@
+
+
+  handleChange = event => {
+    console.log("handleChange was called");
+
+    this.setState({ [event.target.id]: event.target.value });
+  };
+
+  handleSubmit = event => {
+    console.log("handleSubmit was called");
+    event.preventDefault();
+    this.props.signupUser(this.state);
+  };
+
+
+   if (this.props.user) {
+      return <Redirect to='/dashboard' />
+    };

@@ -15,59 +15,68 @@ class Signup extends Component {
     };
   };
 
-  // validateForm() {
-  //   return this.state.firstName.length > 0 &&  this.state.lastName.length > 0 && this.state.email.length > 0 && this.state.password.length > 0;
-  // };
-
-  handleChange = event => {
-    console.log("in handel");
-
-    this.setState({ [event.target.id]: event.target.value });
-  };
-
-  handleSubmit = event => {
-    console.log("in submit func");
-    event.preventDefault();
-    this.props.signupUser(this.state);
-  };
-
   render() {
-
-    if (this.props.user) {
-      return <Redirect to='/dashboard' />
-    };
     return (
-      <div>
-        <div className="signup-page">
+      <div className="auth-page">
 
-          <section className="signup-section">
-            <form className="signup-form" onSubmit={this.handleSubmit}>
+        <section className="form-container">
 
-              <div className="signup-fields">
-                <h2 className="legend">Create Account</h2>
-                <label htmlFor="email">Email</label>
-                <input name="email" id="email" type="text" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
+          <form onSubmit={this.handleSubmit}>
 
-                <label htmlFor="password">Password</label>
-                <input name="password" id="password" type="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" required />
+            <div className="signup-fields">
 
+              <legend>Create Account</legend>
 
+              <label htmlFor="email">Email</label>
 
-                <button className="btn signup-submit" type="submit">Signup</button>
-                <p> Already have an account?<Link to="/login">Login here</Link></p>
-              </div>
-            </form>
+              <input
+                name="email"
+                id="email"
+                type="text"
+                placeholder="Email"
+                value={this.state.email}
+                onChange={this.handleChange}
+                required
+              />
 
-            <div className="signup-info-section blue-green-gradient">
-              <h1>Sign up to join ScholarBoard for free!</h1>
+              <label htmlFor="password">
+                Password
+                </label>
+
+              <input
+                name="password"
+                id="password"
+                type="password"
+                value={this.state.password}
+                onChange={this.handleChange}
+                placeholder="Password"
+                required
+              />
+
+              <button className="btn signup-submit" type="submit">
+                Signup
+                </button>
+
+              <p>
+                Already have an account?
+                  <Link to="/login">
+                  Login here
+                  </Link>
+              </p>
             </div>
+          </form>
 
-          </section>
-        </div>
-      </div >
+          <div className="info-section gradient">
+            <h1>
+              Sign up to join ScholarBoard for free!
+              </h1>
+          </div>
+
+        </section>
+      </div>
     );
-  };
-};
+  }
+}
 
 const mapStateToProps = state => {
   return { user: state.user };
