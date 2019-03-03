@@ -46,7 +46,7 @@ table {
   border-spacing: 0; }
 
 nav {
-  background: lightblue;
+  background: lightgoldenrodyellow;
   display: flex;
   align-items: center;
   padding: 1em 2.3em; }
@@ -64,10 +64,10 @@ header {
 
 .Features {
   height: 70vh;
-  background: lightseagreen; }
+  background: lightgoldenrodyellow; }
 
 .Team {
-  background: red;
+  background: lightgoldenrodyellow;
   height: 90vh; }
   .Team .team-section {
     display: flex;
