@@ -81,7 +81,7 @@ header {
     margin-bottom: 1em; }
 
 footer {
-  background: red;
+  background: lightgoldenrodyellow;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -90,7 +90,7 @@ footer {
     text-align: center; }
 
 .auth-page {
-  background-color: lightblue;
+  background-color: lightgoldenrodyellow;
   padding: 0 5em;
   height: 80vh; }
   .auth-page .form-container {
@@ -144,6 +144,11 @@ footer {
           border: none;
           border-radius: 4px;
           -webkit-appearance: none; }
+      .auth-page .form-container form p {
+        padding-top: 1em; }
+      .auth-page .form-container form a {
+        color: black;
+        margin: 1em 0 0 0.2em; }
     .auth-page .form-container .info-section {
       width: 40vw;
       padding: 1em 2em; }

@@ -1,6 +1,6 @@
 //DONE
 .auth-page {
-  background-color: lightblue;
+  background-color: lightgoldenrodyellow;
   padding: 0 5em;
   height: 80vh;
 
@@ -75,6 +75,13 @@
                   border-radius: 4px;
                 -webkit-appearance: none;
               }
+          }
+          p {
+            padding-top: 1em;
+          }
+          a {
+            color: black;
+            margin: 1em 0 0 0.2em;
           }
       }
 

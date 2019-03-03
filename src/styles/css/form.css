@@ -1,5 +1,5 @@
 .auth-page {
-  background-color: lightblue;
+  background-color: lightgoldenrodyellow;
   padding: 0 5em;
   height: 80vh; }
   .auth-page .form-container {
@@ -53,6 +53,11 @@
           border: none;
           border-radius: 4px;
           -webkit-appearance: none; }
+      .auth-page .form-container form p {
+        padding-top: 1em; }
+      .auth-page .form-container form a {
+        color: black;
+        margin: 1em 0 0 0.2em; }
     .auth-page .form-container .info-section {
       width: 40vw;
       padding: 1em 2em; }

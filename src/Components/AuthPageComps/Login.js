@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Redirect, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { signupUser } from '../../js/actions/index';
 
 
@@ -67,7 +67,7 @@ class Signup extends Component {
               <p>
                 Need to make an account?
                 <Link to="/signup">
-                  Sign up here
+                  Sign up
                 </Link>
               </p>
 

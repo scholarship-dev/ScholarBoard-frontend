@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-// import SignupForm from './SignupForm';
-import { connect } from "react-redux";
-import { Link, Redirect } from 'react-router-dom';
-import { signupUser } from "../../js/actions/index";
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { signupUser } from '../../js/actions/index';
 
 
 class Signup extends Component {
@@ -62,7 +61,7 @@ class Signup extends Component {
               <p>
                 Already have an account?
                   <Link to="/login">
-                  Login here
+                  Login
                   </Link>
               </p>
             </div>

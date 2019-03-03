@@ -1,4 +1,5 @@
 @import 'reset';
+
 //General styles
 @import 'nav';
 @import 'header';
@@ -8,6 +9,10 @@
 
 //Form styles
 @import 'form';
+
+
+//Dashboard  styles
+@import 'dashboard-nav';
 
 //Global custom styles
 .page-section h2 {
