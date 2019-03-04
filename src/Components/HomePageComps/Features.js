@@ -5,7 +5,7 @@ const Features = () => (
     <h2>How it works</h2>
     <section className="feature-content">
 
-      <div className="feature-circle">
+      <div className="feature-circle signup">
         <h4>Step 1. Sign Up</h4>
       </div>
 

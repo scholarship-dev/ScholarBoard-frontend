@@ -2,14 +2,21 @@
   height: 70vh;
   background: #fbfbfb; }
   .Features .feature-content {
-    padding: 5em 14em;
+    padding: 2em 14em;
     display: flex;
     justify-content: space-around; }
     .Features .feature-content .feature-circle {
       background: lightblue;
-      height: 5em;
-      width: 5em;
-      border-radius: 100%;
-      margin: 2em; }
+      height: 20em;
+      width: 20em;
+      margin: 2em;
+      position: relative; }
+      .Features .feature-content .feature-circle h4 {
+        display: none; }
+    .Features .feature-content .signup {
+      background: no-repeat url("../../images/people-pics/signup.jpg");
+      background-size: cover;
+      background-position: -20px;
+      border: 1px solid black; }
 
 /*# sourceMappingURL=features.css.map */

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
-import headersvg from '../../images/svg/header-svg.png';
+import headersvg from '../../images/people-pics/header-people.png';
 
 const Header = () => (
     <header>
