@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './js/store';
 import './styles/css/main.css';
@@ -13,18 +13,26 @@ import Footer from './components/GeneralComps/Footer';
 const App = () => (
   <Provider store={store}>
     <Router>
-      <div className="App">
+      <Switch>
+        <div className="App">
 
-        <Route path="/" component={Navbar} />
-        <Route path="/" exact component={Home} />
-        <Route exact path="/login" component={Login} />
+          <Route path="/" component={Navbar} />
+          <Route path="/" exact component={Home} />
+          <Route exact path="/login" component={Login} />
 
-        <Route exact path="/signup" component={Signup} />
-        <Route exact path="/dashboard"
-          component={Dashboard} />
-        <Route path="/" component={Footer} />
+          <Route exact path="/signup" component={Signup} />
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Route path="/" component={Footer} />
 
-      </div>
+          {/* TODO: Try to redirect them if the route does not exist */}
+          {/* <Route
+            path="*"
+            render={() => (
+              <Redirect to="/" />
+            )}
+          /> */}
+        </div>
+      </Switch>
     </Router>
   </Provider>
 );
