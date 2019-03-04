@@ -10,5 +10,9 @@ nav {
   nav a {
     text-decoration: none;
     margin-left: 2em; }
+  nav a.active {
+    background: red;
+    padding: 0.3em;
+    border-radius: 0.2em; }
 
 /*# sourceMappingURL=nav.css.map */

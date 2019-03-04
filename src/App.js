@@ -22,7 +22,7 @@ const App = () => (
 
           <Route exact path="/signup" component={Signup} />
           <Route exact path="/dashboard" component={Dashboard} />
-          <Route path="/" component={Footer} />
+          {/* <Route path="/" component={Footer} /> */}
 
           {/* TODO: Try to redirect them if the route does not exist */}
           {/* <Route

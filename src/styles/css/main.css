@@ -57,6 +57,10 @@ nav {
   nav a {
     text-decoration: none;
     margin-left: 2em; }
+  nav a.active {
+    background: red;
+    padding: 0.3em;
+    border-radius: 0.2em; }
 
 header {
   background: lightgoldenrodyellow;
@@ -212,6 +216,9 @@ footer {
       border: 1px solid black;
       width: 20%;
       margin: 10px; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
 
 .page-section h2 {
   text-align: center;
