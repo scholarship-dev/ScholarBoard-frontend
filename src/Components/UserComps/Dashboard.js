@@ -14,7 +14,20 @@ class Dashboard extends Component {
         <section>
 
           <nav>
-
+            <ul>
+              <a href="/">
+                <li>Your Scholarships</li>
+              </a>
+              <a href="/applied">
+                <li>Applied</li>
+              </a>
+              <a href="/awarded">
+                <li>Awarded</li>
+              </a>
+              <a href="#">
+                <li>Profile</li>
+              </a>
+            </ul>
           </nav>
 
         </section>

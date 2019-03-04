@@ -1,8 +1,15 @@
 .dashboard {
   display: flex; }
   .dashboard nav {
-    background: red;
-    height: 80vh;
-    min-width: 16vw; }
+    background: lightgoldenrodyellow;
+    height: 78vh;
+    min-width: 16vw;
+    align-items: flex-start;
+    padding: 5em 1em 0 2em; }
+    .dashboard nav a {
+      color: black;
+      font-size: 1.4em; }
+      .dashboard nav a:hover {
+        text-decoration: underline; }
 
 /*# sourceMappingURL=dashboard.css.map */
