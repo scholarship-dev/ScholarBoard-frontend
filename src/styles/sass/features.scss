@@ -1,4 +1,17 @@
 .Features {
   height: 70vh;
-  background: lightgoldenrodyellow;
+  background: #fbfbfb;
+  .feature-content {
+    padding: 5em 14em;
+    display: flex;
+    justify-content: space-around;
+    .feature-circle {
+      background: lightblue;
+      height: 5em;
+      width: 5em;
+      border-radius: 100%;
+      margin: 2em;
+    }
+  }
+ 
 }

@@ -6,8 +6,8 @@ import Team from './Team';
 const Home = () => (
   <div>
     <Header />
-    {/* <Features />
-    <Team /> */}
+    <Features />
+    {/* <Team /> */}
   </div>
 );
 

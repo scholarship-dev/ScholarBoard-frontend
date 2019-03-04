@@ -4,7 +4,19 @@ const Features = () => (
   <div className="Features page-section">
     <h2>How it works</h2>
     <section className="feature-content">
-      <p>Add some content explaining how it works</p>
+
+      <div className="feature-circle">
+        <h4>Step 1. Sign Up</h4>
+      </div>
+
+      <div className="feature-circle">
+        <h4>Step 2. Sign Up</h4>
+      </div>
+
+      <div className="feature-circle">
+        <h4>Step 2. Sign Up</h4>
+      </div>
+
     </section>
   </div>
 );
