@@ -1,18 +1,22 @@
 nav {
-  background: lightgoldenrodyellow;
   display: flex;
   align-items: center;
-  padding: 1em 1em; }
+  padding: 1em 1em;
+  box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.1); }
   nav .nav-right {
     margin-left: auto; }
   nav img {
     width: 50%; }
   nav a {
     text-decoration: none;
-    margin-left: 2em; }
+    margin-left: 2em;
+    color: black; }
+  nav .nav-right a {
+    width: 3em;
+    padding: 0.7em; }
   nav a.active {
-    background: red;
-    padding: 0.3em;
-    border-radius: 0.2em; }
+    background: #2196F3;
+    border-radius: 0.2em;
+    color: white; }
 
 /*# sourceMappingURL=nav.css.map */

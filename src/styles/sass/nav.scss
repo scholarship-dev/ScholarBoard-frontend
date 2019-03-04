@@ -1,10 +1,10 @@
 // TODO: Style the header appropriately
 nav {
-  background: lightgoldenrodyellow;
   display: flex;
   align-items: center;
   // TODO: Figure out the padding on this
   padding: 1em 1em;
+  box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.1em);
   .nav-right {
     margin-left: auto;
   }
@@ -14,10 +14,17 @@ nav {
   a {
     text-decoration: none;
     margin-left: 2em;
+    color: black;
+  }
+  .nav-right {
+    a {
+      width: 3em;
+      padding: 0.7em;
+    }
   }
   a.active {
-    background: red;
-    padding: 0.3em;
+    background: #2196F3;
     border-radius: 0.2em;
+    color: white;
   }
 }
