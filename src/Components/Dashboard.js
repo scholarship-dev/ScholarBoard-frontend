@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Typed from 'react-typed';
 import axios from 'axios';
+import { connect } from "react-redux";
+import { Redirect } from 'react-router-dom';
 
 class Dashboard extends Component {
 
@@ -10,6 +12,11 @@ class Dashboard extends Component {
   };
 
   render() {
+    console.log("this.props.user", this.props.user);
+    
+    if (this.props.user === "") {
+      return <Redirect to='/login' />
+    }
     return (
       <div>
         <div className="dashboard-page">
@@ -80,4 +87,11 @@ class Dashboard extends Component {
   };
 };
 
-export default Dashboard;
+const mapStateToProps = state => {
+  return { user: state.user };
+};
+
+const UserDashboard = connect(mapStateToProps, null)(Dashboard);
+
+
+export default UserDashboard;
