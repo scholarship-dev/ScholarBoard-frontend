@@ -6,35 +6,34 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-.header-logo {
-    float: left;
-    max-width: 14em;
+    .header-logo {
+        float: left;
+        max-width: 14em;
+    }
+    a.logo {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    a.active {
+        background-color: $lighterblue;
+        color: white;
+    }
 }
-a.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
-a:hover {
-    background-color: #ddd;
-    color: black;
-}
-a.active {
-    background-color: $lighterblue;
-    color: white;
-}
-}
-
 .header-right {
-float: right;
-a {
-    color: $black;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px; 
-    line-height: 25px;
-    border-radius: 4px;
-}
+    float: right;
+    a {
+        color: $black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px; 
+        line-height: 25px;
+        border-radius: 4px;
+    }
 }
 
 @media screen and (max-width: 500px) {

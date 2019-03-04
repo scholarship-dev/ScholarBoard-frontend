@@ -255,12 +255,13 @@ footer .footer-credits {
 }
 
 .dashboard-page {
-  height: 82vh;
+  min-height: 82vh;
   background-color: #ECECEC;
   margin: 0 auto;
   display: block;
   text-align: center;
   padding-top: 4em;
+  padding-bottom: 10em;
 }
 .dashboard-page .db-title {
   margin-top: 0em;

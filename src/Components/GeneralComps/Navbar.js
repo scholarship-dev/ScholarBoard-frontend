@@ -9,10 +9,10 @@ class Navbar extends Component {
   render() {
     if (this.props.user) {
       return (
-        <div className="header">
+        <div className="header btn-shadow">
           <Link to="/"><img href="#default" className="header-logo" src={logo} alt="Logo" srcSet="" /></Link>
           <div className="header-right">
-            <button onClick={this.props.logoutUser}>Logout</button>
+            <button className="btn" onClick={this.props.logoutUser}>Logout</button>
           </div>
         </div>
       )
