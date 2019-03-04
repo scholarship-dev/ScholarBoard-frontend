@@ -2,13 +2,50 @@ header {
   height: 60vh;
   display: flex;
   align-items: center;
-  padding: 1em 3.5em;
+  padding: 2em 3.5em;
   justify-content: space-between;
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    span[role="img"] {
+      padding-left: 2%;
+      font-size: 4em;
+    }
+  }
   h1 {
-    font-size: 4.3em;
+    font-size: calc(0.2em + 5vw);
+    margin-bottom: 0.2em;
+    width: 100%;
+
+  }
+  p {
+    font-size: 1.3em;
+    font-weight: 400;
+    opacity: 0.8;
+    line-height: 1.45;
+    padding: 0.65em 0em;
   }
   img {
-    height: 80%;
+    height: 85%;
     margin-left: 2em;
+  }
+  button {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    letter-spacing: 1.2px;
+    font-size: 1.5em;
+    width: 50%;
+    border-radius: 0.1em;
+    border: none;
+    border-radius: 0.1em;
+    color: white;
+    background: #FF6283;
+    transition: background opacity 7s;
+    box-shadow: 0.06em 0.06em 0.06em rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover {
+      box-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.1);
+    }
   }
 }

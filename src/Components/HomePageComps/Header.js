@@ -7,9 +7,9 @@ const Header = () => (
     <header>
 
         <section className="cta-content">
-            {/* TODO: Replace the emoji with a picture of a cap. Emojis don't render on all screens */}
+            {/* TODO: Replace the emoji with a picture of a cap. Emojis don't render on all screens
             <span role="img" aria-label="Grad Icon"> 🎓
-        </span>
+        </span> */}
 
             <h1>
                 <Typed
