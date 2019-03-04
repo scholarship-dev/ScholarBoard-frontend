@@ -1,17 +1,12 @@
-* {
+html, body {
   padding: 0px;
   margin: 0px;
-}
-html, body {
   height: 100%;
   font-size: 16px;
 }
-body {
-  position: relative;
-}
 
 html {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .btn {
@@ -24,7 +19,7 @@ html {
   font-size: 13px;
   font-weight: 500;
   line-height: 17px;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   vertical-align: middle;
   cursor: pointer;
   border: none;
@@ -33,35 +28,26 @@ html {
 }
 
 .btn-shadow {
-  -webkit-transition: -webkit-box-shadow 200ms ease-in-out;
-  transition: -webkit-box-shadow 200ms ease-in-out;
   transition: box-shadow 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
   border-bottom: 1px solid transparent;
   border-color: rgba(0, 0, 0, 0.14);
-  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
 }
 
 .top-shadow {
-  -webkit-transition: -webkit-box-shadow 200ms ease-in-out;
-  transition: -webkit-box-shadow 200ms ease-in-out;
   transition: box-shadow 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
   border-top: 1px solid transparent;
   border-color: rgba(0, 0, 0, 0.14);
-  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
 }
 
 .blue-green-gradient {
-  background: -webkit-gradient(linear, right top, left top, from(#00F260), to(#0575E6));
   background: linear-gradient(270deg, #00F260, #0575E6);
   background-size: 800% 800%;
   -webkit-animation: ColorChangeBackground 20s ease infinite;
+  -moz-animation: ColorChangeBackground 20s ease infinite;
   animation: ColorChangeBackground 20s ease infinite;
 }
-
 @-webkit-keyframes ColorChangeBackground {
   0% {
     background-position: 0% 50%;
@@ -73,7 +59,17 @@ html {
     background-position: 0% 50%;
   }
 }
-
+@-moz-keyframes ColorChangeBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 @keyframes ColorChangeBackground {
   0% {
     background-position: 0% 50%;
@@ -87,38 +83,26 @@ html {
 }
 
 .header {
-  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+  background-color: transparent;
   padding: 20px 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .header .header-logo {
   float: left;
   max-width: 14em;
 }
-
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
 }
-
 .header a:hover {
   background-color: #ddd;
   color: black;
 }
-
 .header a.active {
   background-color: #5b96e9;
   color: white;
@@ -127,7 +111,6 @@ html {
 .header-right {
   float: right;
 }
-
 .header-right a {
   color: #1C1C1C;
   text-align: center;
@@ -144,102 +127,64 @@ html {
     display: block;
     text-align: left;
   }
+
   .header-right {
     float: none;
   }
 }
-
-.short-footer {
-  position: absolute;
-  left: 0;
+footer {
+  /* Figure out why this only sticks to the bottom on certain pages */
+  position: fixed;
   bottom: 0;
   width: 100%;
+  height: 5vh;
+  text-align: center;
   background-color: #1C1C1C;
+  overflow: hidden;
+  padding: 1em 0em 2em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
   text-align: center;
-  overflow: hidden;
-  padding: 2em 0em 1em 0em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-
-.short-footer .footer-logo {
+footer .footer-logo {
   max-width: 14em;
 }
-
-.short-footer .footer-credits {
-  color: rgba(255, 255, 255, 0.712);
-}
-
-.long-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #1C1C1C;
-  color: white;
-  text-align: center;
-  overflow: hidden;
-  padding: 2em 0em 1em 0em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.long-footer .footer-logo {
-  max-width: 14em;
-}
-
-.long-footer .footer-credits {
+footer .footer-credits {
+  margin-top: 0.2em;
   color: rgba(255, 255, 255, 0.712);
 }
 
 .home-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: flex-start;
+  justify-content: space-evenly;
   margin: 2.2em 10em 0em 10em;
 }
-
 .home-top .info-section {
   max-width: 40vw;
 }
-
 .home-top .info-section .slogan {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 3em;
   font-weight: bolder;
   color: #1C1C1C;
   margin-bottom: 0em;
 }
-
 .home-top .info-section .top-sentence {
-  margin-top: .2em;
+  margin-top: 0.2em;
   color: #5b96e9;
   font-size: 1.2em;
 }
-
+.home-top .info-section .credits {
+  margin-top: 7em;
+  color: #5b96e9;
+  font-size: 1.2em;
+}
+.home-top .info-section .credits span {
+  color: #511691;
+}
 .home-top .img-section .scholarship-img {
   margin-top: 3em;
   max-width: 14em;
@@ -248,63 +193,39 @@ html {
 .signup-page {
   background-color: #ECECEC;
 }
-
 .signup-page .signup-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   padding-top: 3em;
 }
-
 .signup-page .signup-section .signup-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: white;
   padding: 1em 2em;
   min-width: 48vw;
-  border-radius: 1em 0em 0em 1em;
+  border-radius: 1em;
   margin-bottom: 14em;
 }
-
 .signup-page .signup-section .signup-form .signup-small-logo {
   max-width: 12em;
 }
-
 .signup-page .signup-section .signup-form .signup-fields {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 5em;
   margin: 3em auto 0 auto;
 }
-
 .signup-page .signup-section .signup-form .signup-fields .legend {
   text-align: center;
 }
-
 .signup-page .signup-section .signup-form .signup-fields label {
-  margin: 1em 0em .3em .3em;
+  margin: 1em 0em 0.3em 0.3em;
   color: #8e8e8e;
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: bolder;
 }
-
 .signup-page .signup-section .signup-form .signup-fields input {
   border-width: 0 0 2px;
   border-color: #ECECEC;
@@ -313,24 +234,20 @@ html {
   font-size: 1em;
   min-width: 20vw;
 }
-
 .signup-page .signup-section .signup-form .signup-fields input:focus {
   outline: none;
   border-color: #3E4EE3;
 }
-
 .signup-page .signup-section .signup-form .signup-fields .signup-submit {
   margin-top: 1em;
   background-color: black;
 }
-
 .signup-page .signup-section .signup-info-section {
-  width: 25vw;
+  width: 25%;
   height: 60vh;
   padding: 1em 2em;
-  border-radius: 0em 1em 1em 0em;
+  border-radius: 1em;
 }
-
 .signup-page .signup-section .signup-info-section h1 {
   font-size: 3em;
   font-weight: bolder;
@@ -345,27 +262,18 @@ html {
   text-align: center;
   padding-top: 4em;
 }
-
 .dashboard-page .db-title {
   margin-top: 0em;
 }
-
 .dashboard-page .sort-tool {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: #ffffff;
   width: 60vw;
   margin: 0 auto 2em auto;
-  padding: .3em 0em;
+  padding: 0.3em 0em;
 }
-
 .dashboard-page .sort-tool input {
   border-width: 0 0 2px;
   border-color: #ECECEC;
@@ -374,80 +282,33 @@ html {
   font-size: 1em;
   width: 14vw;
 }
-
 .dashboard-page .sort-tool input:focus {
   outline: none;
   border-color: #3E4EE3;
 }
-
 .dashboard-page .sort-tool button {
   border-radius: 0;
   padding: 6px 24px 6px;
 }
-
 .dashboard-page .s-card {
   background-color: #ffffff;
   width: 55vw;
   margin: 0 auto;
   padding: 0.5em 3em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .dashboard-page .s-card .left {
   text-align: left;
   max-width: 75%;
 }
-
 .dashboard-page .s-card .left .title {
   font-size: 1.4em;
   font-weight: bolder;
 }
-
 .dashboard-page .s-card .right {
   text-align: center;
   max-width: 25%;
 }
 
-/* Williams styles start here for the night until he can figure out this scss workflow */
-.page-section h1 {
-  text-align: center;
-}
-
-.Features {
-  height: 70vh;
-  background: lightblue;
-  margin-top: 1em;
-  text-align: center;
-}
-.Features p {
-  margin-top: 5em;
-}
-
-.team-section {
-  display: flex;
-  justify-content: space-around;
-  height: 80vh;
-  padding: 0 2em;
-  margin-top: 3.5em;
-}
-
-.team-section img {
-  height: 18vh;
-  border-radius: 0.1em;
-}
-
-footer {
-  /* Figure out why this only sticks to the bottom on certain pages */
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: red;
-  height: 10vh;
-  text-align: center;
-}
 /*# sourceMappingURL=styles.css.map */

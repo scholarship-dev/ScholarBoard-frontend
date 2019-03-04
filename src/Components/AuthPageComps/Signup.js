@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import { Link, Redirect } from 'react-router-dom';
 import { signupUser } from "../../js/actions/index";
 
-
 class Signup extends Component {
   constructor(props) {
     super(props);
@@ -43,7 +42,7 @@ class Signup extends Component {
       <div>
         <div className="signup-page">
 
-          <section className="signup-section">
+          <section className="signup-section signup-info-section blue-green-gradient">
             <form className="signup-form" onSubmit={this.handleSubmit}>
 
               <div className="signup-fields">
@@ -74,13 +73,13 @@ class Signup extends Component {
                 <input name="password" id="password" type="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" required />
 
                 <button className="btn signup-submit" type="submit">Signup</button>
-                <p> Already have an account?<Link to="/login">Login here</Link></p>
+                <p> Already have an account? <Link to="/login">Login here</Link></p>
               </div>
             </form>
-
+{/* 
             <div className="signup-info-section blue-green-gradient">
               <h1>Sign up to join ScholarBoard for free!</h1>
-            </div>
+            </div> */}
 
           </section>
         </div>

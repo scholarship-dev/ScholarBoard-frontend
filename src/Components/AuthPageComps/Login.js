@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-// import SignupForm from './SignupForm';
 import { connect } from "react-redux";
 import { Redirect, Link } from 'react-router-dom';
 import { loginUser } from "../../js/actions/index";
-// import logo from '../../images/logo2black.png';
-
+// import Particles from 'react-particles-js';
 
 class Login extends Component {
   constructor(props) {
@@ -32,29 +30,22 @@ class Login extends Component {
     };
 
     return (
-      <div className="signup-page">
+      <div className="signup-page blue-green-gradient">
         <section className="signup-section">
-          <form className="signup-form" onSubmit={this.handleSubmit}>
-
+        {/* <Particles/> */}
+            <form className=" signup-info-section signup-form" onSubmit={this.handleSubmit}>
             <div className="signup-fields">
               <h2 className="legend">Login</h2>
+              
               <label htmlFor="email">Email</label>
               <input name="email" id="email" type="text" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
 
-
               <label htmlFor="password">Password</label>
               <input name="password" id="password" type="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" required />
-
               <button className="btn signup-submit" type="submit">Login</button>
               <p>Need to make an account? <Link to="/signup">Sign up here</Link></p>
             </div>
-          </form>
-
-
-          <div className="signup-info-section blue-green-gradient">
-            <h1>Time to apply for those scholarships!</h1>
-          </div>
-
+            </form>
         </section>
       </div>
     );
