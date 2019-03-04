@@ -177,6 +177,13 @@ footer {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
+.dashboard {
+  display: flex; }
+  .dashboard nav {
+    background: red;
+    height: 80vh;
+    min-width: 16vw; }
+
 .page-section h2 {
   text-align: center;
   padding-top: 1em;

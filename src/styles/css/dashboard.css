@@ -1,0 +1,8 @@
+.dashboard {
+  display: flex; }
+  .dashboard nav {
+    background: red;
+    height: 80vh;
+    min-width: 16vw; }
+
+/*# sourceMappingURL=dashboard.css.map */
