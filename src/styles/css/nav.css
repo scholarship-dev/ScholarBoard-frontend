@@ -10,10 +10,10 @@ nav {
   nav a {
     text-decoration: none;
     margin-left: 2em;
-    color: black; }
+    color: black;
+    font-size: 1.2em; }
   nav .nav-right a {
-    width: 3em;
-    padding: 0.7em; }
+    padding: 0.4em; }
   nav a.active {
     background: #2196F3;
     border-radius: 0.2em;

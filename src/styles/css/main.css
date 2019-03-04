@@ -57,17 +57,26 @@ nav {
   nav a {
     text-decoration: none;
     margin-left: 2em;
-    color: black; }
+    color: black;
+    font-size: 1.2em; }
   nav .nav-right a {
-    width: 3em;
-    padding: 0.7em; }
+    padding: 0.4em; }
   nav a.active {
     background: #2196F3;
     border-radius: 0.2em;
     color: white; }
 
 header {
-  height: 90vh; }
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 1em 3.5em;
+  justify-content: space-between; }
+  header h1 {
+    font-size: 4.3em; }
+  header img {
+    height: 80%;
+    margin-left: 2em; }
 
 .Features {
   height: 70vh;

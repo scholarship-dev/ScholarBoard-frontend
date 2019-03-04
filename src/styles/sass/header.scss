@@ -1,3 +1,14 @@
 header {
-  height: 90vh;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 1em 3.5em;
+  justify-content: space-between;
+  h1 {
+    font-size: 4.3em;
+  }
+  img {
+    height: 80%;
+    margin-left: 2em;
+  }
 }
