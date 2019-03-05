@@ -1,16 +1,12 @@
 header {
-  height: 79vh;
+  height: 70vh;
   display: flex;
-  align-items: center;
-  padding: 0em 4em;
+  padding: 5em 4em;
   justify-content: space-between; }
   header .cta-content {
     display: flex;
     flex-direction: column;
-    width: 65%; }
-    header .cta-content span[role="img"] {
-      padding-left: 2%;
-      font-size: 4em; }
+    width: 75%; }
     header .cta-content h1 {
       font-size: calc(0.2em + 5vw);
       margin-bottom: 0.2em; }
@@ -21,7 +17,7 @@ header {
       line-height: 1.45;
       padding: 0.65em 0em; }
   header img {
-    height: 70%;
+    height: 75%;
     margin-left: 2em; }
   header button {
     margin-top: 0.5em;

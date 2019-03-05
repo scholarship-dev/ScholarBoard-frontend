@@ -67,18 +67,14 @@ nav {
     color: white; }
 
 header {
-  height: 79vh;
+  height: 70vh;
   display: flex;
-  align-items: center;
-  padding: 0em 4em;
+  padding: 5em 4em;
   justify-content: space-between; }
   header .cta-content {
     display: flex;
     flex-direction: column;
-    width: 65%; }
-    header .cta-content span[role="img"] {
-      padding-left: 2%;
-      font-size: 4em; }
+    width: 75%; }
     header .cta-content h1 {
       font-size: calc(0.2em + 5vw);
       margin-bottom: 0.2em; }
@@ -89,7 +85,7 @@ header {
       line-height: 1.45;
       padding: 0.65em 0em; }
   header img {
-    height: 70%;
+    height: 75%;
     margin-left: 2em; }
   header button {
     margin-top: 0.5em;
@@ -113,6 +109,8 @@ header {
   height: 88vh;
   background: #fbfbfb;
   border: 0.1px solid rgba(0, 0, 0, 0.05); }
+  .Features img {
+    width: 5%; }
   .Features .feature-content {
     padding-top: 2em;
     display: flex;
@@ -163,16 +161,21 @@ header {
       font-size: 2em; }
   .Team img {
     height: 10em;
+    border-radius: 0.2em;
     margin-bottom: 1em; }
   .Team p {
     margin-top: 10px; }
 
 footer {
-  background: lightgoldenrodyellow;
+  background: #4b38a0;
+  color: white;
+  font-size: 1.2em;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 10vh; }
+  height: 5vh;
+  text-align: center;
+  padding-top: 2em; }
   footer h4 {
     text-align: center; }
 

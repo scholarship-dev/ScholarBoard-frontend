@@ -1,21 +1,18 @@
 header {
-  height: 79vh;
+  height: 70vh;
   display: flex;
-  align-items: center;
-  padding: 0em 4em;
+  padding: 5em 4em;
+
   justify-content: space-between;
   .cta-content {
     display: flex;
     flex-direction: column;
-    width: 65%;
-    span[role="img"] {
-      padding-left: 2%;
-      font-size: 4em;
-    }
+    width: 75%;
     h1 {
       font-size: calc(0.2em + 5vw);
       margin-bottom: 0.2em;
   }
+
   p {
     font-size: 1.3em;
     font-weight: 400;
@@ -25,7 +22,7 @@ header {
   }
   }
   img {
-    height: 70%;
+    height: 75%;
     margin-left: 2em;
   }
   button {

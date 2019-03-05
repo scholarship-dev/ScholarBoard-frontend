@@ -1,9 +1,13 @@
 footer {
-  background: lightgoldenrodyellow;
+  background: #4b38a0;
+  color: white;
+  font-size: 1.2em;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 10vh; }
+  height: 5vh;
+  text-align: center;
+  padding-top: 2em; }
   footer h4 {
     text-align: center; }
 

@@ -2,8 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <footer>
-    <h4>Consult the team for the content</h4>
-  </footer>
+    <p className="footer-credits"><span role="img" aria-label="Grad Icon">💻</span> Built by Asim, Medi, Thomas and William <span role="img" aria-label="Grad Icon">🎓</span></p>  </footer>
 );
 
 

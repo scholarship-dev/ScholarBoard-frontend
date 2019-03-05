@@ -2,6 +2,8 @@
   height: 88vh;
   background: #fbfbfb;
   border: 0.1px solid rgba(0, 0, 0, 0.05); }
+  .Features img {
+    width: 5%; }
   .Features .feature-content {
     padding-top: 2em;
     display: flex;
