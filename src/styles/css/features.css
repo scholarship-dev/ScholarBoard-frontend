@@ -5,18 +5,39 @@
     padding: 2em 14em;
     display: flex;
     justify-content: space-around; }
-    .Features .feature-content .feature-circle {
+    .Features .feature-content .feature-step {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: lightblue;
       height: 20em;
       width: 20em;
-      margin: 2em;
+      margin-left: 2em;
       position: relative; }
-      .Features .feature-content .feature-circle h4 {
-        display: none; }
+      .Features .feature-content .feature-step .feature-step-content {
+        position: absolute;
+        top: 20em;
+        width: 16em; }
+        .Features .feature-content .feature-step .feature-step-content p {
+          opacity: 0.75;
+          width: 18em;
+          margin-top: 1em;
+          line-height: 1.2em; }
+      .Features .feature-content .feature-step h4 {
+        font-size: 1.3em;
+        text-align: center;
+        left: 1em; }
     .Features .feature-content .signup {
       background: no-repeat url("../../images/people-pics/signup.jpg");
       background-size: cover;
-      background-position: -20px;
-      border: 1px solid black; }
+      background-position: -50px; }
+    .Features .feature-content .apply {
+      background: no-repeat url("../../images/home-page-pics/apply.jpg");
+      background-size: cover;
+      background-position: -50px; }
+    .Features .feature-content .celebrate {
+      background: no-repeat url("../../images/home-page-pics/party.jpg");
+      background-size: cover;
+      background-position: -20px; }
 
 /*# sourceMappingURL=features.css.map */

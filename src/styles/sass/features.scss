@@ -5,28 +5,49 @@
     padding:2em 14em;
     display: flex;
     justify-content: space-around;
-    .feature-circle {
+    .feature-step {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: lightblue;
       height: 20em;
       width: 20em;
-      margin: 2em;
+      margin-left: 2em;
       position: relative; 
+      .feature-step-content {
+        position: absolute;
+        top: 20em;
+        width: 16em;
+        p {
+          opacity: 0.75;
+          width: 18em;
+          margin-top: 1em;
+          line-height: 1.2em;
+        }
+      }
 
       h4 {
-        display: none;
-        // position: absolute;
-        // top: 8em;
-        // left: 2em;
-        // width: 5.5em;
-        // font-size: 1.3em;
+  
+        font-size: 1.3em;
+        text-align: center;
+        left: 1em;
       }
+
     }
     .signup {
       background: no-repeat url('../../images/people-pics/signup.jpg');
       background-size: cover;
-      background-position:-20px ;
-      border: 1px solid black;
-
+      background-position: -50px ;
+    }
+    .apply {
+      background: no-repeat url('../../images/home-page-pics/apply.jpg');
+      background-size: cover;
+      background-position: -50px ;
+    }
+    .celebrate {
+      background: no-repeat url('../../images/home-page-pics/party.jpg');
+      background-size: cover;
+      background-position: -20px ;
     }
 
   }
