@@ -61,6 +61,10 @@ nav {
     font-size: 1.2em; }
   nav .nav-right a {
     padding: 0.4em; }
+    nav .nav-right a:hover {
+      background: #2196F3;
+      border-radius: 0.2em;
+      color: white; }
   nav a.active {
     background: #2196F3;
     border-radius: 0.2em;
@@ -167,7 +171,7 @@ header {
     margin-top: 10px; }
 
 footer {
-  background: #4b38a0;
+  background: rgba(0, 0, 0, 0.65);
   color: white;
   font-size: 1.2em;
   bottom: 0;

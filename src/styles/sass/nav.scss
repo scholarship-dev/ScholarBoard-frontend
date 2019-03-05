@@ -20,7 +20,11 @@ nav {
   .nav-right {
     a {
       padding: 0.4em;
-      // text-transform: uppercase;
+      &:hover {
+        background: #2196F3;
+        border-radius: 0.2em;
+        color: white;
+      }
     }
   }
   a.active {
