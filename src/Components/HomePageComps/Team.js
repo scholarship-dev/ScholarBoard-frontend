@@ -17,7 +17,7 @@ const Team = () => (
         alt="Medi Assumani"
       />
 
-        <TeamMember
+      <TeamMember
         name="Thomas Lee"
         img={Thomas}
         alt="Thomas Lee"
@@ -35,7 +35,7 @@ const Team = () => (
         name="William Bogans"
         img={Will}
         alt="William Bogans"
-        description="Back-End Engineer"
+        description="Front-End Engineer"
       />
 
     </section>

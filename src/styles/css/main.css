@@ -165,7 +165,7 @@ header {
       font-size: 2em; }
   .Team img {
     height: 10em;
-    border-radius: 0.2em;
+    border-radius: 100%;
     margin-bottom: 1em; }
   .Team p {
     margin-top: 10px; }
@@ -184,7 +184,7 @@ footer {
     text-align: center; }
 
 .auth-page {
-  background-color: lightgoldenrodyellow;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 0 5em;
   height: 80vh; }
   .auth-page .form-container {

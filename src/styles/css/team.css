@@ -9,7 +9,7 @@
       font-size: 2em; }
   .Team img {
     height: 10em;
-    border-radius: 0.2em;
+    border-radius: 100%;
     margin-bottom: 1em; }
   .Team p {
     margin-top: 10px; }
