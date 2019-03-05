@@ -31,6 +31,17 @@
     }
   }
 
+  section.dashboard-content {
+    background: red;
+    padding: 0 5em;
+
+    .filter {
+      display: flex;
+      flex-direction: row;
+    }
+
+  }
+
   section.scholarships {
     display: flex;
     flex-wrap: wrap;
