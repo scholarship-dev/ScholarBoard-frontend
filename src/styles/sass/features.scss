@@ -1,10 +1,13 @@
 .Features {
-  height: 70vh;
+  height: 88vh;
   background: #fbfbfb;
+  
   .feature-content {
-    padding:2em 14em;
+    padding-top:2em;
     display: flex;
     justify-content: space-around;
+    width: 100%;
+
     .feature-step {
       display: flex;
       align-items: center;
@@ -12,12 +15,13 @@
       background: lightblue;
       height: 20em;
       width: 20em;
-      margin-left: 2em;
       position: relative; 
+
       .feature-step-content {
         position: absolute;
         top: 20em;
         width: 16em;
+
         p {
           opacity: 0.75;
           width: 18em;
@@ -25,12 +29,10 @@
           line-height: 1.2em;
         }
       }
-
       h4 {
-  
+        margin-top: 1.5em;
         font-size: 1.3em;
         text-align: center;
-        left: 1em;
       }
 
     }

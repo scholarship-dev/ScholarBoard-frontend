@@ -110,12 +110,13 @@ header {
       box-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.1); }
 
 .Features {
-  height: 70vh;
+  height: 88vh;
   background: #fbfbfb; }
   .Features .feature-content {
-    padding: 2em 14em;
+    padding-top: 2em;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    width: 100%; }
     .Features .feature-content .feature-step {
       display: flex;
       align-items: center;
@@ -123,7 +124,6 @@ header {
       background: lightblue;
       height: 20em;
       width: 20em;
-      margin-left: 2em;
       position: relative; }
       .Features .feature-content .feature-step .feature-step-content {
         position: absolute;
@@ -135,9 +135,9 @@ header {
           margin-top: 1em;
           line-height: 1.2em; }
       .Features .feature-content .feature-step h4 {
+        margin-top: 1.5em;
         font-size: 1.3em;
-        text-align: center;
-        left: 1em; }
+        text-align: center; }
     .Features .feature-content .signup {
       background: no-repeat url("../../images/people-pics/signup.jpg");
       background-size: cover;
