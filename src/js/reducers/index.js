@@ -14,18 +14,17 @@ import { HANDLE_LOGIN, SIGNUP_USER, LOGOUT_USER, HANDLE_SETTINGS } from "../cons
 
 
 const initialState = {
-  token: "",
   user: ""
 };
 
 function rootReducer(state = initialState, action) {
   switch(action.type) {
     case HANDLE_LOGIN: 
-      return {...state, token: action.token_payload, user: action.user_payload}
+      return {...state, user: action.payload}
     case SIGNUP_USER:
-      return {...state, token: action.token_payload, user: action.user_payload}
+      return {...state, user: action.payload}
     case LOGOUT_USER:
-      return {...state, user: "", token: ""}
+      return {...state, user: ""}
     case HANDLE_SETTINGS:
       return {...state, user: action.payload}
     default: 

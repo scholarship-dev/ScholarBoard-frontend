@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { signupUser } from '../../js/actions/index';
+import { connect } from "react-redux";
+import { Redirect, Link } from 'react-router-dom';
+import { loginUser } from "../../js/actions/index";
 
-
-class Signup extends Component {
+class Login extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      firstName: '',
       email: '',
+      password: ''
     };
-  }
+  };
+
+  handleChange = event => {
+    this.setState({ [event.target.id]: event.target.value });
+  };
+
+  handleSubmit = event => {
+    event.preventDefault();
+    this.props.loginUser(this.state);
+  };
 
   render() {
     return (
@@ -20,83 +28,42 @@ class Signup extends Component {
 
         <section className="form-container">
 
-          <form onSubmit={this.handleSubmit}>
+          return (
+      <div className="signup-page blue-green-gradient">
+            <section className="signup-section">
+              <form className=" signup-info-section signup-form" onSubmit={this.handleSubmit}>
+                <div className="signup-fields">
+                  <h2 className="legend">Login</h2>
 
-            <div className="signup-fields">
+                  <label htmlFor="email">Email</label>
+                  <input name="email" id="email" type="text" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
 
-              <legend>
-                Login
-              </legend>
-
-              <label htmlFor="email">
-                Email
-              </label>
-
-              <input
-                name="email"
-                id="email"
-                type="text"
-                placeholder="Email"
-                value={this.state.email}
-                onChange={this.handleChange}
-                required
-              />
-
-
-              <label htmlFor="password">
-                Password
-              </label>
-
-              <input
-                name="password"
-                id="password"
-                type="password"
-                value={this.state.password}
-                onChange={this.handleChange}
-                placeholder="Password"
-                required
-              />
-
-              <button
-                className="btn signup-submit"
-                type="submit"
-              >
-                Login
-              </button>
-
-              <p>
-                Need to make an account?
-                <Link to="/signup">
-                  Sign up
-                </Link>
-              </p>
-
-            </div>
-          </form>
-
-
-          <div className="info-section gradient">
-            <h1>
-              Time to apply for those scholarships!
-            </h1>
+                  <label htmlFor="password">Password</label>
+                  <input name="password" id="password" type="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" required />
+                  <button className="btn signup-submit" type="submit">Login</button>
+                  <p>Need to make an account? <Link to="/signup">Sign up here</Link></p>
+                </div>
+              </form>
+            </section>
           </div>
-
         </section>
+
       </div>
     );
   }
 }
 
-const mapStateToProps = (state) => {
-  return { user: state.user };
-};
+// const mapStateToProps = (state) => {
+//   return { user: state.user };
+// };
 
-function mapDispatchToProps() {
-  return {
-    signupUser,
-  };
-}
+// function mapDispatchToProps() {
+//   return {
+//     signupUser,
+//   };
+// }
 
-const SignupUser = connect(mapStateToProps, mapDispatchToProps())(Signup);
 
-export default SignupUser;
+// const LoginUser = connect(mapStateToProps, mapDispatchToProps())(Login);
+
+export default Login;
