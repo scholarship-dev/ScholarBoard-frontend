@@ -1,6 +1,6 @@
 .Team {
-  background: lightgoldenrodyellow;
   height: 90vh;
+  
   .team-section {
     display: flex;
     justify-content: space-around;
@@ -13,5 +13,8 @@
   img {
     height: 10em;
     margin-bottom: 1em;
+  }
+  p {
+    margin-top:10px;
   }
 }

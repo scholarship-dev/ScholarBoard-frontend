@@ -1,6 +1,7 @@
 .Features {
   height: 88vh;
   background: #fbfbfb;
+  border: 0.1px solid rgba(0, 0, 0, 0.05);
   
   .feature-content {
     padding-top:2em;
@@ -16,6 +17,7 @@
       height: 20em;
       width: 20em;
       position: relative; 
+
 
       .feature-step-content {
         position: absolute;
@@ -37,15 +39,17 @@
 
     }
     .signup {
-      background: no-repeat url('../../images/people-pics/signup.jpg');
+      background: no-repeat url('../../images/home-page-pics/signup.jpg');
       background-size: cover;
       background-position: -50px ;
     }
+
     .apply {
       background: no-repeat url('../../images/home-page-pics/apply.jpg');
       background-size: cover;
       background-position: -50px ;
     }
+
     .celebrate {
       background: no-repeat url('../../images/home-page-pics/party.jpg');
       background-size: cover;

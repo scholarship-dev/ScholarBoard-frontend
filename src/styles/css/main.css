@@ -111,7 +111,8 @@ header {
 
 .Features {
   height: 88vh;
-  background: #fbfbfb; }
+  background: #fbfbfb;
+  border: 0.1px solid rgba(0, 0, 0, 0.05); }
   .Features .feature-content {
     padding-top: 2em;
     display: flex;
@@ -139,7 +140,7 @@ header {
         font-size: 1.3em;
         text-align: center; }
     .Features .feature-content .signup {
-      background: no-repeat url("../../images/people-pics/signup.jpg");
+      background: no-repeat url("../../images/home-page-pics/signup.jpg");
       background-size: cover;
       background-position: -50px; }
     .Features .feature-content .apply {
@@ -152,7 +153,6 @@ header {
       background-position: -20px; }
 
 .Team {
-  background: lightgoldenrodyellow;
   height: 90vh; }
   .Team .team-section {
     display: flex;
@@ -164,6 +164,8 @@ header {
   .Team img {
     height: 10em;
     margin-bottom: 1em; }
+  .Team p {
+    margin-top: 10px; }
 
 footer {
   background: lightgoldenrodyellow;

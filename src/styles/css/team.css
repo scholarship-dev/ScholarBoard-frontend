@@ -1,5 +1,4 @@
 .Team {
-  background: lightgoldenrodyellow;
   height: 90vh; }
   .Team .team-section {
     display: flex;
@@ -11,5 +10,7 @@
   .Team img {
     height: 10em;
     margin-bottom: 1em; }
+  .Team p {
+    margin-top: 10px; }
 
 /*# sourceMappingURL=team.css.map */

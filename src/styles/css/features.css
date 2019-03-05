@@ -1,6 +1,7 @@
 .Features {
   height: 88vh;
-  background: #fbfbfb; }
+  background: #fbfbfb;
+  border: 0.1px solid rgba(0, 0, 0, 0.05); }
   .Features .feature-content {
     padding-top: 2em;
     display: flex;
@@ -28,7 +29,7 @@
         font-size: 1.3em;
         text-align: center; }
     .Features .feature-content .signup {
-      background: no-repeat url("../../images/people-pics/signup.jpg");
+      background: no-repeat url("../../images/home-page-pics/signup.jpg");
       background-size: cover;
       background-position: -50px; }
     .Features .feature-content .apply {

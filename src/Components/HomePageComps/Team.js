@@ -13,29 +13,29 @@ const Team = () => (
       <TeamMember
         name="Medi Assumani"
         img={medi}
-        description="blahhhhh"
+        description="Back-End Engineer"
         alt="Medi Assumani"
+      />
+
+        <TeamMember
+        name="Thomas Lee"
+        img={Thomas}
+        alt="Thomas Lee"
+        description="Front-End Engineer"
       />
 
       <TeamMember
         name="Asim Zaidi"
         img={Asim}
-        description="blahhhh"
+        description="Front-End Engineer"
         alt="Asim Zaidi"
-      />
-
-      <TeamMember
-        name="Thomas Lee"
-        img={Thomas}
-        alt="Thomas Lee"
-        description="Blahhhh"
       />
 
       <TeamMember
         name="William Bogans"
         img={Will}
         alt="William Bogans"
-        description="blahhhh"
+        description="Back-End Engineer"
       />
 
     </section>
