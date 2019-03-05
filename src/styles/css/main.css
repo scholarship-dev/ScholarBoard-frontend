@@ -171,22 +171,22 @@ header {
     margin-top: 10px; }
 
 footer {
-  background: rgba(0, 0, 0, 0.65);
-  color: white;
-  font-size: 1.2em;
-  bottom: 0;
-  left: 0;
+  /* Figure out why this only sticks to the bottom on certain pages */
   width: 100%;
-  height: 5vh;
-  text-align: center;
-  padding-top: 2em; }
-  footer h4 {
-    text-align: center; }
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; }
+  footer .footer-credits {
+    text-align: center;
+    margin-top: .2em;
+    color: white; }
 
 .auth-page {
   background-color: rgba(0, 0, 0, 0.1);
-  padding: 0 5em;
-  height: 80vh; }
+  padding: 0 5em; }
   .auth-page .form-container {
     display: flex;
     flex-direction: row;
@@ -199,14 +199,19 @@ footer {
       background-color: white;
       padding: 1em 2em;
       min-width: 48vw;
-      height: 60vh; }
+      margin-bottom: 9em; }
+      .auth-page .form-container form form.signup {
+        height: 100%; }
+        .auth-page .form-container form form.signup legend {
+          padding-top: -2em; }
       .auth-page .form-container form .signup-fields {
         display: flex;
         flex-direction: column;
-        margin: 3em auto 0 auto; }
+        margin: 1em auto 4em auto; }
         .auth-page .form-container form .signup-fields legend {
           text-align: center;
-          font-size: 2em; }
+          font-size: 2em;
+          padding-bottom: 1em; }
         .auth-page .form-container form .signup-fields label {
           margin: 1em 0em .3em .3em;
           color: gray;
@@ -243,13 +248,6 @@ footer {
       .auth-page .form-container form a {
         color: black;
         margin: 1em 0 0 0.2em; }
-    .auth-page .form-container .info-section {
-      width: 40vw;
-      padding: 1em 2em; }
-      .auth-page .form-container .info-section h1 {
-        font-size: 3em;
-        font-weight: bolder;
-        color: white; }
   .auth-page .gradient {
     background: -webkit-gradient(linear, right top, left top, from(#00F260), to(#0575E6));
     background: linear-gradient(270deg, #00F260, #0575E6);

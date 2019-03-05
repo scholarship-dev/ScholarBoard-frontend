@@ -48,33 +48,140 @@ class Signup extends Component {
             <div className="signup-fields">
               <legend>Create Account</legend>
 
-              <label htmlFor="firstname">First Name</label>
-              <input name="firstname" id="firstname" type="text" placeholder="First Name" value={this.state.firstname} onChange={this.handleChange} required />
+              <label
+                htmlFor="firstname">
+                First Name
+              </label>
 
-              <label htmlFor="lastname">Last Name</label>
-              <input name="lastname" id="lastname" type="text" placeholder="Last Name" value={this.state.lastname} onChange={this.handleChange} required />
+              <input
+                name="firstname"
+                id="firstname"
+                type="text"
+                placeholder="First Name"
+                value={this.state.firstname}
+                onChange={this.handleChange}
+                required
+              />
 
-              <label htmlFor="email">Email</label>
-              <input name="email" id="email" type="text" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
+              <label
+                htmlFor="lastname">
+                Last Name
+              </label>
 
-              <label htmlFor="gpa">GPA</label>
-              <input name="gpa" id="gpa" type="number" placeholder="GPA" value={this.state.gpa} onChange={this.handleChange} required />
+              <input
+                name="lastname"
+                id="lastname"
+                type="text"
+                placeholder="Last Name"
+                value={this.state.lastname}
+                onChange={this.handleChange}
+                required
+              />
 
-              <label htmlFor="ethnicity">Ethnicity</label>
-              <input name="ethnicity" id="ethnicity" type="text" placeholder="Ethnicity" value={this.state.ethnicity} onChange={this.handleChange} required />
+              <label
+                htmlFor="email">
+                Email
+              </label>
 
-              <label htmlFor="educationLevel">Education Level</label>
-              <input name="educationLevel" id="educationLevel" type="text" placeholder="Education Level" value={this.state.educationLevel} onChange={this.handleChange} required />
+              <input
+                name="email"
+                id="email"
+                type="text"
+                placeholder="Email"
+                value={this.state.email}
+                onChange={this.handleChange}
+                required
+              />
 
-              <label htmlFor="grade">Grade</label>
-              <input name="grade" id="grade" type="text" placeholder="Grade" value={this.state.grade} onChange={this.handleChange} required />
+              <label
+                htmlFor="gpa">
+                GPA
+              </label>
 
-              <label htmlFor="password">Password</label>
-              <input name="password" id="password" type="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" required />
+              <input
+                name="gpa"
+                id="gpa"
+                type="number"
+                placeholder="GPA"
+                value={this.state.gpa}
+                onChange={this.handleChange}
+                required
+              />
 
-              <button className="btn signup-submit" type="submit">Signup</button>
-              <p> Already have an account? <Link to="/login">Login here</Link></p>
+              <label
+                htmlFor="ethnicity">
+                Ethnicity
+              </label>
+
+              <input
+                name="ethnicity"
+                id="ethnicity"
+                type="text"
+                placeholder="Ethnicity"
+                value={this.state.ethnicity}
+                onChange={this.handleChange}
+                required
+              />
+
+              <label
+                htmlFor="educationLevel">
+                Education Level
+              </label>
+
+              <input
+                name="educationLevel"
+                id="educationLevel"
+                type="text"
+                placeholder="Education Level"
+                value={this.state.educationLevel}
+                onChange={this.handleChange}
+                required
+              />
+
+              <label
+                htmlFor="grade">
+                Grade
+              </label>
+
+              <input
+                name="grade"
+                id="grade"
+                type="text"
+                placeholder="Grade"
+                value={this.state.grade}
+                onChange={this.handleChange}
+                required
+              />
+
+              <label
+                htmlFor="password">
+                Password
+              </label>
+
+              <input
+                name="password"
+                id="password"
+                type="password"
+                value={this.state.password}
+                onChange={this.handleChange}
+                placeholder="Password"
+                required
+              />
+
+              <button
+                type="submit">
+                Signup
+              </button>
+              <p>
+                Already have an account?
+
+              <Link to="/login">
+                  Login here
+              </Link>
+
+              </p>
             </div>
+
           </form>
         </section>
       </div>
