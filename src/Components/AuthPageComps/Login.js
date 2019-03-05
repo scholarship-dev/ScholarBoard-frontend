@@ -26,29 +26,54 @@ class Login extends Component {
     return (
       <div className="auth-page">
 
-        <section className="form-container">
+        <section
+          className="form-container"
+        >
 
-          return (
-      <div className="signup-page blue-green-gradient">
-            <section className="signup-section">
-              <form className=" signup-info-section signup-form" onSubmit={this.handleSubmit}>
-                <div className="signup-fields">
-                  <h2 className="legend">Login</h2>
+          <form
+            onSubmit={this.handleSubmit}
+          >
 
-                  <label htmlFor="email">Email</label>
-                  <input name="email" id="email" type="text" placeholder="Email" value={this.state.email} onChange={this.handleChange} required />
+            <div className="signup-fields">
+              <legend>Login</legend>
 
-                  <label htmlFor="password">Password</label>
-                  <input name="password" id="password" type="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" required />
-                  <button className="btn signup-submit" type="submit">Login</button>
-                  <p>Need to make an account? <Link to="/signup">Sign up here</Link></p>
-                </div>
-              </form>
-            </section>
-          </div>
+              <label htmlFor="email">
+                Email
+                  </label>
+
+              <input
+                name="email"
+                id="email" type="text" placeholder="Email"
+                value={this.state.email}
+                onChange={this.handleChange}
+                required
+              />
+
+              <label htmlFor="password">
+                Password
+                  </label>
+
+              <input
+                name="password"
+                id="password"
+                type="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" required
+              />
+
+              <button
+                type="submit">
+                Login
+                  </button>
+
+              <p>
+                Need to make an account? <Link to="/signup">
+                  Sign up here
+                  </Link>
+              </p>
+            </div>
+
+          </form>
         </section>
-
-      </div>
+      </div >
     );
   }
 }

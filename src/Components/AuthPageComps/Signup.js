@@ -34,13 +34,19 @@ class Signup extends Component {
 
   render() {
     return (
-      <div className="signup-page">
+      <div className="auth-page">
 
-        <section className="signup-section signup-info-section blue-green-gradient">
-          <form className="signup-form" onSubmit={this.handleSubmit}>
+        <section
+          className="form-container"
+        >
+
+          <form
+            className="signup-form"
+            onSubmit={this.handleSubmit}
+          >
 
             <div className="signup-fields">
-              <h2 className="legend">Create Account</h2>
+              <legend>Create Account</legend>
 
               <label htmlFor="firstname">First Name</label>
               <input name="firstname" id="firstname" type="text" placeholder="First Name" value={this.state.firstname} onChange={this.handleChange} required />
