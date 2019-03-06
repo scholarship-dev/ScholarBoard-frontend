@@ -191,4 +191,4 @@ function mapDispatchToProps() {
 };
 const SignupUser = connect(mapStateToProps, mapDispatchToProps())(Signup);
 
-export default Signup;
+export default SignupUser;
