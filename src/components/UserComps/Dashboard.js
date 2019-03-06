@@ -16,7 +16,7 @@ class Dashboard extends Component {
 
   async componentDidMount() {
     try {
-      const scholarshipArr = await axios.get('https://scholarboard-api.herokuapp.com/api/dashboard');
+      const scholarshipArr = await axios.get('https://cors.io/?https://scholarboard-api.herokuapp.com/api/scholarships');
       const { data: scholarships } = scholarshipArr;
       console.log(scholarships)
       this.setState({
