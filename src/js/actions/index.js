@@ -1,62 +1,49 @@
 // src/js/actions/index.js
 
-import { HANDLE_LOGIN, SIGNUP_USER, LOGOUT_USER, HANDLE_SETTINGS } from "../constants/action-types";
-import axios from "axios";
+import axios from 'axios';
+import {
+    HANDLE_LOGIN, SIGNUP_USER, LOGOUT_USER, HANDLE_SETTINGS
+} from '../constants/action-types';
 
-export const logoutUser = () => {
-    return { type: LOGOUT_USER }
-};
+export function logoutUser() {
+    console.log('in logoutUser');
+    return (dispatcher) => {
+        axios.delete('/api/sign-out').then(() => {
+            dispatcher(handleLogout());
+        });
+    };
+}
 
-// LOGIN ACTION 
+export const handleLogout = () => ({
+    type: LOGOUT_USER,
+});
+
+// LOGIN ACTION
 export function loginUser(loginState) {
     return (dispatcher) => {
-        axios.post(`/login`, loginState).then((res) => {
-            dispatcher(handleLogin(res.data.user, res.data.token)); // THUNKED IT!
+        axios.post('/api/sign-in', loginState).then((res) => {
+            dispatcher(handleLogin(res.data)); // THUNKED IT!
         }).catch(console.err);
     };
-};
+}
 
-export const handleLogin = (user, token) => {
-    return {
-        type: HANDLE_LOGIN,
-        user_payload: user,
-        token_payload: token
-    };
-};
+export const handleLogin = user => ({
+    type: HANDLE_LOGIN,
+    payload: user,
+});
 
-// SIGNUP USER ACTION 
+// SIGNUP USER ACTION
 export function signupUser(signupState) {
-    console.log("signup State", signupState);
     return (dispatcher) => {
-        axios.post(`/api/sign-up`, signupState).then((res) => {
-            console.log("res:", res);
-            
-            dispatcher(handleSignup(res.data.user, res.data.token));
+        axios.post('/api/sign-up', signupState).then((res) => {
+            dispatcher(handleSignup(res.data.user));
         }).catch(console.err);
     };
-};
+}
 
-export const handleSignup = (user, token) => {
-    return {
-        type: SIGNUP_USER, 
-        user_payload: user,
-        token_payload: token
-    };
-};
-
-// UPDATE SETTINGS ACTION 
-export function updateSettings(userFormState, token) {
-    return (dispatcher) => {
-        axios.put(`/settings`, {userFormState, token}).then((res) => {
-            console.log("res:", res.data.user);
-            dispatcher(handleSettings(res.data.user));
-        }).catch(console.err);
-    };
-};
-
-export const handleSettings = (user) => {
-    return {
-        type: HANDLE_SETTINGS,
-        payload: user
-    };
-};
+export const handleSignup = user => (
+    {
+        type: SIGNUP_USER,
+        payload: user,
+    }
+);

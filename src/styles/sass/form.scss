@@ -1,8 +1,9 @@
 //DONE
 .auth-page {
-  background-color: rgba(0, 0, 0, 0.1);
   padding: 0 5em;
-  height: 80vh;
+  background: linear-gradient(270deg, #00F260, #0575E6);
+  background-size: 800% 800%;
+  animation: ColorChangeBackground 10s ease infinite;
 
   //DONE:
   .form-container {
@@ -11,6 +12,7 @@
       justify-content: center;
       padding-top: 3em;
       border-radius: 5em;
+      
 
       //DONE
       form {
@@ -19,18 +21,27 @@
           background-color: white;
           padding: 1em 2em;
           min-width: 48vw;
-          height: 60vh;
+          margin-bottom: 9em;
+          border-radius: 0.2em;
+
+          form.signup {
+            height: 100%;
+            legend {
+              padding-top: -2em;
+            }
+          }
 
           //DONE
           .signup-fields {
               display: flex;
               flex-direction: column;
-              margin: 3em auto 0 auto;
+              margin: 1em auto 4em auto;
 
               //DONE
               legend {
                   text-align: center;
                   font-size: 2em;
+                  padding-bottom: 1em;
               }
 
               //DONE
@@ -84,25 +95,6 @@
             margin: 1em 0 0 0.2em;
           }
       }
-
-      .info-section {
-          width: 40vw;
-          padding: 1em 2em;
-
-          h1 {
-              font-size: 3em;
-              font-weight: bolder;
-              color: white;
-          }
-      }
-  }
-
-  .gradient {
-    background: -webkit-gradient(linear, right top, left top, from(#00F260), to(#0575E6));
-    background: linear-gradient(270deg, #00F260, #0575E6);
-    background-size: 800% 800%;
-    -webkit-animation: ColorChangeBackground 10s ease infinite;
-    animation: ColorChangeBackground 10s ease infinite;
   }
 }
 

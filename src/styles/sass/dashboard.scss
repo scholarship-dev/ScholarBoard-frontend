@@ -17,6 +17,7 @@
       }
     }
   }
+
   section.filter {
     display: flex;
     flex-direction: column;
@@ -28,6 +29,17 @@
       font-size: 1.8em;
       margin-bottom: 0.6em;
     }
+  }
+
+  section.dashboard-content {
+    background: red;
+    padding: 0 5em;
+
+    .filter {
+      display: flex;
+      flex-direction: row;
+    }
+
   }
 
   section.scholarships {
@@ -45,6 +57,4 @@
       margin:10px;
     }
   }
-
-
 }

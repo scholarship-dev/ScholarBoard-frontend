@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './js/store';
 import './styles/css/main.css';
@@ -24,13 +24,6 @@ const App = () => (
           <Route exact path="/dashboard" component={Dashboard} />
           <Route path="/" component={Footer} />
 
-          {/* TODO: Try to redirect them if the route does not exist */}
-          {/* <Route
-            path="*"
-            render={() => (
-              <Redirect to="/" />
-            )}
-          /> */}
         </div>
       </Switch>
     </Router>
