@@ -1,12 +1,10 @@
 .dashboard {
   display: flex;
-  height: 80vh;
-  background: lightgoldenrodyellow;
+
   
   nav {
-    background: lightgoldenrodyellow;
     height: 100%;
-    min-width: 16vw;
+    min-width: 11.7em;
     align-items: flex-start;
     padding: 5em 1em 0 2em;
     a {
@@ -19,25 +17,30 @@
   }
 
   section.filter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
     padding-top: 4.5em;
+    width: 100%;
+
+          text-align: center;
+
+
 
     h1 {
       font-size: 1.8em;
       margin-bottom: 0.6em;
+      margin-left: 20%;
     }
   }
 
   section.dashboard-content {
-    background: red;
     padding: 0 5em;
+    width: 100%;
 
     .filter {
       display: flex;
       flex-direction: row;
+      h1 {
+        text-align: center;
+      }
     }
 
   }
@@ -45,16 +48,32 @@
   section.scholarships {
     display: flex;
     flex-wrap: wrap;
-    background: lightcyan;
-    width: 100%;
-    justify-content: center;
     padding-top: 2em;
-  
 
     .scholarship {
       border: 1px solid black;
-      width: 20%;
-      margin:10px;
+      box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+      padding: 1.2em;
+      width: 100%;
+      margin: 1em;
+ text-align: left;
+ p{
+   line-height: 1.5;
+ }
+ p:last-child {
+        text-align: right;
+        padding-right: 2em;
+}
+      }
+      h1 {
+ 
+        margin-bottom: 1em;
+        font-size: 2em;
+      }
+      p {
+        padding-bottom: 1em;
+      }
+    
+      
     }
   }
-}

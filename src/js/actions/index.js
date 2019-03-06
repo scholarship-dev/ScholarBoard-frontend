@@ -5,6 +5,7 @@ import {
     HANDLE_LOGIN, SIGNUP_USER, LOGOUT_USER, HANDLE_SETTINGS
 } from '../constants/action-types';
 
+
 export function logoutUser() {
     console.log('in logoutUser');
     return (dispatcher) => {
