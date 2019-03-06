@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
+import { bindActionCreators } from 'redux';
 import { Redirect, Link } from 'react-router-dom';
 import { loginUser } from "../../js/actions/index";
 
@@ -81,17 +82,11 @@ class Login extends Component {
   }
 }
 
-// const mapStateToProps = (state) => {
-//   return { user: state.user };
-// };
+const mapStateToProps = null;
 
-// function mapDispatchToProps() {
-//   return {
-//     signupUser,
-//   };
-// }
+const mapDispatchToProps = (dispatch) => bindActionCreators({ loginUser }, dispatch);
 
-
-// const LoginUser = connect(mapStateToProps, mapDispatchToProps())(Login);
-
-export default Login;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Login);
