@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Scholarship from './Scholarship';
 import Typed from 'react-typed';
 import axios from 'axios';
@@ -22,22 +23,17 @@ class Dashboard extends Component {
         scholarships
       })
     }
-    catch {
+    catch (err) {
       throw new Error('YOUR GET REQUEST IS NOT WORKING')
     }
   }
 
   renderScholarships() {
     const { scholarships } = this.state;
-    return scholarships.map(scholarship => {
-      const truncatedDescription = scholarship.description.slice(20) + '...';
-      < Scholarship
-        id={scholarship._id}
-        name={scholarship.name}
-        description={scholarship.description}
-        funding={scholarship.funding}
-      />
-    })
+    if (scholarships.length === 0) {
+      return <h1 style={{ fontSize: '2em' }}>Loading Scholarships</h1>
+    }
+    return scholarships.map(scholarship => <Scholarship key={scholarship._id} name={scholarship.name} description={scholarship.description} funding={scholarship.funding} />)
   }
 
 
@@ -49,18 +45,18 @@ class Dashboard extends Component {
         <section>
           <nav>
             <ul>
-              <a href="/">
+              <Link to="/dashboard">
                 <li>Your Scholarships</li>
-              </a>
-              <a href="/applied">
+              </Link>
+              <Link to="#">
                 <li>Applied</li>
-              </a>
-              <a href="/awarded">
+              </Link>
+              <Link to="#">
                 <li>Awarded</li>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="#">
                 <li>Profile</li>
-              </a>
+              </Link>
             </ul>
           </nav>
         </section>
@@ -69,18 +65,7 @@ class Dashboard extends Component {
         <section className="dashboard-content">
 
           <section className="filter">
-            <h1 className="db-title"><Typed strings={['Scholarships For You, [Name Here]']} typeSpeed={16} /></h1>
-            <form className="sort-tool btn-shadow">
-              <input placeholder="Search Term"></input>
-              <select name="Filters">
-                <option value="1">Filter #1</option>
-                <option value="2">Filter #2</option>
-                <option value="3">Filter #3</option>
-                <option value="4">Filter #4</option>
-              </select>
-
-              <button className="btn">Search</button>
-            </form>
+            <h1 ><Typed strings={['Scholarships For You, Annie']} typeSpeed={16} /></h1>
           </section>
 
           <section className="scholarships">
