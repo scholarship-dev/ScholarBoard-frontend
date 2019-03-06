@@ -39,6 +39,11 @@
       background: no-repeat url("../../images/home-page-pics/apply.jpg");
       background-size: cover;
       background-position: -20px; }
+    .Features .feature-content .dashboard {
+      background: no-repeat url("../../images/home-page-pics/dashboard.jpg");
+      background-size: cover;
+      background-position: -20px;
+      background-size: 335px; }
     .Features .feature-content .celebrate {
       background: no-repeat url("../../images/home-page-pics/party.jpg");
       background-size: cover;

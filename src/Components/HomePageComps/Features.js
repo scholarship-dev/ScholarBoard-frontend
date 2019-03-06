@@ -15,8 +15,8 @@ const Features = () => (
         </section>
       </div>
 
-      <div className="feature-step apply">
-        <section className="feature-step-content">
+      <div className="feature-step dashboard">
+        <section className="feature-step-content d">
           <Feature
             step="Step 2. Your Dashboard"
             description="You can view all the scholarships that
