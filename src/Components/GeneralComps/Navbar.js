@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../js/actions';
-import logo from '../../images/logo2black.png';
+import logo from '../../images/home-page-pics/header-logo.png';
 
 
 const Navbar = ({ user, logoutUser }) => {

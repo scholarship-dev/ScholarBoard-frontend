@@ -1,6 +1,8 @@
 .auth-page {
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 0 5em; }
+  padding: 0 5em;
+  background: linear-gradient(270deg, #00F260, #0575E6);
+  background-size: 800% 800%;
+  animation: ColorChangeBackground 10s ease infinite; }
   .auth-page .form-container {
     display: flex;
     flex-direction: row;
@@ -13,7 +15,8 @@
       background-color: white;
       padding: 1em 2em;
       min-width: 48vw;
-      margin-bottom: 9em; }
+      margin-bottom: 9em;
+      border-radius: 0.2em; }
       .auth-page .form-container form form.signup {
         height: 100%; }
         .auth-page .form-container form form.signup legend {
@@ -62,12 +65,6 @@
       .auth-page .form-container form a {
         color: black;
         margin: 1em 0 0 0.2em; }
-  .auth-page .gradient {
-    background: -webkit-gradient(linear, right top, left top, from(#00F260), to(#0575E6));
-    background: linear-gradient(270deg, #00F260, #0575E6);
-    background-size: 800% 800%;
-    -webkit-animation: ColorChangeBackground 10s ease infinite;
-    animation: ColorChangeBackground 10s ease infinite; }
 
 @-webkit-keyframes ColorChangeBackground {
   0% {

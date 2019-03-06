@@ -46,7 +46,7 @@ class Signup extends Component {
           >
 
             <div className="signup-fields">
-              <legend>Create Account</legend>
+              <legend>Create An Account</legend>
 
               <label
                 htmlFor="firstname">
@@ -57,7 +57,6 @@ class Signup extends Component {
                 name="firstname"
                 id="firstname"
                 type="text"
-                placeholder="First Name"
                 value={this.state.firstname}
                 onChange={this.handleChange}
                 required
@@ -72,7 +71,6 @@ class Signup extends Component {
                 name="lastname"
                 id="lastname"
                 type="text"
-                placeholder="Last Name"
                 value={this.state.lastname}
                 onChange={this.handleChange}
                 required
@@ -87,7 +85,6 @@ class Signup extends Component {
                 name="email"
                 id="email"
                 type="text"
-                placeholder="Email"
                 value={this.state.email}
                 onChange={this.handleChange}
                 required
@@ -102,7 +99,6 @@ class Signup extends Component {
                 name="gpa"
                 id="gpa"
                 type="number"
-                placeholder="GPA"
                 value={this.state.gpa}
                 onChange={this.handleChange}
                 required
@@ -117,7 +113,6 @@ class Signup extends Component {
                 name="ethnicity"
                 id="ethnicity"
                 type="text"
-                placeholder="Ethnicity"
                 value={this.state.ethnicity}
                 onChange={this.handleChange}
                 required
@@ -132,7 +127,6 @@ class Signup extends Component {
                 name="educationLevel"
                 id="educationLevel"
                 type="text"
-                placeholder="Education Level"
                 value={this.state.educationLevel}
                 onChange={this.handleChange}
                 required
@@ -147,7 +141,6 @@ class Signup extends Component {
                 name="grade"
                 id="grade"
                 type="text"
-                placeholder="Grade"
                 value={this.state.grade}
                 onChange={this.handleChange}
                 required
@@ -164,7 +157,6 @@ class Signup extends Component {
                 type="password"
                 value={this.state.password}
                 onChange={this.handleChange}
-                placeholder="Password"
                 required
               />
 
