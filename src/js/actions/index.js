@@ -9,7 +9,8 @@ import {
 export function logoutUser() {
     console.log('in logoutUser');
     return (dispatcher) => {
-        axios.delete('/api/sign-out').then(() => {
+                      https://cors.io/?https://scholarboard-api.herokuapp.com
+        axios.delete('https://scholarboard-api.herokuapp.com/api/sign-out').then(() => {
             dispatcher(handleLogout());
         });
     };
@@ -22,7 +23,7 @@ export const handleLogout = () => ({
 // LOGIN ACTION
 export function loginUser(loginState) {
     return (dispatcher) => {
-        axios.post('/api/sign-in', loginState).then((res) => {
+        axios.post('https://scholarboard-api.herokuapp.com/api/sign-in', loginState).then((res) => {
             dispatcher(handleLogin(res.data)); // THUNKED IT!
         }).catch(console.err);
     };
@@ -36,7 +37,7 @@ export const handleLogin = user => ({
 // SIGNUP USER ACTION
 export function signupUser(signupState) {
     return (dispatcher) => {
-        axios.post('/api/sign-up', signupState).then((res) => {
+        axios.post('https://scholarboard-api.herokuapp.com/api/sign-up', signupState).then((res) => {
             dispatcher(handleSignup(res.data.user));
         }).catch(console.err);
     };
