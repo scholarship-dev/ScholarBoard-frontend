@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './js/store';
-import './Styles/css/main.css';
+import './styles/css/main.css';
 import Navbar from './Components/GeneralComps/Navbar';
 import Home from './Components/HomePageComps/Home';
 import Login from './Components/AuthPageComps/Login';
