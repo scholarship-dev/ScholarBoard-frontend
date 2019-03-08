@@ -36,7 +36,7 @@ export const handleLogin = user => ({
 // SIGNUP USER ACTION
 export function signupUser(signupState) {
     return (dispatcher) => {
-        axios.get('https://scholarboard-api.herokuapp.com/api/users/dashboard', signupState).then((res) => {
+        axios.post('https://scholarboard-api.herokuapp.com/api/sign-up', signupState).then((res) => {
             dispatcher(handleSignup(res.data.user));
         }).catch(console.err);
     };
