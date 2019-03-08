@@ -16,14 +16,16 @@ class Dashboard extends Component {
 
   async componentDidMount() {
     try {
-      const scholarshipArr = await axios.get('https://scholarboard-api.herokuapp.com/api/dashboard');
-      const { data: scholarships } = scholarshipArr;
+      const res = await axios.get('/api/scholarships');
+      // const { scholarships } = res.data;
+      const scholarships = res.data;
       console.log(scholarships)
       this.setState({
         scholarships
       })
     }
     catch (err) {
+      console.log(err)
       throw new Error('YOUR GET REQUEST IS NOT WORKING')
     }
   }

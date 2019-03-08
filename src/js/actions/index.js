@@ -7,9 +7,9 @@ import {
 
 
 export function logoutUser() {
-    console.log('in logoutUser');
+    console.log('in logout User');
     return (dispatcher) => {
-        axios.delete('https://scholarboard-api.herokuapp.com/api/sign-out').then(() => {
+        axios.delete('/api/sign-out').then(() => {
             dispatcher(handleLogout());
         });
     };
@@ -35,10 +35,13 @@ export const handleLogin = user => ({
 
 // SIGNUP USER ACTION
 export function signupUser(signupState) {
-    return (dispatcher) => {
-        axios.post('https://scholarboard-api.herokuapp.com/api/sign-up', signupState).then((res) => {
-            dispatcher(handleSignup(res.data.user));
-        }).catch(console.err);
+    return (dispatch) => {
+        console.log('HELLO?!')
+        axios.post('/api/sign-up', signupState)
+            .then((res) => {
+                dispatch(handleSignup(res.data));
+            })
+            .catch(console.err);
     };
 }
 

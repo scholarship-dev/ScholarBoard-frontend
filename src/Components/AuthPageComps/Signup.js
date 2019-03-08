@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
-import { signupUser } from '../../js/actions/index';
+import { signupUser } from '../../js/actions';
 
 class Signup extends Component {
   constructor(props) {
@@ -27,9 +28,10 @@ class Signup extends Component {
     this.setState({ [event.target.id]: event.target.value });
   };
 
-  handleSubmit = event => {
+  handleSubmit(event) {
     event.preventDefault();
     this.props.signupUser(this.state);
+    this.props.history.push('/dashboard')
   };
 
   render() {
@@ -42,7 +44,7 @@ class Signup extends Component {
 
           <form
             className="signup-form"
-            onSubmit={this.handleSubmit}
+            onSubmit={this.handleSubmit.bind(this)}
           >
 
             <div className="signup-fields">
@@ -163,7 +165,8 @@ class Signup extends Component {
               <button
                 type="submit">
                 Signup
-              </button>
+              </button >
+
               <p>
                 Already have an account?
 
@@ -185,11 +188,10 @@ const mapStateToProps = state => {
   return { user: state.user };
 };
 
-function mapDispatchToProps() {
-  return {
-    signupUser
-  };
-};
-const SignupUser = connect(mapStateToProps, mapDispatchToProps())(Signup);
+console.dir(signupUser)
+
+const mapDispatchToProps = (dispatch) => bindActionCreators({ signupUser }, dispatch);
+
+const SignupUser = connect(mapStateToProps, mapDispatchToProps)(Signup);
 
 export default SignupUser;

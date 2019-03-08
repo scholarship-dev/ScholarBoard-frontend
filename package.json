@@ -39,5 +39,5 @@
     "eslint-plugin-react": "^7.12.4",
     "http-proxy-middleware": "^0.19.1"
   },
-  "proxy": "https://scholar-board-api.herokuapp.com"
+  "proxy": "https://scholarboard-api.herokuapp.com"
 }
