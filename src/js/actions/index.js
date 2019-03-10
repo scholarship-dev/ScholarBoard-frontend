@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 import {
-    HANDLE_LOGIN, SIGNUP_USER, LOGOUT_USER, HANDLE_SETTINGS
+    HANDLE_LOGIN, SIGNUP_USER, LOGOUT_USER
 } from '../constants/action-types';
 
 
@@ -22,7 +22,7 @@ export const handleLogout = () => ({
 // LOGIN ACTION
 export function loginUser(loginState) {
     return (dispatcher) => {
-        axios.post('https://scholarboard-api.herokuapp.com/api/sign-in', loginState).then((res) => {
+        axios.post('/api/sign-in', loginState).then((res) => {
             dispatcher(handleLogin(res.data)); // THUNKED IT!
         }).catch(console.err);
     };
@@ -36,7 +36,6 @@ export const handleLogin = user => ({
 // SIGNUP USER ACTION
 export function signupUser(signupState) {
     return (dispatch) => {
-        console.log('HELLO?!')
         axios.post('/api/sign-up', signupState)
             .then((res) => {
                 dispatch(handleSignup(res.data));

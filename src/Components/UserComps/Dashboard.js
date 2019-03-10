@@ -16,7 +16,7 @@ class Dashboard extends Component {
 
   async componentDidMount() {
     try {
-      const res = await axios.get('/api/scholarships');
+      const res = await axios.get('https://scholarboard-api.herokuapp.com/api/scholarships');
       // const { scholarships } = res.data;
       const scholarships = res.data;
       console.log(scholarships)
