@@ -1,0 +1,43 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 1em;
+  -webkit-box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+          box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-right {
+  margin-left: auto;
+}
+
+nav img {
+  width: 50%;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 2em;
+  color: black;
+  font-size: 1.2em;
+}
+
+nav .nav-right a {
+  padding: 0.4em;
+}
+
+nav .nav-right a:hover {
+  background: #2196F3;
+  border-radius: 0.2em;
+  color: white;
+}
+
+nav a.active {
+  background: #2196F3;
+  border-radius: 0.2em;
+  color: white;
+}
+/*# sourceMappingURL=nav.css.map */
