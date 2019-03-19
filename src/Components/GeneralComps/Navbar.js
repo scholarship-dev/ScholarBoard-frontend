@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { logoutUser } from '../../js/actions';
 import logo from '../../images/home-page-pics/header-logo.png';
 
 const Navbar = ({ user, logoutUser }) => {
@@ -53,12 +51,5 @@ const Navbar = ({ user, logoutUser }) => {
 };
 
 
-// const mapStateToProps = state => ({ user: state.user });
-// function mapDispatchToProps() {
-//   return {
-//     logoutUser,
-//   };
-// }
-// const UserNavbar = connect(mapStateToProps, mapDispatchToProps())(Navbar);
 
 export default Navbar;
