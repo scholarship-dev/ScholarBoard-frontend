@@ -4,13 +4,14 @@
   background: linear-gradient(270deg, #00F260, #0575E6);
   background-size: 800% 800%;
   animation: ColorChangeBackground 10s ease infinite;
+  height: 100%;
 
   //DONE:
   .form-container {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      padding-top: 3em;
+      padding-top: 6em;
       border-radius: 5em;
       
 
