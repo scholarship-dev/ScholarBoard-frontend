@@ -1,1 +1,0 @@
-Tell backend to send the JWT

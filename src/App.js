@@ -13,19 +13,15 @@ import Footer from './Components/GeneralComps/Footer';
 const App = () => (
   <Provider store={store}>
     <Router>
-      <Switch>
-        <div className="App">
+      <>
+        <Route path="/" component={Navbar} />
+        <Route path="/" exact component={Home} />
+        <Route exact path="/login" component={Login} />
 
-          <Route path="/" component={Navbar} />
-          <Route path="/" exact component={Home} />
-          <Route exact path="/login" component={Login} />
-
-          <Route exact path="/signup" component={Signup} />
-          <Route exact path="/dashboard" component={Dashboard} />
-          <Route path="/" component={Footer} />
-
-        </div>
-      </Switch>
+        <Route exact path="/signup" component={Signup} />
+        <Route exact path="/dashboard" component={Dashboard} />
+        <Route path="/" component={Footer} />
+      </>
     </Router>
   </Provider>
 );
