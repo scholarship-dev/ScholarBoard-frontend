@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './js/store';
 import './styles/css/main.css';
-import Navbar from './Components/GeneralComps/Navbar';
-import Home from './Components/HomePageComps/Home';
-import Login from './Components/AuthPageComps/Login';
-import Signup from './Components/AuthPageComps/Signup';
-import Dashboard from './Components/UserComps/Dashboard';
-import Footer from './Components/GeneralComps/Footer';
+import Navbar from './components/GeneralComps/Navbar';
+import Home from './components/HomePageComps/Home';
+import Login from './components/AuthPageComps/Login';
+import Signup from './components/AuthPageComps/Signup';
+import Dashboard from './components/UserComps/Dashboard';
+import Footer from './components/GeneralComps/Footer';
 
 const App = () => (
   <Provider store={store}>
