@@ -111,7 +111,7 @@ class Signup extends Component {
               <input
                 name="gpa"
                 id="gpa"
-                type="number"
+                type="text"
                 value={this.state.gpa}
                 onChange={this.handleChange}
                 required
@@ -182,7 +182,7 @@ class Signup extends Component {
                   required
                   value={this.state.educationLevel}
                   onChange={this.handleChange}
-                  name="educationLevel"
+                  id="educationLevel"
                 >
                   <option value="highschool">Highschool</option>
                   <option value="college">College</option>

@@ -28,7 +28,7 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="auth-page">
+      <div className="auth-page ">
 
         <section
           className="form-container"
@@ -36,14 +36,15 @@ class Login extends Component {
 
           <form
             onSubmit={this.handleSubmit}
+            className="login"
           >
 
-            <div className="signup-fields">
+            <div className="login-fields">
               <legend>Login</legend>
 
               <label htmlFor="email">
                 Email
-                  </label>
+                </label>
 
               <input
                 ref={this.inputRef}
@@ -86,7 +87,6 @@ class Login extends Component {
     );
   }
 }
-
 
 export default connect(
   null,

@@ -202,19 +202,18 @@ footer {
 
 .auth-page {
   padding: 0 5em;
-  background: linear-gradient(270deg, #00F260, #0575E6);
+  background: black;
   background-size: 800% 800%;
-  animation: ColorChangeBackground 10s ease infinite;
   height: 100%; }
   .auth-page .form-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-top: 6em;
-    border-radius: 5em; }
+    border-radius: 5em;
+    height: 100%; }
     .auth-page .form-container form {
       display: flex;
-      flex-direction: column;
       background-color: white;
       padding: 1em 2em;
       min-width: 48vw;
@@ -224,20 +223,24 @@ footer {
         height: 100%; }
         .auth-page .form-container form form.signup legend {
           padding-top: -2em; }
-      .auth-page .form-container form .signup-fields {
+      .auth-page .form-container form .signup-fields,
+      .auth-page .form-container form .login-fields {
         display: flex;
         flex-direction: column;
         margin: 1em auto 4em auto; }
-        .auth-page .form-container form .signup-fields legend {
+        .auth-page .form-container form .signup-fields legend,
+        .auth-page .form-container form .login-fields legend {
           text-align: center;
           font-size: 2em;
           padding-bottom: 1em; }
-        .auth-page .form-container form .signup-fields label {
+        .auth-page .form-container form .signup-fields label,
+        .auth-page .form-container form .login-fields label {
           margin: 1em 0em .3em .3em;
           color: gray;
           font-size: .8em;
           font-weight: bolder; }
-        .auth-page .form-container form .signup-fields input {
+        .auth-page .form-container form .signup-fields input,
+        .auth-page .form-container form .login-fields input {
           border-width: 0 0 2px;
           border-color: lightgray;
           color: black;
@@ -245,14 +248,17 @@ footer {
           font-size: 1em;
           margin-bottom: 1.5em;
           width: 20em; }
-        .auth-page .form-container form .signup-fields select {
+        .auth-page .form-container form .signup-fields select,
+        .auth-page .form-container form .login-fields select {
           margin: 1em 0;
           width: 30em; }
-        .auth-page .form-container form .signup-fields input:focus {
+        .auth-page .form-container form .signup-fields input:focus,
+        .auth-page .form-container form .login-fields input:focus {
           outline: none;
           border-color: darkblue; }
-        .auth-page .form-container form .signup-fields button {
-          margin-top: 2em;
+        .auth-page .form-container form .signup-fields button,
+        .auth-page .form-container form .login-fields button {
+          margin: 2em 0;
           background-color: black;
           color: white;
           position: relative;
@@ -267,29 +273,14 @@ footer {
           border: none;
           border-radius: 4px;
           -webkit-appearance: none; }
-          .auth-page .form-container form .signup-fields button:hover {
+          .auth-page .form-container form .signup-fields button:hover,
+          .auth-page .form-container form .login-fields button:hover {
             cursor: pointer;
             box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3); }
-      .auth-page .form-container form p {
-        padding-top: 1em; }
       .auth-page .form-container form a {
         color: black;
         margin: 1em 0 0 0.2em; }
 
-@-webkit-keyframes ColorChangeBackground {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-@keyframes ColorChangeBackground {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
 .dashboard {
   display: flex; }
   .dashboard nav {
