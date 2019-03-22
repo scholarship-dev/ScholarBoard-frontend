@@ -60,7 +60,13 @@
                   color: black;
                   padding: 5px 5px;
                   font-size: 1em;
-                  min-width: 20vw;
+                  margin-bottom: 1.5em;
+                  width: 20em;
+              }
+
+              select {
+                margin: 1em 0;
+                width: 30em;
               }
 
               //DONE
@@ -71,7 +77,7 @@
 
               //DONE
               button {
-                  margin-top: 1em;
+                margin-top: 2em;
                   background-color: black;
                   color: white;
                   position: relative;
@@ -86,6 +92,11 @@
                   border: none;
                   border-radius: 4px;
                 -webkit-appearance: none;
+
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+                }
               }
           }
           p {

@@ -167,28 +167,37 @@ class Signup extends Component {
                 Education Level
               </label>
 
-              <input
-                name="educationLevel"
-                id="educationLevel"
-                type="text"
-                value={this.state.educationLevel}
-                onChange={this.handleChange}
-                required
-              />
+              <fieldset>
+                <select
+                  required
+                  value={this.state.educationLevel}
+                  onChange={this.handleChange}
+                  name="educationLevel"
+                >
+                  <option value="highschool">Highschool</option>
+                  <option value="college">College</option>
+                </select>
+              </fieldset>
 
               <label
                 htmlFor="grade">
                 Grade
               </label>
 
-              <input
-                name="grade"
-                id="grade"
-                type="text"
-                value={this.state.grade}
-                onChange={this.handleChange}
-                required
-              />
+
+              <fieldset>
+                <
+                  select
+                  required
+                  value={this.state.grade}
+                  onChange={this.handleChange}
+                  name="grade"
+                >
+
+                  <option value="junior">Junior</option>
+                  <option value="senior">Senior</option>
+                </select>
+              </fieldset>
 
               <label
                 htmlFor="password">
@@ -207,7 +216,7 @@ class Signup extends Component {
               <button
                 type="submit">
                 Signup
-              </button >
+              </button>
 
               <p>
                 Already have an account?

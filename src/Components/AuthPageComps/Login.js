@@ -12,11 +12,16 @@ class Login extends Component {
       email: '',
       password: ''
     };
+    this.inputRef = React.createRef();
   };
 
   handleChange = event => {
     this.setState({ [event.target.id]: event.target.value });
   };
+
+  componentDidMount() {
+    this.inputRef.current.focus();
+  }
 
   handleSubmit = event => {
     event.preventDefault();
@@ -43,11 +48,13 @@ class Login extends Component {
                   </label>
 
               <input
+                ref={this.inputRef}
                 name="email"
                 id="email" type="text"
                 value={this.state.email}
                 onChange={this.handleChange}
                 required
+
               />
 
               <label htmlFor="password">
