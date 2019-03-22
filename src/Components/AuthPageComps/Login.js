@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
-import { loginUser } from "../../js/actions/index";
 
 class Login extends Component {
   constructor(props) {
@@ -89,11 +87,7 @@ class Login extends Component {
   }
 }
 
-const mapStateToProps = null;
-
-const mapDispatchToProps = (dispatch) => bindActionCreators({ loginUser }, dispatch);
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+  null,
 )(Login);

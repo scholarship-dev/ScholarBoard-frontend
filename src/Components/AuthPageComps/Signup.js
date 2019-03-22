@@ -20,10 +20,6 @@ class Signup extends Component {
     };
   };
 
-  // validateForm() {
-  //   return this.state.firstName.length > 0 &&  this.state.lastName.length > 0 && this.state.email.length > 0 && this.state.password.length > 0;
-  // };
-
   handleChange = event => {
     this.setState({ [event.target.id]: event.target.value });
   };
@@ -94,6 +90,20 @@ class Signup extends Component {
               />
 
               <label
+                htmlFor="password">
+                Password
+              </label>
+
+              <input
+                name="password"
+                id="password"
+                type="password"
+                value={this.state.password}
+                onChange={this.handleChange}
+                required
+              />
+
+              <label
                 htmlFor="gpa">
                 GPA
               </label>
@@ -122,7 +132,7 @@ class Signup extends Component {
                   value={this.state.ethnicity}
                 >
 
-                  <option selected="selected" disabled="disabled">-- select one --</option>
+                  <option disabled="disabled">-- Select your ethnicity --</option>
                   <optgroup label="White">
                     <option value="White English">English</option>
                     <option value="White Welsh">Welsh</option>
@@ -199,20 +209,6 @@ class Signup extends Component {
                 </select>
               </fieldset>
 
-              <label
-                htmlFor="password">
-                Password
-              </label>
-
-              <input
-                name="password"
-                id="password"
-                type="password"
-                value={this.state.password}
-                onChange={this.handleChange}
-                required
-              />
-
               <button
                 type="submit">
                 Signup
@@ -239,7 +235,6 @@ const mapStateToProps = state => {
   return { user: state.user };
 };
 
-console.dir(signupUser)
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({ signupUser }, dispatch);
 

@@ -1,5 +1,5 @@
 import {
-  HANDLE_LOGIN, SIGNUP_USER, LOGOUT_USER, HANDLE_SETTINGS,
+  SIGNUP_USER,
 }
   from '../constants/action-types';
 
