@@ -14,7 +14,7 @@ const Header = () => (
             </h1>
 
             <p>
-                ScholarBoard allows students to fill out a common application that can be used to apply to dozens of scholarships relevent to them with a click of a button.
+                ScholarBoard allows students to fill out a common application that can be used to apply to dozens of scholarships relevant to them with a click of a button.
             </p>
 
             <Link to="/signup">

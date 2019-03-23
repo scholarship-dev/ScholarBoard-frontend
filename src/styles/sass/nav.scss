@@ -5,10 +5,16 @@ nav {
   box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1em);
   .nav-right {
     margin-left: auto;
+
+    i {
+      display: none;
+    }
+
   }
   img {
     width: 50%;
   }
+
   a {
     text-decoration: none;
     margin-left: 2em;
@@ -30,4 +36,27 @@ nav {
     border-radius: 0.2em;
     color: white;
   }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  nav {
+
+  a[href="/login"],
+  a[href="/signup"] {
+    display: none;
+  }
+
+  img {
+    height: 25%;
+    margin-left: -2.3em;
+  }
+  
+  i {
+    display: block;
+  }
+
+}
+
 }

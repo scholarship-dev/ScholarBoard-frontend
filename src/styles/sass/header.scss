@@ -2,12 +2,13 @@ header {
   height: 70vh;
   display: flex;
   padding: 5em 4em;
-
   justify-content: space-between;
+
   .cta-content {
     display: flex;
     flex-direction: column;
     width: 75%;
+
     h1 {
       font-size: calc(0.2em + 5vw);
       margin-bottom: 0.2em;
@@ -45,6 +46,7 @@ header {
     }
   }
 }
+
 
 
 
