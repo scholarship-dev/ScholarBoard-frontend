@@ -21,6 +21,7 @@ header {
     line-height: 1.45;
     padding: 0.65em 0em;
   }
+
   }
   img {
     height: 75%;
@@ -48,5 +49,14 @@ header {
 }
 
 
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+
+    p {
+      display:none;
+    }
+  }
+}
 
 

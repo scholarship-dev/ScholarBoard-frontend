@@ -17,7 +17,7 @@ const Navbar = () => (
     <div className="nav-right">
       <Link to="/login">Login</Link>
       <Link to="/signup">Signup</Link>
-      <i class="fas fa-bars"></i></div>
+      <i className="fas fa-bars"></i></div>
 
   </nav>
 );

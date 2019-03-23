@@ -39,22 +39,24 @@ nav {
 }
 
 
-
 @media screen and (max-width: 600px) {
-  nav {
 
+  nav {
+    background: #7EADF1;
   a[href="/login"],
   a[href="/signup"] {
     display: none;
-  }
+  };
+
 
   img {
     height: 25%;
     margin-left: -2.3em;
   }
-  
-  i {
+
+  i.fa.fa-bars {
     display: block;
+    background: red;
   }
 
 }

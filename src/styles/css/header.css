@@ -37,4 +37,10 @@ header {
     header button:hover {
       box-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.1); }
 
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column; }
+    header p {
+      display: none; } }
+
 /*# sourceMappingURL=header.css.map */

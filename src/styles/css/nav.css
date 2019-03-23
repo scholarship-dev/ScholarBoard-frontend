@@ -26,13 +26,16 @@ nav {
     color: white; }
 
 @media screen and (max-width: 600px) {
-  nav a[href="/login"],
-  nav a[href="/signup"] {
-    display: none; }
-  nav img {
-    height: 25%;
-    margin-left: -2.3em; }
-  nav i {
-    display: block; } }
+  nav {
+    background: #7EADF1; }
+    nav a[href="/login"],
+    nav a[href="/signup"] {
+      display: none; }
+    nav img {
+      height: 25%;
+      margin-left: -2.3em; }
+    nav i.fa.fa-bars {
+      display: block;
+      background: red; } }
 
 /*# sourceMappingURL=nav.css.map */

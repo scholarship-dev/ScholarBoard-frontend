@@ -1,5 +1,5 @@
 .Team {
-  height: 90vh;
+  height: 100%;
   
   .team-section {
     display: flex;
@@ -17,5 +17,20 @@
   }
   p {
     margin-top:10px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .Team {
+    height: 100%;
+  }
+  .team-section {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+    p, img {
+      margin: 1em 0;
+    }
   }
 }

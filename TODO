@@ -1,6 +1,25 @@
 Landing Page:
-  ☐ Make it responsive.
-  ☐ Verify the team is the team.
+  Responsive:
+
+     Nav:
+      ☐ Figure out the font awesome buttons aren't showing up.
+      ☐ Add an onclick to make the login and signup appear.
+
+    Header:
+      ☐ Change the position of the picture to be inbetween the words and CTA button.
+
+    How it works:
+      ☐ Flex-Wrap and make it pretty.
+      
+    Team: 
+    
+      ☐ Flex-Wrap and make it pretty.
+    Footer:
+      ☐ Put new content there.
+      
+  Normal:
+    ☐ Verify the team is the team.
+    
 
 Sign-Up Page:
   ☐ Add personality?

@@ -49,4 +49,12 @@
       background-size: cover;
       background-position: -20px; }
 
+@media screen and (max-width: 800px) {
+  .Features {
+    height: 100%; }
+
+  .feature-content {
+    flex-direction: column;
+    align-items: center; } }
+
 /*# sourceMappingURL=features.css.map */
