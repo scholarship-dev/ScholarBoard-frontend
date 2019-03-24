@@ -37,12 +37,13 @@ nav {
     nav h1 {
       text-align: center; }
     nav img {
-      height: 25%;
       margin-left: -2.3em; }
     nav img.header-logo {
       display: none; }
     nav img.white-header-logo {
-      display: block; }
+      display: block;
+      height: 45%;
+      width: 50%; }
     nav i.fas.fa-bars {
       display: block;
       color: white;

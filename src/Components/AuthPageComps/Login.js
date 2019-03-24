@@ -30,10 +30,7 @@ class Login extends Component {
     return (
       <div className="auth-page">
 
-        <section
-          className="form-container"
-        >
-
+        <section className="form-container">
           <form
             onSubmit={this.handleSubmit}
             className="login"
@@ -80,12 +77,14 @@ class Login extends Component {
               <Link to="/signup">
                 Sign up here
                   </Link>
-
             </div>
-
           </form>
+          <div>
+
+          </div>
         </section>
-      </div >
+
+      </div>
     );
   }
 }

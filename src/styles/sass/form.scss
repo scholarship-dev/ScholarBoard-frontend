@@ -1,5 +1,6 @@
 .auth-page {
-  background: black;
+    background: rgba(121, 169, 248, 0.08);
+
 
   .form-container {
       display: flex;
@@ -14,6 +15,7 @@
           min-width: 48vw;
           margin-bottom: 9em;
           border-radius: 0.3em;
+          box-shadow: 0.2em 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
     }
 
           //DONE
@@ -40,7 +42,7 @@
 
     label {
         margin: 1em 0em .3em .3em;
-        color: gray;
+        color: rgb(44, 43, 43);
         font-size: 1em;
         font-weight: bolder;
     }
@@ -86,6 +88,18 @@
     }
  
 }
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 
 

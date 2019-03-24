@@ -93,12 +93,13 @@ nav {
     nav h1 {
       text-align: center; }
     nav img {
-      height: 25%;
       margin-left: -2.3em; }
     nav img.header-logo {
       display: none; }
     nav img.white-header-logo {
-      display: block; }
+      display: block;
+      height: 45%;
+      width: 50%; }
     nav i.fas.fa-bars {
       display: block;
       color: white;
@@ -257,7 +258,7 @@ footer {
     color: white; }
 
 .auth-page {
-  background: black; }
+  background: rgba(121, 169, 248, 0.08); }
   .auth-page .form-container {
     display: flex;
     justify-content: center;
@@ -268,7 +269,8 @@ footer {
       padding: 1em 2em;
       min-width: 48vw;
       margin-bottom: 9em;
-      border-radius: 0.3em; }
+      border-radius: 0.3em;
+      box-shadow: 0.2em 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2); }
     .auth-page .form-container a {
       color: black;
       margin: 1em 0 0 0.2em; }
@@ -286,7 +288,7 @@ footer {
   .signup-fields label,
   .login-fields label {
     margin: 1em 0em .3em .3em;
-    color: gray;
+    color: #2c2b2b;
     font-size: 1em;
     font-weight: bolder; }
   .signup-fields p, .signup-fields a,
@@ -326,6 +328,13 @@ footer {
       cursor: pointer;
       box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3); }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 @media screen and (max-width: 800px) {
   .form-container {
     padding: 0 1em; }
