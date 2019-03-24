@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../images/home-page-pics/header-logo.png';
 import whiteLogo from '../../images/home-page-pics/white-header-logo.png';
 
@@ -20,8 +20,8 @@ const Navbar = () => (
 
     <div className="nav-right">
 
-      <Link to="/login">Login</Link>
-      <Link to="/signup">Signup</Link>
+      <NavLink to="/login">Login</NavLink>
+      <NavLink to="/signup">Signup</NavLink>
 
       <i className="fas fa-bars"></i></div>
 
