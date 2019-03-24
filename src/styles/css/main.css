@@ -373,6 +373,7 @@ section.dashboard-content {
   width: 100%;
   padding-top: 5em; }
   section.dashboard-content section.filter h1 {
-    font-size: 1.5em; }
+    font-size: 1.9em;
+    font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
