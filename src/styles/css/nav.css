@@ -9,6 +9,8 @@ nav {
       display: none; }
   nav img {
     width: 50%; }
+  nav img.white-header-logo {
+    display: none; }
   nav a {
     text-decoration: none;
     margin-left: 2em;
@@ -27,15 +29,23 @@ nav {
 
 @media screen and (max-width: 800px) {
   nav {
-    background: #332b8c; }
+    background: #332b8c;
+    padding: 1em 2em; }
     nav a[href="/login"],
     nav a[href="/signup"] {
       display: none; }
+    nav h1 {
+      text-align: center; }
     nav img {
       height: 25%;
       margin-left: -2.3em; }
-    nav i.fa.fa-bars {
+    nav img.header-logo {
+      display: none; }
+    nav img.white-header-logo {
+      display: block; }
+    nav i.fas.fa-bars {
       display: block;
-      background: red; } }
+      color: white;
+      font-size: 2em; } }
 
 /*# sourceMappingURL=nav.css.map */

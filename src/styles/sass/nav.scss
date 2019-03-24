@@ -14,6 +14,9 @@ nav {
   img {
     width: 50%;
   }
+  img.white-header-logo {
+    display: none;
+  }
 
   a {
     text-decoration: none;
@@ -38,27 +41,41 @@ nav {
   }
 }
 
-
 @media screen and (max-width: 800px) {
 
   nav {
     background: #332b8c;
+    padding: 1em 2em;
   a[href="/login"],
   a[href="/signup"] {
     display: none;
   };
 
+  h1 {
+    text-align: center;
+
+  }
 
   img {
     height: 25%;
     margin-left: -2.3em;
   }
 
-  i.fa.fa-bars {
-    display: block;
-    background: red;
+  img.header-logo {
+    display: none;
   }
 
+  img.white-header-logo {
+    display: block;
+  }
+
+
+
+  i.fas.fa-bars {
+    display: block;
+    color: white;
+    font-size: 2em;
+  }
 }
 
 }
