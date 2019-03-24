@@ -27,13 +27,15 @@
 
     .team-section {
     flex-direction: column;
-    padding: 0px;
+    padding-bottom: 15em;
     align-items: center;
+    p {
+      font-size: 1.15em;
+    }
 
     p, img {
-      margin: 1em 0;
+      margin: 2em 0;
     }
   }
-  }
-
+}
 }

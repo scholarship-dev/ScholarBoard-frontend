@@ -19,9 +19,11 @@
     height: 100%; }
     .Team .team-section {
       flex-direction: column;
-      padding: 0px;
+      padding-bottom: 15em;
       align-items: center; }
+      .Team .team-section p {
+        font-size: 1.15em; }
       .Team .team-section p, .Team .team-section img {
-        margin: 1em 0; } }
+        margin: 2em 0; } }
 
 /*# sourceMappingURL=team.css.map */
