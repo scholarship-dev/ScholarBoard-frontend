@@ -14,7 +14,7 @@ const App = () => (
     <Provider store={store}>
         <Router>
             <>
-                {/* <Route path="/" component={Navbar} /> */}
+                <Route path="/" component={Navbar} />
                 <Route path="/" exact component={Home} />
                 <Route exact path="/login" component={Login} />
 

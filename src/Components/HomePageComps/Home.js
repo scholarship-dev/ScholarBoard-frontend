@@ -5,7 +5,7 @@ import Team from './Team';
 
 const Home = () => (
   <div>
-    {/* <Header /> */}
+    <Header />
     <Features />
     <Team />
   </div>
