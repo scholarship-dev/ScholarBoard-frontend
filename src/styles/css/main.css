@@ -138,7 +138,6 @@ header {
       display: none; } }
 section.feature-section {
   display: flex;
-  align-items: center;
   width: 100%; }
   section.feature-section img {
     height: 20em;
@@ -147,7 +146,19 @@ section.feature-section {
 @media screen and (max-width: 800px) {
   section.feature-section {
     flex-direction: column;
-    justify-content: center; } }
+    align-items: center;
+    text-align: center; }
+
+  div.feature {
+    margin-bottom: 3em; }
+    div.feature h4, div.feature p {
+      margin: 0.5em 0; }
+    div.feature h4 {
+      font-size: 2em; }
+    div.feature p {
+      width: 60%;
+      line-height: 1.5;
+      margin-left: 20%; } }
 .Team {
   height: 100%; }
   .Team .team-section {

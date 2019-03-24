@@ -1,9 +1,6 @@
 section.feature-section {
   display: flex;
-  align-items: center;
   width: 100%;
-
-
   img {
     height: 20em;
     width: 20em;
@@ -14,6 +11,23 @@ section.feature-section {
 @media screen and (max-width: 800px) {
   section.feature-section {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  div.feature {
+    margin-bottom: 3em;
+
+    h4,p {
+      margin: 0.5em 0 ;
+    }
+    h4 {
+      font-size: 2em;
+    }
+
+    p {
+      width: 60%;
+      line-height: 1.5;
+      margin-left: 20%;
+    }
   }
 }
