@@ -173,9 +173,8 @@ header {
     header button {
       width: 190%;
       margin: -50%; }
-
-  p {
-    display: none; } }
+    header p {
+      display: none; } }
 .Features {
   border: 0.1em solid rgba(0, 0, 0, 0.1);
   background: #fbfbfb;

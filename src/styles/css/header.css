@@ -58,8 +58,7 @@ header {
     header button {
       width: 190%;
       margin: -50%; }
-
-  p {
-    display: none; } }
+    header p {
+      display: none; } }
 
 /*# sourceMappingURL=header.css.map */
