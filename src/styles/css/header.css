@@ -43,13 +43,21 @@ header {
 @media screen and (max-width: 800px) {
   header {
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 3fr 1fr;
+    grid-template-rows: 100px 3fr 0.5fr;
     grid-template-areas: 'a' 'c' 'b';
     padding: 2em 3em;
-    justify-content: center; }
+    justify-content: center;
+    justify-items: center; }
     header span {
       font-size: 1.2em;
       width: 70%; }
+    header h1 {
+      text-align: left; }
+    header img {
+      margin: 3em 0; }
+    header button {
+      width: 190%;
+      margin: -50%; }
 
   p {
     display: none; } }
