@@ -94,13 +94,15 @@ nav {
       display: block;
       background: red; } }
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5fr 1fr;
+  grid-template-areas: 'a c' 'b c';
   padding: 5em 4em;
   justify-content: space-between; }
   header .cta-content {
-    display: flex;
-    flex-direction: column;
-    width: 75%; }
+    width: 100%;
+    grid-area: a; }
     header .cta-content h1 {
       font-size: calc(0.2em + 5vw);
       margin-bottom: 0.2em; }
@@ -111,7 +113,10 @@ header {
       line-height: 1.45;
       padding: 0.65em 0em; }
   header img {
-    width: 100%; }
+    width: 100%;
+    grid-area: c; }
+  header a {
+    grid-area: b; }
   header button {
     margin-top: 0.5em;
     padding: 0.5em;
@@ -132,8 +137,14 @@ header {
 
 @media screen and (max-width: 800px) {
   header {
-    flex-direction: column;
-    padding: 2em 3em; }
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 3fr 1fr;
+    grid-template-areas: 'a' 'c' 'b';
+    padding: 2em 3em;
+    justify-content: center; }
+    header span {
+      font-size: 1.2em;
+      width: 70%; }
 
   p {
     display: none; } }
