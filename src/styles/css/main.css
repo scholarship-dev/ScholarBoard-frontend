@@ -94,7 +94,6 @@ nav {
       display: block;
       background: red; } }
 header {
-  height: fit-content;
   display: flex;
   padding: 5em 4em;
   justify-content: space-between; }
@@ -133,9 +132,11 @@ header {
 
 @media screen and (max-width: 800px) {
   header {
-    flex-direction: column; }
-    header p {
-      display: none; } }
+    flex-direction: column;
+    padding: 2em 3em; }
+
+  p {
+    display: none; } }
 .Features {
   border: 0.1em solid rgba(0, 0, 0, 0.1);
   background: #fbfbfb;

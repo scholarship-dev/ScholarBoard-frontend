@@ -1,5 +1,4 @@
 header {
-  height: fit-content;
   display: flex;
   padding: 5em 4em;
   justify-content: space-between;
@@ -49,12 +48,17 @@ header {
 
 
 @media screen and (max-width: 800px) {
+
   header {
     flex-direction: column;
+    padding: 2em 3em;
+  }
+
+
     p {
       display:none;
     }
   }
-}
+
 
 
