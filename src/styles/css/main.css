@@ -227,7 +227,7 @@ footer {
     color: white; }
 
 .auth-page {
-  background: lightblue; }
+  background: black; }
   .auth-page .form-container {
     display: flex;
     justify-content: center;
