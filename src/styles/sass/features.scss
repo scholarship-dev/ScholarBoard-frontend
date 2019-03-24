@@ -43,6 +43,7 @@ section.feature-section {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
 
     img {
       height: 20em;
@@ -51,7 +52,6 @@ section.feature-section {
   }
   div.feature {
     margin-bottom: 3em;
-    width: 45em;
 
     h4,p {
       margin: 0.5em 0 ;
