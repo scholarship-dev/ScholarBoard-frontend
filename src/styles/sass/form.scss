@@ -1,99 +1,20 @@
 .auth-page {
   background: lightblue;
 
-  //DONE:
   .form-container {
       display: flex;
       justify-content: center;
       padding-top: 6em;
-      align-items: center;
       
 
-      //DONE
       form {
           display: flex;
           background-color: white;
           padding: 1em 2em;
           min-width: 48vw;
           margin-bottom: 9em;
-          border-radius: 0.2em;
-
-          form.signup {
-            height: 100%;
-            legend {
-              padding-top: -2em;
-            }
-          }
-
-          //DONE
-          .signup-fields,
-          .login-fields {
-              display: flex;
-              flex-direction: column;
-              margin: 1em auto 4em auto;
-
-              //DONE
-              legend {
-                  text-align: center;
-                  font-size: 2em;
-                  padding-bottom: 1em;
-              }
-
-              //DONE
-              label {
-                  margin: 1em 0em .3em .3em;
-                  color: gray;
-                  font-size: .8em;
-                  font-weight: bolder;
-              }
-
-              //DONE
-              input {
-                  border-width: 0 0 2px;
-                  border-color: lightgray;
-                  color: black;
-                  padding: 5px 5px;
-                  font-size: 1em;
-                  margin-bottom: 1.5em;
-                  width: 20em;
-              }
-
-              select {
-                margin: 1em 0;
-                width: 30em;
-              }
-
-              //DONE
-              input:focus {
-                  outline: none;
-                  border-color: darkblue;
-              }
-
-              //DONE
-              button {
-                margin: 2em 0;
-                  background-color: black;
-                  color: white;
-                  position: relative;
-                  text-decoration: none;
-                  color: #ffffff;
-                  display: inline-block;
-                  padding: 10px 15px 11px;
-                  font-size: 13px;
-                  font-weight: 500;
-                  line-height: 17px;
-                  letter-spacing: .02em;
-                  border: none;
-                  border-radius: 4px;
-                -webkit-appearance: none;
-
-                //DONE
-                &:hover {
-                    cursor: pointer;
-                    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
-                }
-              }
-          }
+          border-radius: 0.3em;
+    }
 
           //DONE
           a {
@@ -101,6 +22,91 @@
             margin: 1em 0 0 0.2em;
           }
       }
-  }
 }
+
+
+
+.signup-fields,
+.login-fields {
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto 4em auto;
+
+    legend {
+        text-align: center;
+        font-size: 2em;
+        padding-bottom: 1em;
+    }
+
+    label {
+        margin: 1em 0em .3em .3em;
+        color: gray;
+        font-size: 1em;
+        font-weight: bolder;
+    }
+    p {
+        text-align: center;
+    }
+
+    input {
+        border-width: 0 0 2px;
+        border-color: lightgray;
+        color: black;
+        padding: 5px 5px;
+        font-size: 1em;
+        margin-bottom: 1.5em;
+        width: 20em;
+    }
+
+    select {
+        margin: 1em 0;
+        width: 30em;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: darkblue;
+    }
+
+    button {
+        margin: 2em 0;
+        background-color: black;
+        color: white;
+        color: #ffffff;
+        padding: 10px 15px 11px;
+        font-size: 1em;
+        letter-spacing: .02em;
+        border: none;
+        border-radius: 4px;
+
+    &:hover {
+            cursor: pointer;
+            box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .form-container {
+        padding: 0 2em;
+        legend {
+            font-size: 1.7em;
+        }
+        input{
+            width: 90%;
+        }
+        select {
+            width: 95%;
+        }
+        p {
+            font-size: 1em;
+        }
+        a {
+            margin-left: 1em;
+        }
+    }   
+}
+
 

@@ -3,75 +3,82 @@
   .auth-page .form-container {
     display: flex;
     justify-content: center;
-    padding-top: 6em;
-    align-items: center; }
+    padding-top: 6em; }
     .auth-page .form-container form {
       display: flex;
       background-color: white;
       padding: 1em 2em;
       min-width: 48vw;
       margin-bottom: 9em;
-      border-radius: 0.2em; }
-      .auth-page .form-container form form.signup {
-        height: 100%; }
-        .auth-page .form-container form form.signup legend {
-          padding-top: -2em; }
-      .auth-page .form-container form .signup-fields,
-      .auth-page .form-container form .login-fields {
-        display: flex;
-        flex-direction: column;
-        margin: 1em auto 4em auto; }
-        .auth-page .form-container form .signup-fields legend,
-        .auth-page .form-container form .login-fields legend {
-          text-align: center;
-          font-size: 2em;
-          padding-bottom: 1em; }
-        .auth-page .form-container form .signup-fields label,
-        .auth-page .form-container form .login-fields label {
-          margin: 1em 0em .3em .3em;
-          color: gray;
-          font-size: .8em;
-          font-weight: bolder; }
-        .auth-page .form-container form .signup-fields input,
-        .auth-page .form-container form .login-fields input {
-          border-width: 0 0 2px;
-          border-color: lightgray;
-          color: black;
-          padding: 5px 5px;
-          font-size: 1em;
-          margin-bottom: 1.5em;
-          width: 20em; }
-        .auth-page .form-container form .signup-fields select,
-        .auth-page .form-container form .login-fields select {
-          margin: 1em 0;
-          width: 30em; }
-        .auth-page .form-container form .signup-fields input:focus,
-        .auth-page .form-container form .login-fields input:focus {
-          outline: none;
-          border-color: darkblue; }
-        .auth-page .form-container form .signup-fields button,
-        .auth-page .form-container form .login-fields button {
-          margin: 2em 0;
-          background-color: black;
-          color: white;
-          position: relative;
-          text-decoration: none;
-          color: #ffffff;
-          display: inline-block;
-          padding: 10px 15px 11px;
-          font-size: 13px;
-          font-weight: 500;
-          line-height: 17px;
-          letter-spacing: .02em;
-          border: none;
-          border-radius: 4px;
-          -webkit-appearance: none; }
-          .auth-page .form-container form .signup-fields button:hover,
-          .auth-page .form-container form .login-fields button:hover {
-            cursor: pointer;
-            box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3); }
-      .auth-page .form-container form a {
-        color: black;
-        margin: 1em 0 0 0.2em; }
+      border-radius: 0.3em; }
+    .auth-page .form-container a {
+      color: black;
+      margin: 1em 0 0 0.2em; }
+
+.signup-fields,
+.login-fields {
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto 4em auto; }
+  .signup-fields legend,
+  .login-fields legend {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 1em; }
+  .signup-fields label,
+  .login-fields label {
+    margin: 1em 0em .3em .3em;
+    color: gray;
+    font-size: 1em;
+    font-weight: bolder; }
+  .signup-fields p,
+  .login-fields p {
+    text-align: center; }
+  .signup-fields input,
+  .login-fields input {
+    border-width: 0 0 2px;
+    border-color: lightgray;
+    color: black;
+    padding: 5px 5px;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    width: 20em; }
+  .signup-fields select,
+  .login-fields select {
+    margin: 1em 0;
+    width: 30em; }
+  .signup-fields input:focus,
+  .login-fields input:focus {
+    outline: none;
+    border-color: darkblue; }
+  .signup-fields button,
+  .login-fields button {
+    margin: 2em 0;
+    background-color: black;
+    color: white;
+    color: #ffffff;
+    padding: 10px 15px 11px;
+    font-size: 1em;
+    letter-spacing: .02em;
+    border: none;
+    border-radius: 4px; }
+    .signup-fields button:hover,
+    .login-fields button:hover {
+      cursor: pointer;
+      box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3); }
+
+@media screen and (max-width: 800px) {
+  .form-container {
+    padding: 0 2em; }
+    .form-container legend {
+      font-size: 1.7em; }
+    .form-container input {
+      width: 90%; }
+    .form-container select {
+      width: 95%; }
+    .form-container p {
+      font-size: 1em; }
+    .form-container a {
+      margin-left: 1em; } }
 
 /*# sourceMappingURL=form.css.map */
