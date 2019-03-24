@@ -4,7 +4,7 @@ import logo from '../../images/home-page-pics/header-logo.png';
 import whiteLogo from '../../images/home-page-pics/white-header-logo.png';
 
 const Navbar = () => (
-  <nav>
+  <nav className="main">
 
     <Link to="/">
       <img

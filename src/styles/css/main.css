@@ -48,11 +48,17 @@ table {
 body {
   font-family: 'Open Sans', sans-serif; }
 
+a {
+  text-decoration: none; }
+
 .page-section h2 {
   text-align: center;
   padding-top: 0.5em;
   font-size: 2em;
   padding: 2em; }
+
+li:hover {
+  text-decoration: underline; }
 
 nav {
   display: flex;
