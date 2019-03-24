@@ -11,19 +11,19 @@ import Dashboard from './components/UserComps/Dashboard';
 import Footer from './components/GeneralComps/Footer';
 
 const App = () => (
-  <Provider store={store}>
-    <Router>
-      <>
-        <Route path="/" component={Navbar} />
-        <Route path="/" exact component={Home} />
-        <Route exact path="/login" component={Login} />
+    <Provider store={store}>
+        <Router>
+            <>
+                {/* <Route path="/" component={Navbar} /> */}
+                <Route path="/" exact component={Home} />
+                <Route exact path="/login" component={Login} />
 
-        <Route exact path="/signup" component={Signup} />
-        <Route exact path="/dashboard" component={Dashboard} />
-        <Route path="/" component={Footer} />
-      </>
-    </Router>
-  </Provider>
+                <Route exact path="/signup" component={Signup} />
+                <Route exact path="/dashboard" component={Dashboard} />
+                {/* <Route path="/" component={Footer} /> */}
+            </>
+        </Router>
+    </Provider>
 );
 
 export default App;

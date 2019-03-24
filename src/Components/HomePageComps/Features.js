@@ -1,21 +1,23 @@
 import React from 'react';
+import signUp from '../../images/home-page-pics/signup.jpg';
 import Feature from './Feature';
 
 const Features = () => (
   <div className="Features page-section">
     <h2>How it works</h2>
-    <section className="feature-content">
-      <div className="feature-step signup">
-        <section className="feature-step-content">
+
+    <section className="feature-section">
+
           <Feature
-            step="Step 1. Sign Up"
+          
+              img={signUp}
+              alt="The image for signup"
+              step="Step 1. Sign Up"
             description="We use the data you provide on when you sign up to
               scrape the web for relevant scholarships that match your profile."
           />
-        </section>
-      </div>
 
-      <div className="feature-step dashboard">
+      {/* <div className="feature-step dashboard">
         <section className="feature-step-content d">
           <Feature
             step="Step 2. Your Dashboard"
@@ -43,9 +45,8 @@ const Features = () => (
             description="Give yourself a pat on the back! By using Scholarboard you have saved thousands of hours searching for scholarships."
           />
         </section>
-      </div>
-
-    </section>
+      </div> */}
+      </section>
   </div>
 );
 
