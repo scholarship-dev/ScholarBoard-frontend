@@ -83,7 +83,7 @@ nav {
 
 @media screen and (max-width: 800px) {
   nav {
-    background: #7EADF1; }
+    background: #332b8c; }
     nav a[href="/login"],
     nav a[href="/signup"] {
       display: none; }
