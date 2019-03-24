@@ -190,7 +190,8 @@ section.feature-section {
   justify-content: center;
   text-align: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 5em; }
   section.feature-section h4 {
     font-size: 1.4em; }
   section.feature-section h4, section.feature-section p {
