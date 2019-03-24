@@ -48,10 +48,8 @@ table {
 body {
   font-family: 'Open Sans', sans-serif; }
 
-a {
-  text-decoration: none; }
-
-a:visited {
+a, a:visited {
+  text-decoration: none;
   color: black; }
 
 .page-section h2 {
@@ -360,16 +358,21 @@ footer {
 div.dashboard {
   display: flex; }
   div.dashboard ul.side-nav {
-    padding: 0 2em;
     height: 100vh;
     border-right: 1px solid rgba(0, 0, 0, 0.3); }
     div.dashboard ul.side-nav li {
+      padding-right: 2em;
       margin: 2em;
       width: 100%;
       font-size: 1.4em; }
 
 section.dashboard-content {
-  background: red;
-  width: 100%; }
+  display: flex;
+  justify-content: center;
+  background: lightblue;
+  width: 100%;
+  padding-top: 5em; }
+  section.dashboard-content section.filter h1 {
+    font-size: 1.5em; }
 
 /*# sourceMappingURL=main.css.map */

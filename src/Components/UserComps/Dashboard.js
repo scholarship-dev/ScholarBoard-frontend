@@ -48,7 +48,7 @@ class Dashboard extends Component {
           <Link to="/dashboard">
             <li>Your Scholarships</li>
           </Link>
-          <Link to="#">
+          {/* <Link to="#">
             <li>Applied</li>
           </Link>
           <Link to="#">
@@ -56,7 +56,7 @@ class Dashboard extends Component {
           </Link>
           <Link to="#">
             <li>Profile</li>
-          </Link>
+          </Link> */}
         </ul>
 
         <section className="dashboard-content">
