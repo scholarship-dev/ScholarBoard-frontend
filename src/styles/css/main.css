@@ -136,6 +136,9 @@ header {
     flex-direction: column; }
     header p {
       display: none; } }
+.Features {
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+
 section.feature-section {
   display: flex;
   width: 100%; }

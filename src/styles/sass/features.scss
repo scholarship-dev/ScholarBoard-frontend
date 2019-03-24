@@ -1,3 +1,7 @@
+.Features {
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
 section.feature-section {
   display: flex;
   width: 100%;
@@ -6,7 +10,6 @@ section.feature-section {
     width: 20em;
   }
 }
-
 
 @media screen and (max-width: 800px) {
   section.feature-section {
