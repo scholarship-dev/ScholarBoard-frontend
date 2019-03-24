@@ -136,6 +136,18 @@ header {
     flex-direction: column; }
     header p {
       display: none; } }
+section.feature-section {
+  display: flex;
+  align-items: center;
+  width: 100%; }
+  section.feature-section img {
+    height: 20em;
+    width: 20em; }
+
+@media screen and (max-width: 800px) {
+  section.feature-section {
+    flex-direction: column;
+    justify-content: center; } }
 .Team {
   height: 100%; }
   .Team .team-section {

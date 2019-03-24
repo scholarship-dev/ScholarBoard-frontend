@@ -1,0 +1,19 @@
+section.feature-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+
+  img {
+    height: 20em;
+    width: 20em;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  section.feature-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
