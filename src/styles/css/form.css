@@ -31,8 +31,9 @@
     color: gray;
     font-size: 1em;
     font-weight: bolder; }
-  .signup-fields p,
-  .login-fields p {
+  .signup-fields p, .signup-fields a,
+  .login-fields p,
+  .login-fields a {
     text-align: center; }
   .signup-fields input,
   .login-fields input {
@@ -69,7 +70,7 @@
 
 @media screen and (max-width: 800px) {
   .form-container {
-    padding: 0 2em; }
+    padding: 0 1em; }
     .form-container legend {
       font-size: 1.7em; }
     .form-container input {
@@ -77,8 +78,6 @@
     .form-container select {
       width: 95%; }
     .form-container p {
-      font-size: 1em; }
-    .form-container a {
-      margin-left: 1em; } }
+      font-size: 1em; } }
 
 /*# sourceMappingURL=form.css.map */

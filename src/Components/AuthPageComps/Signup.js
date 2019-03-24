@@ -216,12 +216,12 @@ class Signup extends Component {
 
               <p>
                 Already have an account?
+              </p>
 
               <Link to="/login">
-                  Login here
+                Login here
               </Link>
 
-              </p>
             </div>
 
           </form>

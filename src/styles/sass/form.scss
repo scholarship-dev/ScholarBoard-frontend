@@ -44,7 +44,7 @@
         font-size: 1em;
         font-weight: bolder;
     }
-    p {
+    p,a {
         text-align: center;
     }
 
@@ -84,13 +84,14 @@
             box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
         }
     }
+ 
 }
 
 
 
 @media screen and (max-width: 800px) {
     .form-container {
-        padding: 0 2em;
+        padding: 0 1em;
         legend {
             font-size: 1.7em;
         }
@@ -102,9 +103,6 @@
         }
         p {
             font-size: 1em;
-        }
-        a {
-            margin-left: 1em;
         }
     }   
 }
