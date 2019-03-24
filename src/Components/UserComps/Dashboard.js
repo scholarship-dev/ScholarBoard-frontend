@@ -65,9 +65,9 @@ class Dashboard extends Component {
             <h1 ><Typed strings={['Scholarships For You, Annie']} typeSpeed={16} /></h1>
           </section>
 
-          {/* <section className="scholarships">
+          <section className="scholarships">
             {this.renderScholarships()}
-          </section> */}
+          </section>
 
         </section>
       </div>

@@ -11,12 +11,15 @@ div.dashboard {
 
 section.dashboard-content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background: lightblue;
   width: 100%;
-  padding-top: 5em; }
+  padding: 5em 3em; }
   section.dashboard-content section.filter h1 {
     font-size: 1.9em;
-    font-weight: bold; }
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 3em; }
 
 /*# sourceMappingURL=dashboard.css.map */
