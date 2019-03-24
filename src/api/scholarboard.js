@@ -1,1 +1,0 @@
-// TODO: Create an axios instance to request the scholarships

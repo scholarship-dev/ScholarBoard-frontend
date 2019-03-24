@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
-import { signupUser } from '../../js/actions';
+import { signupUser } from '../../redux/actions';
 
 class Signup extends Component {
   constructor(props) {
