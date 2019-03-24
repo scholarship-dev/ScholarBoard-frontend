@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
-    margin-top: 2em;
+    padding-bottom:20em;
     h3 {
       font-size: 2em;
     }
@@ -24,13 +24,16 @@
 @media screen and (max-width: 800px) {
   .Team {
     height: 100%;
-  }
-  .team-section {
+
+    .team-section {
     flex-direction: column;
+    padding: 0px;
     align-items: center;
-    margin-bottom: 5em;
+
     p, img {
       margin: 1em 0;
     }
   }
+  }
+
 }

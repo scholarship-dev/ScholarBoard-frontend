@@ -3,7 +3,8 @@ body {
 
 .page-section h2 {
   text-align: center;
-  padding-top: 1em;
-  font-size: 2em; }
+  padding-top: 0.5em;
+  font-size: 2em;
+  padding: 2em; }
 
 /*# sourceMappingURL=global.css.map */

@@ -37,9 +37,6 @@ const Features = () => (
             alt="Applying for a scholarship"
           />
 
-
-
-
           <Feature
             step="Step 4. Celebrate"
             description="Give yourself a pat on the back! By using Scholarboard you have saved thousands of hours searching for scholarships."

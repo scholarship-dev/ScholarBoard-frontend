@@ -50,8 +50,9 @@ body {
 
 .page-section h2 {
   text-align: center;
-  padding-top: 1em;
-  font-size: 2em; }
+  padding-top: 0.5em;
+  font-size: 2em;
+  padding: 2em; }
 
 nav {
   display: flex;
@@ -93,7 +94,7 @@ nav {
       display: block;
       background: red; } }
 header {
-  height: 70vh;
+  height: fit-content;
   display: flex;
   padding: 5em 4em;
   justify-content: space-between; }
@@ -111,8 +112,7 @@ header {
       line-height: 1.45;
       padding: 0.65em 0em; }
   header img {
-    height: 75%;
-    margin-left: 2em; }
+    width: 100%; }
   header button {
     margin-top: 0.5em;
     padding: 0.5em;
@@ -137,38 +137,59 @@ header {
     header p {
       display: none; } }
 .Features {
-  border: 1px solid rgba(0, 0, 0, 0.1); }
+  border: 0.1em solid rgba(0, 0, 0, 0.1);
+  background: #fbfbfb;
+  min-height: 48em; }
+
+div.feature {
+  width: 20em; }
 
 section.feature-section {
   display: flex;
-  width: 100%; }
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  section.feature-section h4 {
+    font-size: 1.4em; }
+  section.feature-section h4, section.feature-section p {
+    margin: 0.5em 0; }
+  section.feature-section p {
+    line-height: 1.4; }
   section.feature-section img {
-    height: 20em;
-    width: 20em; }
+    width: 17em;
+    height: 17em;
+    margin-right: 1em; }
 
 @media screen and (max-width: 800px) {
   section.feature-section {
     flex-direction: column;
     align-items: center;
     text-align: center; }
+    section.feature-section img {
+      height: 20em;
+      width: 20em; }
 
   div.feature {
-    margin-bottom: 3em; }
+    margin-bottom: 3em;
+    width: 45em; }
     div.feature h4, div.feature p {
       margin: 0.5em 0; }
     div.feature h4 {
-      font-size: 2em; }
+      font-size: 2em;
+      width: 100%; }
     div.feature p {
       width: 60%;
-      line-height: 1.5;
-      margin-left: 20%; } }
+      margin-left: 20%;
+      font-size: 1.09em; } }
 .Team {
   height: 100%; }
   .Team .team-section {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    margin-top: 2em; }
+    padding-bottom: 20em; }
     .Team .team-section h3 {
       font-size: 2em; }
   .Team img {
@@ -181,13 +202,12 @@ section.feature-section {
 @media screen and (max-width: 800px) {
   .Team {
     height: 100%; }
-
-  .team-section {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5em; }
-    .team-section p, .team-section img {
-      margin: 1em 0; } }
+    .Team .team-section {
+      flex-direction: column;
+      padding: 0px;
+      align-items: center; }
+      .Team .team-section p, .Team .team-section img {
+        margin: 1em 0; } }
 footer {
   position: static;
   left: 0;
