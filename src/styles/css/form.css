@@ -3,6 +3,7 @@
   .auth-page .form-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 6em; }
     .auth-page .form-container form {
       display: flex;
@@ -36,6 +37,9 @@
   .login-fields p,
   .login-fields a {
     text-align: center; }
+  .signup-fields a,
+  .login-fields a {
+    text-decoration: underline; }
   .signup-fields input,
   .login-fields input {
     border-width: 0 0 2px;
@@ -44,18 +48,19 @@
     padding: 5px 5px;
     font-size: 1em;
     margin-bottom: 1.5em;
-    width: 20em; }
+    width: 90%; }
   .signup-fields select,
   .login-fields select {
     margin: 1em 0;
-    width: 30em; }
+    width: 95%;
+    font-size: 1.3em; }
   .signup-fields input:focus,
   .login-fields input:focus {
     outline: none;
     border-color: darkblue; }
   .signup-fields button,
   .login-fields button {
-    margin: 2em 0;
+    margin: 0.5em 0;
     background-color: black;
     color: white;
     color: #ffffff;

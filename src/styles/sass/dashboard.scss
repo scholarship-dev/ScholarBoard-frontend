@@ -2,10 +2,17 @@ div.dashboard {
   display: flex;
   ul.side-nav {
     padding:0 2em;
+    height: 100vh;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
     li {
       margin: 2em;
       width: 100%;
       font-size: 1.4em;
     }
   }
+}
+
+section.dashboard-content {
+  background: red;
+  width: 100%;
 }

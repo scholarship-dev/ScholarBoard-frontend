@@ -1,10 +1,10 @@
 .auth-page {
     background: rgba(121, 169, 248, 0.08);
 
-
   .form-container {
       display: flex;
       justify-content: center;
+      align-items: center;
       padding-top: 6em;
       
 
@@ -49,6 +49,9 @@
     p,a {
         text-align: center;
     }
+    a {
+        text-decoration: underline;
+    }
 
     input {
         border-width: 0 0 2px;
@@ -57,12 +60,13 @@
         padding: 5px 5px;
         font-size: 1em;
         margin-bottom: 1.5em;
-        width: 20em;
+        width: 90%;
     }
 
     select {
         margin: 1em 0;
-        width: 30em;
+        width: 95%;
+        font-size: 1.3em;
     }
 
     input:focus {
@@ -71,7 +75,7 @@
     }
 
     button {
-        margin: 2em 0;
+        margin: 0.5em 0;
         background-color: black;
         color: white;
         color: #ffffff;

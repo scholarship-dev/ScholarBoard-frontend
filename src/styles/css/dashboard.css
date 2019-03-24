@@ -1,10 +1,16 @@
 div.dashboard {
   display: flex; }
   div.dashboard ul.side-nav {
-    padding: 0 2em; }
+    padding: 0 2em;
+    height: 100vh;
+    border-right: 1px solid rgba(0, 0, 0, 0.3); }
     div.dashboard ul.side-nav li {
       margin: 2em;
       width: 100%;
       font-size: 1.4em; }
+
+section.dashboard-content {
+  background: red;
+  width: 100%; }
 
 /*# sourceMappingURL=dashboard.css.map */
