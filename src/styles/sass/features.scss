@@ -1,6 +1,7 @@
 .Features {
   border: 0.1em solid rgba(0,0,0,0.1);
     background: #fbfbfb;
+    min-height: 48em;
 }
 
 div.feature {
@@ -13,6 +14,7 @@ section.feature-section {
   width: 100%;
   justify-content: center;
   text-align: center;
+  align-items: center;
   flex-wrap: wrap;
 
   h4 {
@@ -50,17 +52,20 @@ section.feature-section {
   }
   div.feature {
     margin-bottom: 3em;
+    width: 45em;
 
     h4,p {
       margin: 0.5em 0 ;
     }
     h4 {
       font-size: 2em;
+      width: 100%;
     }
 
     p {
       width: 60%;
       margin-left: 20%;
+      font-size: 1.09em;
     }
   }
 }
