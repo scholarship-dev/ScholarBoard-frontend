@@ -50,8 +50,9 @@ body {
 
 .page-section h2 {
   text-align: center;
-  padding-top: 1em;
-  font-size: 2em; }
+  padding-top: 0.5em;
+  font-size: 2em;
+  padding: 2em; }
 
 nav {
   display: flex;
@@ -93,7 +94,7 @@ nav {
       display: block;
       background: red; } }
 header {
-  height: 70vh;
+  height: fit-content;
   display: flex;
   padding: 5em 4em;
   justify-content: space-between; }
@@ -111,8 +112,7 @@ header {
       line-height: 1.45;
       padding: 0.65em 0em; }
   header img {
-    height: 75%;
-    margin-left: 2em; }
+    width: 100%; }
   header button {
     margin-top: 0.5em;
     padding: 0.5em;
@@ -136,18 +136,26 @@ header {
     flex-direction: column; }
     header p {
       display: none; } }
+.Features {
+  border: 0.1em solid rgba(0, 0, 0, 0.1);
+  background: #fbfbfb; }
+
 section.feature-section {
   display: flex;
-  width: 100%; }
+  width: 100%;
+  padding: 20em; }
   section.feature-section img {
-    height: 20em;
-    width: 20em; }
+    width: 17em;
+    height: 17em; }
 
 @media screen and (max-width: 800px) {
   section.feature-section {
     flex-direction: column;
     align-items: center;
     text-align: center; }
+    section.feature-section img {
+      height: 20em;
+      width: 20em; }
 
   div.feature {
     margin-bottom: 3em; }
@@ -165,7 +173,7 @@ section.feature-section {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    margin-top: 2em; }
+    padding-bottom: 20em; }
     .Team .team-section h3 {
       font-size: 2em; }
   .Team img {
@@ -178,13 +186,12 @@ section.feature-section {
 @media screen and (max-width: 800px) {
   .Team {
     height: 100%; }
-
-  .team-section {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5em; }
-    .team-section p, .team-section img {
-      margin: 1em 0; } }
+    .Team .team-section {
+      flex-direction: column;
+      padding: 0px;
+      align-items: center; }
+      .Team .team-section p, .Team .team-section img {
+        margin: 1em 0; } }
 footer {
   position: static;
   left: 0;

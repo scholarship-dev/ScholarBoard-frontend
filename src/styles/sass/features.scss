@@ -1,10 +1,18 @@
+.Features {
+  border: 0.1em solid rgba(0,0,0,0.1);
+    background: #fbfbfb;
+}
+
+
 section.feature-section {
   display: flex;
   width: 100%;
+  padding: 20em;
   img {
-    height: 20em;
-    width: 20em;
+    width: 17em;
+    height: 17em;
   }
+
 }
 
 
@@ -13,6 +21,11 @@ section.feature-section {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    img {
+      height: 20em;
+      width: 20em;
+    }
   }
   div.feature {
     margin-bottom: 3em;

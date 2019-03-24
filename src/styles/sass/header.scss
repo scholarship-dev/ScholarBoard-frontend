@@ -1,5 +1,5 @@
 header {
-  height: 70vh;
+  height: fit-content;
   display: flex;
   padding: 5em 4em;
   justify-content: space-between;
@@ -24,8 +24,7 @@ header {
 
   }
   img {
-    height: 75%;
-    margin-left: 2em;
+    width: 100%;
   }
   button {
     margin-top: 0.5em;
@@ -52,7 +51,6 @@ header {
 @media screen and (max-width: 600px) {
   header {
     flex-direction: column;
-
     p {
       display:none;
     }
