@@ -16,7 +16,6 @@ section.dashboard-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: lightblue;
   width: 100%;
   padding: 5em 3em;
 
@@ -31,5 +30,24 @@ section.dashboard-content {
 }
 
 section.scholarships {
-  
+
+  .scholarship {
+    background: lightblue;
+    margin: 1em;
+    padding: 1em;
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    p:first-of-type {
+      margin: 1em 0;
+      line-height: 1.3;
+    }
+
+    p:last-of-type {
+      text-align: right;
+    }
+
+  }
 }
