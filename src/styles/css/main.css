@@ -227,17 +227,12 @@ footer {
     color: white; }
 
 .auth-page {
-  padding: 0 5em;
-  background: black;
-  background-size: 800% 800%;
-  height: 100%; }
+  background: lightblue; }
   .auth-page .form-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding-top: 6em;
-    border-radius: 5em;
-    height: 100%; }
+    align-items: center; }
     .auth-page .form-container form {
       display: flex;
       background-color: white;

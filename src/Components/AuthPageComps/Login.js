@@ -28,7 +28,7 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="auth-page ">
+      <div className="auth-page">
 
         <section
           className="form-container"
