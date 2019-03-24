@@ -4,6 +4,9 @@ body {
 a {
   text-decoration: none; }
 
+a:visited {
+  color: black; }
+
 .page-section h2 {
   text-align: center;
   padding-top: 0.5em;

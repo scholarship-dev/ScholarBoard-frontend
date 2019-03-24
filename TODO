@@ -2,21 +2,12 @@ Landing Page:
   Responsive:
 
      Nav:
-      ☐ Figure out the font awesome buttons aren't showing up.
       ☐ Add an onclick to make the login and signup appear.
-
-    Header:
-      ☐ Change the position of the picture to be inbetween the words and CTA button.
-
-    Footer:
-      ☐ Put new content there!!!
+     
       
   Normal:
     ☐ Verify the team is the team.
     ☐ Replace the background for the images.
+    ☐ Make footer sticky.
+    ☐ Put new content there!!!
 
-Sign-Up Page:
-  ☐ Add personality?
-
-Login:
-  ☐ Add personality?

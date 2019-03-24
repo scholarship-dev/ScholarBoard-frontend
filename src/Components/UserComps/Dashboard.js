@@ -44,25 +44,20 @@ class Dashboard extends Component {
     return (
       <div className="dashboard">
 
-        <section>
-          <nav>
-            <ul>
-              <Link to="/dashboard">
-                <li>Your Scholarships</li>
-              </Link>
-              <Link to="#">
-                <li>Applied</li>
-              </Link>
-              <Link to="#">
-                <li>Awarded</li>
-              </Link>
-              <Link to="#">
-                <li>Profile</li>
-              </Link>
-            </ul>
-          </nav>
-        </section>
-
+        <ul className="side-nav">
+          <Link to="/dashboard">
+            <li>Your Scholarships</li>
+          </Link>
+          <Link to="#">
+            <li>Applied</li>
+          </Link>
+          <Link to="#">
+            <li>Awarded</li>
+          </Link>
+          <Link to="#">
+            <li>Profile</li>
+          </Link>
+        </ul>
 
         <section className="dashboard-content">
 
