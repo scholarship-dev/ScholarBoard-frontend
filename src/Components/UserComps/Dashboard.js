@@ -48,7 +48,7 @@ class Dashboard extends Component {
           <Link to="/dashboard">
             <li>
               Your Scholarships
-            <i class="fa fa-square-o" aria-hidden="true"></i>
+              <i class="fa fa-list" aria-hidden="true"></i>
             </li>
           </Link>
           <Link to="#">

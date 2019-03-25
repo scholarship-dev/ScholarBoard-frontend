@@ -9,9 +9,18 @@ div.dashboard {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     position: sticky;
     top: 0;
+    padding:3em 2em 0 2em;
+    margin-left: -2em;
+
+    .fa {
+      margin-left: 0.4em;
+      color: #332b8c;
+    }
+   
     li {
       padding-right: 2em;
-      margin: 2em;
+      
+      margin:1em 2em;
       width: 100%;
       font-size: 1.4em;
     }
@@ -83,7 +92,6 @@ section.scholarships {
 @media screen and (max-width: 800px) {
   ul.side-nav {
     display: none;
-
   }
 
   section.dashboard-content {
@@ -99,9 +107,5 @@ section.scholarships {
     }
   
   }
-
-
-  
-
   
 }
