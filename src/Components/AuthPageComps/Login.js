@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 class Login extends Component {
@@ -48,6 +47,7 @@ class Login extends Component {
 
               <label htmlFor={email}>
                 Email
+                <br />
                 <input
                   ref={this.inputRef}
                   name="email"
@@ -61,6 +61,7 @@ class Login extends Component {
 
               <label htmlFor={password}>
                 Password
+                <br />
                 <input
                   name="password"
                   id={password}
@@ -95,6 +96,4 @@ class Login extends Component {
   }
 }
 
-export default connect(
-  null,
-)(Login);
+export default Login;

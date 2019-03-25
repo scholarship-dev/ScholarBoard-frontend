@@ -18,6 +18,7 @@ class Signup extends Component {
   }
 
   handleChange = (event) => {
+    console.log(event.target.id);
     this.setState(
       {
         [event.target.id]: event.target.value,
@@ -55,6 +56,7 @@ class Signup extends Component {
                 htmlFor={firstName}
               >
                 First Name
+                <br />
                 <input
                   name={firstName}
                   id="firstName"
@@ -69,9 +71,10 @@ class Signup extends Component {
                 htmlFor={lastName}
               >
                 Last Name
+                <br />
                 <input
                   name={lastName}
-                  id={lastName}
+                  id="lastName"
                   type="text"
                   value={lastName}
                   onChange={this.handleChange}
@@ -84,6 +87,7 @@ class Signup extends Component {
                 htmlFor="email"
               >
                 Email
+                <br />
                 <input
                   name="email"
                   id="email"
@@ -99,6 +103,7 @@ class Signup extends Component {
                 htmlFor="password"
               >
                 Password
+                <br />
                 <input
                   name="password"
                   id="password"
@@ -113,6 +118,7 @@ class Signup extends Component {
                 htmlFor="gpa"
               >
                 GPA
+                <br />
                 <input
                   name="gpa"
                   id="gpa"
@@ -131,7 +137,7 @@ class Signup extends Component {
                   Ethnicity
                   <select
                     required
-                    id={ethnicity}
+                    id="ethnicity"
                     onChange={this.handleChange}
                     name="ethnicity"
                     value={ethnicity}
@@ -202,7 +208,7 @@ class Signup extends Component {
               >
                 Grade
                 <select
-                  id={grade}
+                  id="grade"
                   required
                   value={grade}
                   onChange={this.handleChange}
