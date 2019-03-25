@@ -1,4 +1,5 @@
 nav {
+  background:#332b8c;
   display: flex;
   align-items: center;
   padding: 1em 1em;
@@ -26,11 +27,11 @@ nav {
   }
   .nav-right {
     a {
+      color: white;
       padding: 0.4em;
       &:hover {
         background: #2196F3;
         border-radius: 0.2em;
-        color: white;
       }
     }
   }

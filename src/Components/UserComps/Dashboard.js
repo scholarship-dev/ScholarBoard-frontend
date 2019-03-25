@@ -46,17 +46,22 @@ class Dashboard extends Component {
 
         <ul className="side-nav">
           <Link to="/dashboard">
-            <li>Your Scholarships</li>
-          </Link>
-          {/* <Link to="#">
-            <li>Applied</li>
-          </Link>
-          <Link to="#">
-            <li>Awarded</li>
+            <li>Your Scholarships
+            <i class="fa fa-square-o" aria-hidden="true"></i>
+            </li>
           </Link>
           <Link to="#">
-            <li>Profile</li>
-          </Link> */}
+            <li>Applied
+            <i class="fa fa-check" aria-hidden="true"></i></li>
+          </Link>
+          <Link to="#">
+            <li>Awarded
+            <i class="fa fa-star" aria-hidden="true"></i>
+            </li>
+          </Link>
+          <Link to="#">
+            <li>Profile <i class="fa fa-cog" aria-hidden="true"></i></li>
+          </Link>
         </ul>
 
         <section className="dashboard-content">
