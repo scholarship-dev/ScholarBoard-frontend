@@ -45,26 +45,35 @@ class Dashboard extends Component {
       <div className="dashboard">
 
         <ul className="side-nav">
+
           <Link to="/dashboard">
             <li>
               Your Scholarships
               <i class="fa fa-list" aria-hidden="true"></i>
             </li>
           </Link>
+
           <Link to="#">
             <li>Applied
             <i class="fa fa-check" aria-hidden="true"></i>
             </li>
           </Link>
+
           <Link to="#">
             <li>Awarded
             <i class="fa fa-star" aria-hidden="true"></i>
             </li>
           </Link>
+
           <Link to="#">
             <li>Profile <i class="fa fa-cog" aria-hidden="true"></i>
             </li>
           </Link>
+
+          <section className="tip">
+            <h3>Tip of the day</h3>
+          </section>
+
         </ul>
 
         <section className="dashboard-content">
