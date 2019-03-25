@@ -71,7 +71,7 @@ class Dashboard extends Component {
           </Link>
 
           <section className="tip">
-            <h3>Tip of the day</h3>
+            {/* <h3>Tip of the day</h3> */}
           </section>
 
         </ul>
