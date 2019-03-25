@@ -4,23 +4,27 @@ import whiteLogo from '../../images/home/white-header-logo.png';
 
 
 class Navbar extends Component {
-  // constructor(props) {
-  //   super(props);
+  constructor(props) {
+    super(props);
 
-  //   // this.state = {
-  //   //   navToggle: false,
-  //   // };
-  // }
+    this.state = {
+      navActive: false,
+    };
+  }
 
   dropDown = () => {
-    // this.setState({
-    //   navToggle: true,
-    // });
+    const { navActive } = this.state;
+    this.setState(
+      {
+        navActive: !navActive,
+      },
+    );
   }
 
   render() {
+    const { navActive } = this.state;
     return (
-      <nav>
+      <nav className={(navActive ? 'dropdown' : '')}>
 
         <Link to="/">
           <img

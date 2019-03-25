@@ -6,11 +6,6 @@ nav {
   box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1em);
   transition: padding 2s ease;
 
-  .dropdown {
-    height: 100vh;
-  }
-
-
   .nav-right {
     margin-left: auto;
 
@@ -58,8 +53,12 @@ nav {
   .red {
     height: 100vh;
   }
-
 }
+
+.dropdown {
+  height: 100vh;
+}
+
 
 @media screen and (max-width: 800px) {
   nav {
