@@ -1,6 +1,7 @@
 div.dashboard {
   display: flex;
 
+
   ul.side-nav {
     height: 100vh;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
@@ -21,7 +22,6 @@ section.dashboard-content {
   justify-content: center;
   width: 100%;
   padding: 5em 3em;
-  background: lightblue;
 
   section.filter {
    
@@ -29,6 +29,7 @@ section.dashboard-content {
       font-size: 1.9em;
       text-align: center;
       font-weight: bold;
+      padding-bottom: 2em;
     }
   }
 }
@@ -40,6 +41,20 @@ section.scholarships {
     margin: 1em;
     padding: 1em;
     box-shadow: 0.09em 0.09em 0.09em rgba(0, 0, 0, 0.1);
+
+    .scholarship-bottom {
+      display: flex;
+      justify-content: space-between;
+
+
+      button {
+        border: none;
+        border-radius: 0.3em;
+        background: #ff6283;
+        color: white;
+        font-size: 1.2em;
+      }
+    }
 
     h1 {
       font-size: 1.5em;
@@ -72,7 +87,12 @@ section.scholarships {
         font-size: 1.7em;
       }
     }
+    .scholarship {
+      box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.3);
+    }
+  
   }
+
 
   
 
