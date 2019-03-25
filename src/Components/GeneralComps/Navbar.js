@@ -11,7 +11,8 @@ class Navbar extends Component {
   }
 
   dropDown = () => {
-    console.log(this.navRef)
+    const nav = this.navRef.current;
+    nav.style.height = "200px";
   }
 
   render() {
