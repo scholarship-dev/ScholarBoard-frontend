@@ -7,11 +7,6 @@ const Navbar = () => (
   <nav className="main">
 
     <Link to="/">
-      <img
-        className="header-logo"
-        src={logo}
-        alt="Logo"
-      />
       <img src={whiteLogo}
         alt="Logo"
         className="white-header-logo"

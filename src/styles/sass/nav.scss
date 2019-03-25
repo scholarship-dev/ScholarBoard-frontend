@@ -15,9 +15,6 @@ nav {
   img {
     width: 50%;
   }
-  img.white-header-logo {
-    display: none;
-  }
 
   a {
     text-decoration: none;
@@ -30,14 +27,17 @@ nav {
       color: white;
       padding: 0.4em;
       &:hover {
-        background: #2196F3;
-        border-radius: 0.2em;
+        padding-bottom: 0.1em;
+        border-bottom: 1px solid #000;
+        border-color: white;
+        color: white;
       }
     }
   }
   a.active {
-    background: #2196F3;
-    border-radius: 0.2em;
+    padding-bottom: 0.1em;
+    border-bottom: 1px solid #000;
+    border-color: white;
     color: white;
   }
 }
