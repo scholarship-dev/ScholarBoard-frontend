@@ -66,9 +66,6 @@ section.scholarships {
         background: #ff6283;
         color: white;
         font-size: 1.2em;
-        &:hover {
-   
-        }
       }
     }
 
@@ -90,8 +87,10 @@ section.scholarships {
 
 
 @media screen and (max-width: 800px) {
-  ul.side-nav {
-    display: none;
+  div.dashboard {
+    ul.side-nav {
+      display: none;
+    }
   }
 
   section.dashboard-content {
