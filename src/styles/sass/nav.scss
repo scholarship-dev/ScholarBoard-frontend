@@ -4,6 +4,9 @@ nav {
   align-items: center;
   padding: 1em 1em;
   box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1em);
+  transition: padding 2s ease;
+
+
   .nav-right {
     margin-left: auto;
 
@@ -49,8 +52,11 @@ nav {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width:800px) {
 
+}
+
+@media screen and (max-width: 800px) {
   nav {
     background: #332b8c;
     padding: 1em 2em;

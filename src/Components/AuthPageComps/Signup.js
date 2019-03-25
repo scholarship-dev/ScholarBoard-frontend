@@ -18,6 +18,7 @@ class Signup extends Component {
       grade: '',
       password: ''
     };
+
   };
 
   handleChange = event => {
@@ -30,6 +31,10 @@ class Signup extends Component {
     // this.props.history.push('/dashboard')
     console.log(this.state)
   };
+
+  componentDidMount() {
+
+  }
 
   render() {
     return (

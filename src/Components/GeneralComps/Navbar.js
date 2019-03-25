@@ -10,9 +10,10 @@ class Navbar extends Component {
     this.navRef = React.createRef();
   }
 
+
   dropDown = () => {
     const nav = this.navRef.current;
-    nav.style.height = "200px";
+    nav.style.height = '20em';
   }
 
   render() {
@@ -29,13 +30,15 @@ class Navbar extends Component {
         <div className="nav-right">
 
           <NavLink to="/login">Login</NavLink>
+
           <NavLink to="/signup">Signup</NavLink>
 
           <i onClick={this.dropDown} className="fas fa-bars"></i>
         </div>
-      </nav>
+      </nav >
     )
   }
 }
+
 
 export default Navbar;

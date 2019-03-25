@@ -18,13 +18,15 @@ class Login extends Component {
   };
 
   componentDidMount() {
-    this.inputRef.current.focus();
+    this.inputRef.current.focus()
   }
+
 
   handleSubmit = event => {
     event.preventDefault();
     this.props.loginUser(this.state);
   };
+
 
   render() {
     return (
