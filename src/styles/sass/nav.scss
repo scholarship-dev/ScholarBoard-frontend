@@ -9,6 +9,9 @@ nav {
 
     i {
       display: none;
+      &:hover {
+        cursor: pointer;
+      }
     }
 
   }
@@ -32,6 +35,10 @@ nav {
         border-color: white;
         color: white;
       }
+    }
+    button {
+      appearance: none;
+      color: transparent;
     }
   }
   a.active {

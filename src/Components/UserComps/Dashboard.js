@@ -19,7 +19,6 @@ class Dashboard extends Component {
       const res = await axios.get('https://scholarboard-api.herokuapp.com/api/scholarships');
       // const { scholarships } = res.data;
       const scholarships = res.data;
-      console.log(scholarships)
       this.setState({
         scholarships
       })
@@ -49,24 +48,24 @@ class Dashboard extends Component {
           <Link to="/dashboard">
             <li>
               Your Scholarships
-              <i class="fa fa-list" aria-hidden="true"></i>
+              <i className="fa fa-list" aria-hidden="true"></i>
             </li>
           </Link>
 
           <Link to="#">
             <li>Applied
-            <i class="fa fa-check" aria-hidden="true"></i>
+            <i className="fa fa-check" aria-hidden="true"></i>
             </li>
           </Link>
 
           <Link to="#">
             <li>Awarded
-            <i class="fa fa-star" aria-hidden="true"></i>
+            <i className="fa fa-star" aria-hidden="true"></i>
             </li>
           </Link>
 
           <Link to="#">
-            <li>Profile <i class="fa fa-cog" aria-hidden="true"></i>
+            <li>Profile <i className="fa fa-cog" aria-hidden="true"></i>
             </li>
           </Link>
 
