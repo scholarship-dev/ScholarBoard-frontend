@@ -1,10 +1,8 @@
 // src/js/store/index.js
 
-import { createStore, applyMiddleware, compose } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from '../reducers';
-
-const storeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const MS_CLUBS_STATE = 'MS_CLUBS_STATE';
 
@@ -27,7 +25,7 @@ export const saveState = (state) => {
     const serializedState = JSON.stringify(state);
     localStorage.setItem(MS_CLUBS_STATE, serializedState);
   } catch (err) {
-    console.log('Error saving data');
+    // console.log('Error saving data');
   }
 };
 
@@ -36,7 +34,7 @@ const persistedState = loadState();
 const store = createStore(
   rootReducer,
   persistedState,
-  storeEnhancers(applyMiddleware(thunk)),
+  applyMiddleware(thunk),
 );
 
 store.subscribe(() => {

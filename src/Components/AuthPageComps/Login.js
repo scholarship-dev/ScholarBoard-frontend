@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from "react-redux";
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 class Login extends Component {
@@ -8,27 +8,32 @@ class Login extends Component {
 
     this.state = {
       email: '',
-      password: ''
+      password: '',
     };
     this.inputRef = React.createRef();
-  };
-
-  handleChange = event => {
-    this.setState({ [event.target.id]: event.target.value });
-  };
-
-  componentDidMount() {
-    this.inputRef.current.focus()
   }
 
+  componentDidMount() {
+    this.inputRef.current.focus();
+  }
 
-  handleSubmit = event => {
+  handleChange = (event) => {
+    this.setState(
+      {
+        [event.target.id]: event.target.value,
+      },
+    );
+  };
+
+
+  handleSubmit = (event) => {
     event.preventDefault();
-    this.props.loginUser(this.state);
   };
 
 
   render() {
+    const { email, password } = this.state;
+
     return (
       <div className="auth-page">
 
@@ -41,49 +46,48 @@ class Login extends Component {
             <div className="login-fields">
               <legend>Login</legend>
 
-              <label htmlFor="email">
+              <label htmlFor={email}>
                 Email
-                </label>
+                <input
+                  ref={this.inputRef}
+                  name="email"
+                  id={email}
+                  type="text"
+                  value={email}
+                  onChange={this.handleChange}
+                  required
+                />
+              </label>
 
-              <input
-                ref={this.inputRef}
-                name="email"
-                id="email" type="text"
-                value={this.state.email}
-                onChange={this.handleChange}
-                required
-
-              />
-
-              <label htmlFor="password">
+              <label htmlFor={password}>
                 Password
-                  </label>
-
-              <input
-                name="password"
-                id="password"
-                type="password"
-                value={this.state.password}
-                onChange={this.handleChange}
-                required
-              />
+                <input
+                  name="password"
+                  id={password}
+                  type="password"
+                  value={password}
+                  onChange={this.handleChange}
+                  required
+                />
+              </label>
 
               <button
-                type="submit">
+                type="submit"
+              >
                 Login
-                  </button>
+              </button>
 
               <p>
-                Need to make an account? <br />
+                Need to make an account?
+
+                <br />
               </p>
               <Link to="/signup">
                 Sign up here
-                  </Link>
+              </Link>
             </div>
           </form>
-          <div>
-
-          </div>
+          <div />
         </section>
 
       </div>

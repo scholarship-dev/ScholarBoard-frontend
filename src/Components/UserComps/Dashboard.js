@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Scholarship from './Scholarship';
 import Typed from 'react-typed';
 import axios from 'axios';
+import Scholarship from './Scholarship';
+
 
 /* eslint-disable  */
 class Dashboard extends Component {

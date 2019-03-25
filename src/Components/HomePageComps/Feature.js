@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 const Feature = ({ step, description, img, alt }) => (
   <div className="feature">
@@ -7,6 +9,21 @@ const Feature = ({ step, description, img, alt }) => (
     <p>{description}</p>
   </div>
 );
+
+
+Feature.propTypes = {
+  step: PropTypes.string,
+  description: PropTypes.string,
+  img: PropTypes.string,
+  alt: PropTypes.string,
+};
+
+Feature.defaultProps = {
+  step: 'Sarah',
+  description: 'lorem ipsum',
+  img: 'hey',
+  alt: 'An image',
+};
 
 
 export default Feature;

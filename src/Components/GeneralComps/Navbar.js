@@ -1,27 +1,30 @@
 import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import whiteLogo from '../../images/home-page-pics/white-header-logo.png';
+import whiteLogo from '../../images/home/white-header-logo.png';
 
 
 class Navbar extends Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
 
-    this.navRef = React.createRef();
-  }
-
+  //   // this.state = {
+  //   //   navToggle: false,
+  //   // };
+  // }
 
   dropDown = () => {
-    const nav = this.navRef.current;
-    nav.style.height = '20em';
+    // this.setState({
+    //   navToggle: true,
+    // });
   }
 
   render() {
     return (
-      <nav ref={this.navRef} className="main" >
+      <nav>
 
         <Link to="/">
-          <img src={whiteLogo}
+          <img
+            src={whiteLogo}
             alt="Logo"
             className="white-header-logo"
           />
@@ -33,10 +36,17 @@ class Navbar extends Component {
 
           <NavLink to="/signup">Signup</NavLink>
 
-          <i onClick={this.dropDown} className="fas fa-bars"></i>
+          <i
+            onClick={this.dropDown}
+            className="fas fa-bars"
+            onKeyDown={this.dropDown}
+            role="button"
+            tabIndex={0}
+          />
+
         </div>
-      </nav >
-    )
+      </nav>
+    );
   }
 }
 

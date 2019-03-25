@@ -9,17 +9,17 @@ import Dashboard from './UserComps/Dashboard';
 import Footer from './GeneralComps/Footer';
 
 const App = () => (
-    <Router>
-        <>
-            <Route path="/" component={Navbar} />
-            <Route path="/" exact component={Home} />
-            <Route exact path="/login" component={Login} />
+  <Router>
+    <>
+      <Route path="/" component={Navbar} />
+      <Route path="/" exact component={Home} />
+      <Route exact path="/login" component={Login} />
 
-            <Route exact path="/signup" component={Signup} />
-            <Route exact path="/dashboard" component={Dashboard} />
-            <Route path="/" component={Footer} />
-        </>
-    </Router>
+      <Route exact path="/signup" component={Signup} />
+      <Route exact path="/dashboard" component={Dashboard} />
+      <Route path="/" component={Footer} />
+    </>
+  </Router>
 );
 
 export default App;

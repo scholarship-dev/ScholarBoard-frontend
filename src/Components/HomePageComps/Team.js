@@ -1,8 +1,8 @@
-import React from 'react'
-import medi from '../../images/team-images/Medi.jpg';
-import Asim from '../../images/team-images/Asim.jpg';
-import Thomas from '../../images/team-images/Thomas.jpg';
-import Will from '../../images/team-images/Will.jpg';
+import React from 'react';
+import medi from '../../images/team/Medi.jpg';
+import Asim from '../../images/team/Asim.jpg';
+import Thomas from '../../images/team/Thomas.jpg';
+import Will from '../../images/team/Will.jpg';
 import TeamMember from './TeamMember';
 
 const Team = () => (

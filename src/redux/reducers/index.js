@@ -1,17 +1,7 @@
-import {
-  SIGNUP_USER,
-}
-  from '../constants/action-types';
-
-
-const initialState = {
-  user: '',
-};
-
-function rootReducer(state = initialState, action) {
+function rootReducer(state, action) {
   switch (action.type) {
-    case SIGNUP_USER:
-      return { ...state, user: action.payload };
+    case 'SHUTUP':
+      return state;
     default:
       return state;
   }
