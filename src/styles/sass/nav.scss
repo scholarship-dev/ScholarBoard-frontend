@@ -2,9 +2,10 @@ nav {
   background:#332b8c;
   display: flex;
   align-items: center;
-  padding: 1em 1em;
+  padding: 1em 4em;
   box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1em);
   transition: padding 2s ease;
+  transition: height 4s ease-in;
 
 
   .nav-right {
@@ -20,6 +21,7 @@ nav {
   }
   img {
     width: 50%;
+    margin-left: -3em;
   }
 
   a {
@@ -31,7 +33,6 @@ nav {
   .nav-right {
     a {
       color: white;
-      padding: 0.4em;
       &:hover {
         padding-bottom: 0.1em;
         border-bottom: 1px solid #000;
@@ -79,21 +80,11 @@ nav {
 
   }
 
-  img {
-    margin-left: -2.3em;
-  }
-
-  img.header-logo {
-    display: none;
-  }
-
   img.white-header-logo {
     display: block;
     height: 45%;
-    width: 50%;
+    width: 75%;
   }
-
-
 
   i.fas.fa-bars {
     display: block;
