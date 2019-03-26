@@ -27,6 +27,7 @@ class Login extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
+    console.log(this.state)
   };
 
 
@@ -51,7 +52,7 @@ class Login extends Component {
                 <input
                   ref={this.inputRef}
                   name="email"
-                  id={email}
+                  id="email"
                   type="text"
                   value={email}
                   onChange={this.handleChange}
@@ -64,7 +65,7 @@ class Login extends Component {
                 <br />
                 <input
                   name="password"
-                  id={password}
+                  id="password"
                   type="password"
                   value={password}
                   onChange={this.handleChange}
