@@ -1,33 +1,34 @@
 .auth-page {
     background: rgba(121, 169, 248, 0.08);
-
+    legend {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
   .form-container {
       display: flex;
       justify-content: center;
-      align-items: center;
       padding-top: 6em;
       
       form {
           display: flex;
           background-color: white;
-          padding: 1em 2em;
+          padding-top: 1em;
           min-width: 50%;
           margin-bottom: 9em;
           border-radius: 0.3em;
           box-shadow: 0.2em 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
     }
-    form.login {
-        min-width: 40%;
+        a {
+    color: black;
+    margin: 1em 0 0 0.2em;
     }
-    
-          //DONE
-          a {
-            color: black;
-            margin: 1em 0 0 0.2em;
-          }
-      }
+    }
+ 
 }
-
+form.login {
+    min-width: 80%;
+}
 
 
 
@@ -38,24 +39,18 @@
     width: 80%;
     margin: 1em auto 4em auto;
 
-    legend {
-        text-align: center;
-        font-size: 2em;
-        padding-bottom: 1em;
-    }
 
     label {
-        margin: 1em 0em .3em .3em;
         color: rgb(44, 43, 43);
-        font-size: 1em;
+        font-size: 1.1em;
         font-weight: bolder;
+        margin-bottom: 2em;
     }
+
     p,a {
         text-align: center;
     }
-    a {
-        text-decoration: underline;
-    }
+ 
 
     input {
         border-width: 0 0 2px;
@@ -63,14 +58,18 @@
         color: black;
         padding: 5px 5px;
         font-size: 1em;
-        margin-bottom: 1.5em;
-        width: 90%
+        // margin-bottom: 1.5em;
+        width: 95%;
+        margin-top: 1.2em;
     }
 
     select {
-        margin: 1em 0;
         width: 95%;
         font-size: 1.3em;
+    }
+
+    option {
+        padding-bottom: 2em;
     }
 
     input:focus {
@@ -94,6 +93,7 @@
             box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
         }
     }
+ 
 }
 
 @keyframes gradient {
@@ -111,21 +111,12 @@
 
 
 @media screen and (max-width: 800px) {
+    label {
+        margin-left:1em;
+    }
     .form-container {
         padding:  0em 2em;
-        legend {
-            font-size: 1.7em;
-        }
-        input{
-            width: 90%;
-        }
-        select {
-            width: 95%;
-        }
-        p {
-            font-size: 1em;
-        }
-    }   
+    } 
 }
 
 

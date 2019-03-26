@@ -27,7 +27,6 @@ class Signup extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.history.push("/dashboard");
   }
 
   render() {
@@ -198,26 +197,25 @@ class Signup extends Component {
                     <option value="highschool">Highschool</option>
                     <option value="college">College</option>
                   </select>
+
+                  <label
+                    htmlFor={grade}
+                  >
+                    Grade
+                    <select
+                      id="grade"
+                      required
+                      value={grade}
+                      onChange={this.handleChange}
+                      name="grade"
+                    >
+                      <option value="junior">Junior</option>
+                      <option value="senior">Senior</option>
+                    </select>
+                  </label>
                 </label>
               </fieldset>
 
-
-              <label
-                htmlFor={grade}
-              >
-                Grade
-                <select
-                  id="grade"
-                  required
-                  value={grade}
-                  onChange={this.handleChange}
-                  name="grade"
-                >
-
-                  <option value="junior">Junior</option>
-                  <option value="senior">Senior</option>
-                </select>
-              </label>
 
               <button
                 type="submit"
