@@ -18,7 +18,6 @@ class Signup extends Component {
   }
 
   handleChange = (event) => {
-    console.log(event.target.id);
     this.setState(
       {
         [event.target.id]: event.target.value,
@@ -28,6 +27,7 @@ class Signup extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
+    this.props.history.push("/dashboard");
   }
 
   render() {
