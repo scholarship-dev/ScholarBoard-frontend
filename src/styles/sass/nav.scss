@@ -1,14 +1,27 @@
 nav {
+  background:#332b8c;
   display: flex;
   align-items: center;
-  padding: 1em 1em;
+  padding: 1em 4em;
   box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1em);
+
+
   .nav-right {
     margin-left: auto;
+
+    i {
+      display: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
   }
   img {
     width: 50%;
+    margin-left: -3em;
   }
+
   a {
     text-decoration: none;
     margin-left: 2em;
@@ -17,17 +30,64 @@ nav {
   }
   .nav-right {
     a {
-      padding: 0.4em;
+      color: white;
       &:hover {
-        background: #2196F3;
-        border-radius: 0.2em;
+        padding-bottom: 0.1em;
+        border-bottom: 1px solid #000;
+        border-color: white;
         color: white;
       }
     }
+    button {
+      appearance: none;
+      color: transparent;
+    }
   }
   a.active {
-    background: #2196F3;
-    border-radius: 0.2em;
+    padding-bottom: 0.1em;
+    border-bottom: 1px solid #000;
+    border-color: white;
     color: white;
   }
+
+  .red {
+    height: 100vh;
+  }
+}
+
+.dropdown {
+  height: 100vh;
+  position: fixed;
+  opacity: 0.8;
+}
+
+
+@media screen and (max-width: 800px) {
+  nav {
+    background: #332b8c;
+    padding: 1em 2em;
+    position: sticky;
+    top: 0;
+  a[href="/login"],
+  a[href="/signup"] {
+    display: none;
+  };
+
+  h1 {
+    text-align: center;
+
+  }
+  img.white-header-logo {
+    display: block;
+    height: 45%;
+    width: 69.7%;
+  }
+
+  i.fas.fa-bars {
+    display: block;
+    color: white;
+    font-size: 2em;
+  }
+}
+
 }

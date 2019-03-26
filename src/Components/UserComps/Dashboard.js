@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Scholarship from './Scholarship';
 import Typed from 'react-typed';
 import axios from 'axios';
+import Scholarship from './Scholarship';
+
 
 /* eslint-disable  */
 class Dashboard extends Component {
@@ -19,7 +20,6 @@ class Dashboard extends Component {
       const res = await axios.get('https://scholarboard-api.herokuapp.com/api/scholarships');
       // const { scholarships } = res.data;
       const scholarships = res.data;
-      console.log(scholarships)
       this.setState({
         scholarships
       })
@@ -44,25 +44,37 @@ class Dashboard extends Component {
     return (
       <div className="dashboard">
 
-        <section>
-          <nav>
-            <ul>
-              <Link to="/dashboard">
-                <li>Your Scholarships</li>
-              </Link>
-              <Link to="#">
-                <li>Applied</li>
-              </Link>
-              <Link to="#">
-                <li>Awarded</li>
-              </Link>
-              <Link to="#">
-                <li>Profile</li>
-              </Link>
-            </ul>
-          </nav>
-        </section>
+        <ul className="side-nav">
 
+          <Link to="/dashboard">
+            <li>
+              Your Scholarships
+              <i className="fa fa-list" aria-hidden="true"></i>
+            </li>
+          </Link>
+
+          <Link to="#">
+            <li>Applied
+            <i className="fa fa-check" aria-hidden="true"></i>
+            </li>
+          </Link>
+
+          <Link to="#">
+            <li>Awarded
+            <i className="fa fa-star" aria-hidden="true"></i>
+            </li>
+          </Link>
+
+          <Link to="#">
+            <li>Profile <i className="fa fa-cog" aria-hidden="true"></i>
+            </li>
+          </Link>
+
+          <section className="tip">
+            {/* <h3>Tip of the day</h3> */}
+          </section>
+
+        </ul>
 
         <section className="dashboard-content">
 

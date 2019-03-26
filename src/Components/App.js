@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import '../styles/sass';
+import '../styles/sass/main.scss';
 import Navbar from './GeneralComps/Navbar';
 import Home from './HomePageComps/Home';
 import Login from './AuthPageComps/Login';
@@ -14,7 +14,6 @@ const App = () => (
       <Route path="/" component={Navbar} />
       <Route path="/" exact component={Home} />
       <Route exact path="/login" component={Login} />
-
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/dashboard" component={Dashboard} />
       <Route path="/" component={Footer} />

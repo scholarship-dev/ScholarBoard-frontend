@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-// TODO: Fix proptypes error later
+
 const TeamMember = ({ name, description, img, alt }) => (
   <div className="team-member">
     <img src={img} alt={alt} />
@@ -8,6 +9,20 @@ const TeamMember = ({ name, description, img, alt }) => (
     <p>{description}</p>
   </div>
 );
+
+TeamMember.propTypes = {
+  name: PropTypes.string,
+  description: PropTypes.string,
+  img: PropTypes.string,
+  alt: PropTypes.string,
+};
+
+TeamMember.defaultProps = {
+  name: 'Sarah',
+  description: 'lorem ipsum',
+  img: 'hey',
+  alt: 'An image',
+};
 
 
 export default TeamMember;

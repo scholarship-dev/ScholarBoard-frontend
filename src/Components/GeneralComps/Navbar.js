@@ -1,55 +1,58 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../images/home-page-pics/header-logo.png';
+import React, { Component } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import whiteLogo from '../../images/home/white-header-logo.png';
 
-const Navbar = ({ user, logoutUser }) => {
-  if (user) {
+
+class Navbar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      navActive: false,
+    };
+  }
+
+  dropDown = () => {
+    const { navActive } = this.state;
+    this.setState(
+      {
+        navActive: !navActive,
+      },
+    );
+  }
+
+  render() {
+    const { navActive } = this.state;
     return (
-      <nav>
+      <nav className={(navActive ? 'dropdown' : '')}>
+
         <Link to="/">
-
           <img
-            className="header-logo"
-            src={logo}
+            src={whiteLogo}
             alt="Logo"
-            srcSet=""
+            className="white-header-logo"
           />
-
         </Link>
 
         <div className="nav-right">
-          <button
-            type="submit"
-            className="btn"
-            onClick={logoutUser}
-          >
-            Logout
-          </button>
+
+          <NavLink to="/login">Login</NavLink>
+
+          <NavLink to="/signup">Signup</NavLink>
+
+          <i
+            onClick={this.dropDown}
+            className="fas fa-bars"
+            onKeyDown={this.dropDown}
+            role="button"
+            tabIndex={0}
+          />
 
         </div>
       </nav>
     );
   }
-  return (
-    <nav>
-
-      <Link to="/">
-        <img
-          className="header-logo"
-          src={logo}
-          alt="Logo"
-          srcSet=""
-        />
-      </Link>
-
-      <div className="nav-right">
-        <Link to="/login">Login</Link>
-        <Link to="/signup">Signup</Link>
-      </div>
-    </nav>
-  );
-};
-
+}
 
 
 export default Navbar;

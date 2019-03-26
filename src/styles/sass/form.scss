@@ -1,125 +1,130 @@
-//DONE
 .auth-page {
-  padding: 0 5em;
-  background: linear-gradient(270deg, #00F260, #0575E6);
-  background-size: 800% 800%;
-  animation: ColorChangeBackground 10s ease infinite;
-  height: 100%;
-
-  //DONE:
+    background: rgba(121, 169, 248, 0.08);
+    legend {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+    
   .form-container {
       display: flex;
-      flex-direction: row;
       justify-content: center;
-      padding-top: 6em;
-      border-radius: 5em;
+      padding-top: 7em;
       
-
-      //DONE
       form {
           display: flex;
-          flex-direction: column;
           background-color: white;
-          padding: 1em 2em;
-          min-width: 48vw;
+          padding-top: 1em;
+          min-width: 50%;
           margin-bottom: 9em;
-          border-radius: 0.2em;
+          border-radius: 0.3em;
+          box-shadow: 0.2em 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+    }
+        a {
+    color: black;
+    margin: 1em 0 0 0.2em;
+    }
+    }
 
-          form.signup {
-            height: 100%;
-            legend {
-              padding-top: -2em;
-            }
-          }
 
-          //DONE
-          .signup-fields {
-              display: flex;
-              flex-direction: column;
-              margin: 1em auto 4em auto;
-
-              //DONE
-              legend {
-                  text-align: center;
-                  font-size: 2em;
-                  padding-bottom: 1em;
-              }
-
-              //DONE
-              label {
-                  margin: 1em 0em .3em .3em;
-                  color: gray;
-                  font-size: .8em;
-                  font-weight: bolder;
-              }
-
-              //DONE
-              input {
-                  border-width: 0 0 2px;
-                  border-color: lightgray;
-                  color: black;
-                  padding: 5px 5px;
-                  font-size: 1em;
-                  min-width: 20vw;
-              }
-
-              //DONE
-              input:focus {
-                  outline: none;
-                  border-color: darkblue;
-              }
-
-              //DONE
-              button {
-                  margin-top: 1em;
-                  background-color: black;
-                  color: white;
-                  position: relative;
-                  text-decoration: none;
-                  color: #ffffff;
-                  display: inline-block;
-                  padding: 10px 15px 11px;
-                  font-size: 13px;
-                  font-weight: 500;
-                  line-height: 17px;
-                  letter-spacing: .02em;
-                  border: none;
-                  border-radius: 4px;
-                -webkit-appearance: none;
-              }
-          }
-          p {
-            padding-top: 1em;
-          }
-          a {
-            color: black;
-            margin: 1em 0 0 0.2em;
-          }
-      }
-  }
+        option {
+            margin-bottom: 2em;
+        }
+}
+form.login {
+    min-width: 80%;
+    label:first-of-type {
+        margin-top: -1em;
+    }
 }
 
-//The Gradient animation for the auth forms
-@-webkit-keyframes ColorChangeBackground {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+
+
+.signup-fields,
+.login-fields {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 1em auto 4em auto;
+
+
+    label {
+        color: rgb(44, 43, 43);
+        font-size: 1.1em;
+        font-weight: bolder;
+        margin-bottom: 2em;
+    }
+
+    p,a {
+        text-align: center;
+    }
+ 
+    input {
+        border-width: 0 0 2px;
+        border-color: lightgray;
+        color: black;
+        padding: 5px 5px;
+        font-size: 1em;
+        width: 90%;
+        margin-top: 1.2em;
+    }
+
+    select {
+        width: 95%;
+        font-size: 1.3em;
+        margin:1em 0 1em 0;
+    }
+
+    option {
+        padding-bottom: 2em;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: darkblue;
+    }
+
+    button {
+        margin: 0.5em 0;
+        background-color: black;
+        color: white;
+        color: #ffffff;
+        padding: 10px 15px 11px;
+        font-size: 1em;
+        letter-spacing: .02em;
+        border: none;
+        border-radius: 4px;
+
+    &:hover {
+            cursor: pointer;
+            box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+        }
+    }
+
+ 
 }
 
-@keyframes ColorChangeBackground {
-  0% {
-    background-position: 0% 50%;
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+
+
+
+@media screen and (max-width: 800px) {
+    label {
+        margin-left:1em;
+    }
+    .form-container {
+        padding:  0em 2em;
+    } 
 }
+
+

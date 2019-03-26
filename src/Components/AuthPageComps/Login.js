@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from "react-redux";
-import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
 
 class Login extends Component {
@@ -9,75 +7,92 @@ class Login extends Component {
 
     this.state = {
       email: '',
-      password: ''
+      password: '',
     };
+    this.inputRef = React.createRef();
+  }
+
+  componentDidMount() {
+    this.inputRef.current.focus();
+  }
+
+  handleChange = (event) => {
+    this.setState(
+      {
+        [event.target.id]: event.target.value,
+      },
+    );
   };
 
-  handleChange = event => {
-    this.setState({ [event.target.id]: event.target.value });
-  };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
-    this.props.loginUser(this.state);
   };
+
 
   render() {
+    const { email, password } = this.state;
+
     return (
       <div className="auth-page">
 
-        <section
-          className="form-container"
-        >
-
+        <section className="form-container">
           <form
             onSubmit={this.handleSubmit}
+            className="login"
           >
 
-            <div className="signup-fields">
+            <div className="login-fields">
               <legend>Login</legend>
 
-              <label htmlFor="email">
+              <label htmlFor={email}>
                 Email
-                  </label>
+                <br />
+                <input
+                  ref={this.inputRef}
+                  name="email"
+                  id="email"
+                  type="text"
+                  value={email}
+                  onChange={this.handleChange}
+                  required
+                />
+              </label>
 
-              <input
-                name="email"
-                id="email" type="text"
-                value={this.state.email}
-                onChange={this.handleChange}
-                required
-              />
-
-              <label htmlFor="password">
+              <label htmlFor={password}>
                 Password
-                  </label>
-
-              <input
-                name="password"
-                id="password"
-                type="password"
-                value={this.state.password}
-                onChange={this.handleChange}
-                required
-              />
+                <br />
+                <input
+                  name="password"
+                  id="password"
+                  type="password"
+                  value={password}
+                  onChange={this.handleChange}
+                  required
+                />
+              </label>
 
               <button
-                type="submit">
+                type="submit"
+              >
                 Login
-                  </button>
+              </button>
 
               <p>
-                Need to make an account? <Link to="/signup">
-                  Sign up here
-                  </Link>
-              </p>
-            </div>
+                Need to make an account?
 
+                <br />
+              </p>
+              <Link to="/signup">
+                Sign up here
+              </Link>
+            </div>
           </form>
+          <div />
         </section>
       </div>
     );
   }
 }
+
 export default Login;

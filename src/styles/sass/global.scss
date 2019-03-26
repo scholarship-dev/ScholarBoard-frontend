@@ -1,0 +1,26 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  text-decoration: underline;
+}
+.page-section h2 {
+  text-align: center;
+  padding-top: 0.5em;
+  font-size: 2em;
+  padding: 2em;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+button:hover {
+  cursor: pointer;
+}
+
+

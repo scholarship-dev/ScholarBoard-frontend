@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
 
 class Signup extends Component {
@@ -8,33 +6,37 @@ class Signup extends Component {
     super(props);
 
     this.state = {
-      firstname: '',
-      lastname: '',
+      firstName: '',
+      lastName: '',
       email: '',
       gpa: '',
       ethnicity: '',
       educationLevel: '',
       grade: '',
-      password: ''
+      password: '',
+      confirmPassword: '',
     };
+  }
+
+  handleChange = (event) => {
+    this.setState(
+      {
+        [event.target.id]: event.target.value,
+      },
+    );
   };
 
-  // validateForm() {
-  //   return this.state.firstName.length > 0 &&  this.state.lastName.length > 0 && this.state.email.length > 0 && this.state.password.length > 0;
-  // };
-
-  handleChange = event => {
-    this.setState({ [event.target.id]: event.target.value });
-  };
-
-  handleSubmit(event) {
+  handleSubmit = (event) => {
     event.preventDefault();
-    // this.props.signupUser(this.state);
-    // this.props.history.push('/dashboard')
-    console.log(this.state)
-  };
+    console.log(this.state);
+  }
 
   render() {
+    const {
+      firstName, lastName, email, gpa,
+      ethnicity, educationLevel, grade, password, confirmPassword,
+    } = this.state;
+
     return (
       <div className="auth-page">
 
@@ -51,171 +53,191 @@ class Signup extends Component {
               <legend>Create An Account</legend>
 
               <label
-                htmlFor="firstname">
+                htmlFor={firstName}
+              >
                 First Name
+                <br />
+                <input
+                  name={firstName}
+                  id="firstName"
+                  type="text"
+                  value={firstName}
+                  onChange={this.handleChange}
+
+                />
               </label>
 
-              <input
-                name="firstname"
-                id="firstname"
-                type="text"
-                value={this.state.firstname}
-                onChange={this.handleChange}
-                required
-              />
-
               <label
-                htmlFor="lastname">
+                htmlFor={lastName}
+              >
                 Last Name
+                <br />
+                <input
+                  name={lastName}
+                  id="lastName"
+                  type="text"
+                  value={lastName}
+                  onChange={this.handleChange}
+
+                />
               </label>
 
-              <input
-                name="lastname"
-                id="lastname"
-                type="text"
-                value={this.state.lastname}
-                onChange={this.handleChange}
-                required
-              />
 
               <label
-                htmlFor="email">
+                htmlFor="email"
+              >
                 Email
+                <br />
+                <input
+                  name="email"
+                  id="email"
+                  type="text"
+                  value={email}
+                  onChange={this.handleChange}
+                />
               </label>
 
-              <input
-                name="email"
-                id="email"
-                type="text"
-                value={this.state.email}
-                onChange={this.handleChange}
-                required
-              />
 
               <label
-                htmlFor="gpa">
+                htmlFor="password"
+              >
+                Password
+                <br />
+                <input
+                  name="password"
+                  id="password"
+                  type="password"
+                  value={password}
+                  onChange={this.handleChange}
+                />
+              </label>
+
+              <label
+                htmlFor="confirmPassword"
+              >
+                Confirm Password
+                <br />
+                <input
+                  name="confirmPassword"
+                  id="confirmPassword"
+                  type="confirmPassword"
+                  value={confirmPassword}
+                  onChange={this.handleChange}
+                />
+              </label>
+
+
+              <label
+                htmlFor="gpa"
+              >
                 GPA
-              </label>
+                <br />
+                <input
+                  name="gpa"
+                  id="gpa"
+                  type="text"
+                  value={gpa}
+                  onChange={this.handleChange}
 
-              <input
-                name="gpa"
-                id="gpa"
-                type="number"
-                value={this.state.gpa}
-                onChange={this.handleChange}
-                required
-              />
-
-              <label
-                htmlFor="ethnicity">
-                Ethnicity
+                />
               </label>
 
               <fieldset>
 
-                <select
-                  required
-                  id="ethnicity"
-                  onChange={this.handleChange}
-                  name="ethnicity"
-                  value={this.state.ethnicity}
+                <label
+                  htmlFor={ethnicity}
                 >
+                  Ethnicity
 
-                  <option selected="selected" disabled="disabled">-- select one --</option>
-                  <optgroup label="White">
-                    <option value="White English">English</option>
-                    <option value="White Welsh">Welsh</option>
-                    <option value="White Scottish">Scottish</option>
-                    <option value="White Northern Irish">Northern Irish</option>
-                    <option value="White Irish">Irish</option>
-                    <option value="White Gypsy or Irish Traveller">Gypsy or Irish Traveller</option>
-                    <option value="White Other">Any other White background</option>
-                  </optgroup>
-                  <optgroup label="Mixed or Multiple ethnic groups">
-                    <option value="Mixed White and Black Caribbean">White and Black Caribbean</option>
-                    <option value="Mixed White and Black African">White and Black African</option>
-                    <option value="Mixed White Other">Any other Mixed or Multiple background</option>
-                  </optgroup>
-                  <optgroup label="Asian">
-                    <option value="Asian Indian">Indian</option>
-                    <option value="Asian Pakistani">Pakistani</option>
-                    <option value="Asian Bangladeshi">Bangladeshi</option>
-                    <option value="Asian Chinese">Chinese</option>
-                    <option value="Asian Other">Any other Asian background</option>
-                  </optgroup>
-                  <optgroup label="Black">
-                    <option value="Black African">African</option>
-                    <option value="Black African American">African American</option>
-                    <option value="Black Caribbean">Caribbean</option>
-                    <option value="Black Other">Any other Black background</option>
-                  </optgroup>
-                  <optgroup label="Other ethnic groups">
-                    <option value="Arab">Arab</option>
+                  <select
+                    id="ethnicity"
+                    onChange={this.handleChange}
+                    name="ethnicity"
+                    value={ethnicity}
+                    placeholder="White"
+                  >
+
+                    <option disabled="disabled">-- Select your ethnicity --</option>
+                    <option style={
+                      {
+                        display: 'none',
+                      }
+                    }
+                    />
                     <option value="Hispanic">Hispanic</option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Asian Indian">Asian</option>
+                    <option value="Asian">Asian</option>
                     <option value="Latino">Latino</option>
                     <option value="Native American">Native American</option>
-                    <option value="Pacific Islander">Pacific Islander</option>
-                    <option value="Other">Any other ethnic group</option>
-                  </optgroup>
-                </select>
+                    <option value="Not given">None</option>
+                  </select>
+                </label>
+
 
               </fieldset>
 
-              <label
-                htmlFor="educationLevel">
-                Education Level
-              </label>
+              <fieldset>
+                <label
+                  htmlFor="educationLevel"
+                >
+                  Education Level
+                  <select
 
-              <input
-                name="educationLevel"
-                id="educationLevel"
-                type="text"
-                value={this.state.educationLevel}
-                onChange={this.handleChange}
-                required
-              />
+                    value={educationLevel || 'Highschool'}
+                    onChange={this.handleChange}
+                    id="educationLevel"
+                  >
+                    <option style={
+                      {
+                        display: 'none',
+                      }
+                    }
+                    />
+                    <option value="highschool">Highschool</option>
+                    <option value="college">College</option>
+                  </select>
 
-              <label
-                htmlFor="grade">
-                Grade
-              </label>
+                  <label
+                    htmlFor={grade}
+                  >
+                    Grade
+                    <select
+                      id="grade"
 
-              <input
-                name="grade"
-                id="grade"
-                type="text"
-                value={this.state.grade}
-                onChange={this.handleChange}
-                required
-              />
+                      value={grade}
+                      onChange={this.handleChange}
+                      name="grade"
+                    >
+                      <option style={
+                        {
+                          display: 'none',
+                        }
+                      }
+                      />
+                      <option value="junior">Junior</option>
+                      <option value="senior">Senior</option>
+                    </select>
+                  </label>
+                </label>
+              </fieldset>
 
-              <label
-                htmlFor="password">
-                Password
-              </label>
-
-              <input
-                name="password"
-                id="password"
-                type="password"
-                value={this.state.password}
-                onChange={this.handleChange}
-                required
-              />
 
               <button
-                type="submit">
+                type="submit"
+              >
                 Signup
-              </button >
+              </button>
 
               <p>
                 Already have an account?
+              </p>
 
               <Link to="/login">
-                  Login here
+                Login here
               </Link>
 
-              </p>
             </div>
 
           </form>
@@ -224,4 +246,5 @@ class Signup extends Component {
     );
   }
 }
+
 export default Signup;
