@@ -5,6 +5,7 @@
         font-size: 2em;
         margin-bottom: 2em;
     }
+    
   .form-container {
       display: flex;
       justify-content: center;
@@ -24,10 +25,17 @@
     margin: 1em 0 0 0.2em;
     }
     }
- 
+
+
+        option {
+            margin-bottom: 2em;
+        }
 }
 form.login {
     min-width: 80%;
+    label:first-of-type {
+        margin-top: -1em;
+    }
 }
 
 
@@ -51,21 +59,20 @@ form.login {
         text-align: center;
     }
  
-
     input {
         border-width: 0 0 2px;
         border-color: lightgray;
         color: black;
         padding: 5px 5px;
         font-size: 1em;
-        // margin-bottom: 1.5em;
-        width: 95%;
+        width: 90%;
         margin-top: 1.2em;
     }
 
     select {
         width: 95%;
         font-size: 1.3em;
+        margin:1em 0 1em 0;
     }
 
     option {
@@ -93,6 +100,7 @@ form.login {
             box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
         }
     }
+
  
 }
 
